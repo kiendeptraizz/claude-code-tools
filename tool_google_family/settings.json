@@ -1,0 +1,6 @@
+{
+  "gpm_port": 19995,
+  "threads": 4,
+  "close_after": true,
+  "get_emails": true
+}

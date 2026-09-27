@@ -1,0 +1,10 @@
+{
+  "name": "truycuu-crm-ro-mcp",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "MCP server chỉ-đọc: cho Claude đọc trực tiếp CRM (MySQL) + bot (SQLite) qua SSH.",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.4.0"
+  }
+}

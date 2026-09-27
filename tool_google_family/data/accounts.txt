@@ -1,0 +1,5 @@
+# Mỗi dòng 1 account, định dạng:  email|pass|2fa
+#   - 2fa = secret TOTP (chuỗi base32, vd JBSWY3DPEHPK3PXP) để tool tự sinh mã 6 số.
+#   - Nếu profile GPM đã đăng nhập sẵn thì pass/2fa có thể để trống.
+# Xóa dòng ghi chú này và dán acc thật vào. Ví dụ:
+# myaccount@gmail.com|MatKhau123|JBSWY3DPEHPK3PXP

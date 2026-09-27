@@ -1,0 +1,113 @@
+[15:46:28] === Kiểm tra token: 10 account ===
+[15:46:32]   ✓  goarkemper4110@hotmail.com: OK (2 mail trong INBOX)
+[15:46:35]   ✓  necocheaferriter01@hotmail.com: OK (2 mail trong INBOX)
+[15:46:39]   ✓  myonggranfield64@hotmail.com: OK (3 mail trong INBOX)
+[15:46:45]   ✓  rainardrotch7804@hotmail.com: OK (3 mail trong INBOX)
+[15:46:49]   ✓  madererooth61@hotmail.com: OK (3 mail trong INBOX)
+[15:46:54]   ✓  darellhardi5357@hotmail.com: OK (2 mail trong INBOX)
+[15:46:58]   ✓  windonlucic3024@hotmail.com: OK (2 mail trong INBOX)
+[15:47:02]   ✓  driscolldrach63@hotmail.com: OK (2 mail trong INBOX)
+[15:47:06]   ✓  frantumfollis51@hotmail.com: OK (2 mail trong INBOX)
+[15:47:09]   ✓  cervantszrosendale19@hotmail.com: OK (2 mail trong INBOX)
+[15:47:09] === Token: 10 sống / 0 lỗi ===
+[15:47:12] === Bắt đầu: 10 account ===
+[15:47:12] [1/10] goarkemper4110@hotmail.com
+[15:47:55] === Bắt đầu: 10 account ===
+[15:47:56] [1/10] goarkemper4110@hotmail.com
+[15:53:07] === Bắt đầu: 10 account ===
+[15:53:07] [1/10] goarkemper4110@hotmail.com
+[15:58:07] === Bắt đầu: 10 account ===
+[15:58:07] [1/10] goarkemper4110@hotmail.com
+[15:58:31]     ❌ THẤT BẠI: không thấy ô nhập email
+[15:58:36] [2/10] necocheaferriter01@hotmail.com
+[15:58:57]     ❌ THẤT BẠI: không thấy ô nhập email
+[15:59:02] === ĐÃ DỪNG ===
+[15:59:02] === Xong: 0 thành công / 2 lỗi ===
+[16:13:40] === Kiểm tra token: 10 account ===
+[16:13:42]   ✗  goarkemper4110@hotmail.com: IMAP lỗi -> User is authenticated but not connected.
+[16:13:46]   ✓  necocheaferriter01@hotmail.com: OK (2 mail trong INBOX)
+[16:13:49]   ✓  myonggranfield64@hotmail.com: OK (3 mail trong INBOX)
+[16:13:52]   ✓  rainardrotch7804@hotmail.com: OK (3 mail trong INBOX)
+[16:13:56]   ✓  madererooth61@hotmail.com: OK (3 mail trong INBOX)
+[16:13:59]   ✓  darellhardi5357@hotmail.com: OK (2 mail trong INBOX)
+[16:14:02]   ✓  windonlucic3024@hotmail.com: OK (2 mail trong INBOX)
+[16:14:06]   ✓  driscolldrach63@hotmail.com: OK (2 mail trong INBOX)
+[16:14:09]   ✓  frantumfollis51@hotmail.com: OK (2 mail trong INBOX)
+[16:14:12]   ✓  cervantszrosendale19@hotmail.com: OK (2 mail trong INBOX)
+[16:14:12] === Token: 9 sống / 1 lỗi ===
+[16:27:49] === GIAI ĐOẠN 1/2: thêm email khôi phục chéo cho 2 acc ===
+[16:27:49] [GĐ1 1/2] madererooth61@hotmail.com  ← recovery: darellhardi5357@hotmail.com
+[16:28:44]     madererooth61@hotmail.com: ✓ đã thêm recovery darellhardi5357@hotmail.com (mã 216811)
+[16:28:49] [GĐ1 2/2] darellhardi5357@hotmail.com  ← recovery: madererooth61@hotmail.com
+[16:29:41]     darellhardi5357@hotmail.com: ✓ đã thêm recovery madererooth61@hotmail.com (mã 009943)
+[16:29:46] === GIAI ĐOẠN 2/2: đổi mật khẩu ===
+[16:29:46] [GĐ2 1/2] madererooth61@hotmail.com
+[16:30:19]     ❌ không thấy ô mật khẩu (acc bị Microsoft chặn/thử thách?)
+[16:30:22] [GĐ2 2/2] darellhardi5357@hotmail.com
+[16:30:56]     ❌ không thấy ô mật khẩu (acc bị Microsoft chặn/thử thách?)
+[16:30:59] === XONG: 0 đổi pass thành công / 2 lỗi (trên 2 acc) ===
+[16:53:35]     ✓ đã thêm recovery driscolldrach63@hotmail.com (mã 663444)
+[18:54:19] [1/12] jurief.distato8@hotmail.com  (recovery: rhumae_arleail5@hotmail.com)
+[18:55:03]     ❌ token của rhumae_arleail5@hotmail.com (nơi nhận mã) đã chết
+[18:55:08] [2/12] rhumae_arleail5@hotmail.com  (recovery: vilaliy.fneresa@hotmail.com)
+[18:55:57]     ❌ token của vilaliy.fneresa@hotmail.com (nơi nhận mã) đã chết
+[18:56:02] === ĐÃ DỪNG ===
+[18:56:02] === XONG: 0 thành công / 2 lỗi (trên 12 acc) ===
+[18:56:02]    (acc cuối chuỗi có thể lỗi do hết acc còn token sống làm nguồn mã — xem failed.txt)
+[19:03:18] === Kiểm tra token: 8 account ===
+[19:03:22]   ✓  briscoehardge35@hotmail.com: OK (2 mail trong INBOX)
+[19:03:26]   ✓  tennillelacz140@hotmail.com: OK (2 mail trong INBOX)
+[19:03:30]   ✓  davinpicot8684@hotmail.com: OK (2 mail trong INBOX)
+[19:03:33]   ✓  schwenttecchio444@hotmail.com: OK (2 mail trong INBOX)
+[19:03:36]   ✓  wondoloskiprzybyl285@hotmail.com: OK (2 mail trong INBOX)
+[19:03:48]   ✓  tarttrenea317@hotmail.com: OK (2 mail trong INBOX)
+[19:03:48] === ĐÃ DỪNG ===
+[19:03:48] === Token: 6 sống / 0 lỗi ===
+[19:03:50] [1/8] briscoehardge35@hotmail.com  (recovery: tennillelacz140@hotmail.com)
+[19:04:50]     ✓ đã thêm recovery tennillelacz140@hotmail.com (mã 013615)
+[19:05:48]     ✅ ĐỔI PASS OK -> Doipass@2026Abc
+[19:05:53] [2/8] tennillelacz140@hotmail.com  (recovery: davinpicot8684@hotmail.com)
+[19:06:50]     ✓ đã thêm recovery davinpicot8684@hotmail.com (mã 987674)
+[19:07:56]     ✅ ĐỔI PASS OK -> Doipass@2026Abc
+[19:08:01] [3/8] davinpicot8684@hotmail.com  (recovery: schwenttecchio444@hotmail.com)
+[19:09:39]     ✓ đã thêm recovery schwenttecchio444@hotmail.com (mã 045369)
+[19:10:38]     ❌ đổi pass không lưu được (mật khẩu yếu/trùng pass cũ?). 
+[19:10:43] [4/8] schwenttecchio444@hotmail.com  (recovery: wondoloskiprzybyl285@hotmail.com)
+[19:33:24] === BẮT ĐẦU: 2 acc | 2 luồng song song ===
+[19:33:24] [1/2] BẮT ĐẦU briscoehardge35@hotmail.com  (recovery: tennillelacz140@hotmail.com)
+[19:33:24] [2/2] BẮT ĐẦU tennillelacz140@hotmail.com  (recovery: briscoehardge35@hotmail.com)
+[19:35:09]     ❌ tennillelacz140@hotmail.com: token nguồn-mã briscoehardge35@hotmail.com đã chết
+[19:35:33]     ❌ briscoehardge35@hotmail.com: token nguồn-mã tennillelacz140@hotmail.com đã chết
+[19:35:33] === XONG: 0 thành công / 2 lỗi (trên 2 acc) ===
+[19:36:47] === Kiểm tra token: 8 account ===
+[19:36:48]   ✗  briscoehardge35@hotmail.com: token CHẾT / IMAP lỗi
+[19:36:49]   ✗  tennillelacz140@hotmail.com: token CHẾT / IMAP lỗi
+[19:36:50]   ✗  davinpicot8684@hotmail.com: token CHẾT / IMAP lỗi
+[19:36:53]   ✓  schwenttecchio444@hotmail.com: OK (4 mail trong INBOX)
+[19:36:56]   ✓  wondoloskiprzybyl285@hotmail.com: OK (2 mail trong INBOX)
+[19:37:01]   ✓  tarttrenea317@hotmail.com: OK (2 mail trong INBOX)
+[19:37:04]   ✓  stachowiaksturz8801@hotmail.com: OK (2 mail trong INBOX)
+[19:37:08]   ✓  lakitamccarrol977@hotmail.com: OK (2 mail trong INBOX)
+[19:37:08] === Token: 5 sống / 3 lỗi ===
+[19:37:47] === BẮT ĐẦU: 2 acc | 2 luồng song song ===
+[19:37:47] [1/2] BẮT ĐẦU schwenttecchio444@hotmail.com  (recovery: wondoloskiprzybyl285@hotmail.com)
+[19:37:47] [2/2] BẮT ĐẦU wondoloskiprzybyl285@hotmail.com  (recovery: schwenttecchio444@hotmail.com)
+[19:38:42]     ✓ đã thêm recovery schwenttecchio444@hotmail.com (mã 332315)
+[19:39:51]     ❌ schwenttecchio444@hotmail.com: token nguồn-mã wondoloskiprzybyl285@hotmail.com đã chết
+[19:40:38]     ✅ wondoloskiprzybyl285@hotmail.com | pass mới: Kien@Songsong26 | token mới: không lấy được
+[19:40:38] === XONG: 1 thành công / 1 lỗi (trên 2 acc) ===
+[19:42:47] === BẮT ĐẦU: 2 acc | 2 luồng song song ===
+[19:42:47] [1/2] BẮT ĐẦU tarttrenea317@hotmail.com  (recovery: stachowiaksturz8801@hotmail.com)
+[19:42:47] [2/2] BẮT ĐẦU stachowiaksturz8801@hotmail.com  (recovery: tarttrenea317@hotmail.com)
+[19:43:42]     ✓ đã thêm recovery stachowiaksturz8801@hotmail.com (mã 655430)
+[19:43:48]     ❌ stachowiaksturz8801@hotmail.com: mã bị từ chối (sai/hết hạn)
+[19:48:11]     ✅ tarttrenea317@hotmail.com | pass mới: Kien@Songsong26 | token mới: không lấy được
+[19:48:11] === XONG: 1 thành công / 1 lỗi (trên 2 acc) ===
+[19:50:17] === BẮT ĐẦU: 2 acc | 1 luồng song song ===
+[19:50:17] [1/2] BẮT ĐẦU stachowiaksturz8801@hotmail.com  (recovery: lakitamccarrol977@hotmail.com)
+[19:51:56]     ✓ đã thêm recovery lakitamccarrol977@hotmail.com (mã 214724)
+[19:53:24]     ✅ stachowiaksturz8801@hotmail.com | pass mới: Kien@Songsong26 | token mới: CÓ
+[19:53:24] [2/2] BẮT ĐẦU lakitamccarrol977@hotmail.com  (recovery: stachowiaksturz8801@hotmail.com)
+[19:54:18]     ✓ đã thêm recovery stachowiaksturz8801@hotmail.com (mã 541563)
+[19:55:45]     ✅ lakitamccarrol977@hotmail.com | pass mới: Kien@Songsong26 | token mới: CÓ
+[19:55:45] === XONG: 2 thành công / 0 lỗi (trên 2 acc) ===

@@ -1,0 +1,28 @@
+INFO:     Started server process [27528]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8700 (Press CTRL+C to quit)
+INFO:     Started server process [8928]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8700 (Press CTRL+C to quit)
+INFO:     127.0.0.1:59039 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63080 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63080 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63080 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63052 - "GET /api/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53342 - "GET / HTTP/1.1" 200 OK
+INFO:     Started server process [23916]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8700 (Press CTRL+C to quit)
+INFO:     Started server process [23624]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8700 (Press CTRL+C to quit)
+INFO:     127.0.0.1:60070 - "GET / HTTP/1.1" 200 OK
+INFO:     Started server process [24536]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8700 (Press CTRL+C to quit)
+INFO:     127.0.0.1:56380 - "GET / HTTP/1.1" 200 OK

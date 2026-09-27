@@ -1,0 +1,7 @@
+Host truycuu
+  HostName 157.66.219.229
+  User root
+  IdentityFile "C:\Users\Trung Kiên\.ssh\truycuu_vps"
+  UserKnownHostsFile "C:\Users\Trung Kiên\.ssh\known_hosts"
+  StrictHostKeyChecking accept-new
+  ServerAliveInterval 60

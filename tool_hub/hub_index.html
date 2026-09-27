@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tool MMO — Hub</title>
+<style>
+  :root{--bg:#0f1216;--card:#181c22;--card2:#1f242c;--line:#2a313b;--txt:#e6e9ee;
+    --mut:#9aa4b2;--accent:#10a37f;--accent2:#0d8c6d;--ok:#22c55e;--bad:#ef4444;}
+  *{box-sizing:border-box}
+  html,body{margin:0;height:100%;background:var(--bg);color:var(--txt);
+    font-family:system-ui,Segoe UI,Roboto,Arial,sans-serif;font-size:14px}
+  .app{display:flex;height:100vh}
+  .side{width:270px;flex:0 0 270px;background:var(--card);border-right:1px solid var(--line);
+    display:flex;flex-direction:column;padding:14px}
+  .brand{font-size:18px;font-weight:800;display:flex;align-items:center;gap:8px;margin-bottom:14px}
+  .tool{display:flex;gap:10px;align-items:flex-start;padding:11px;border:1px solid var(--line);
+    border-radius:10px;margin-bottom:9px;cursor:pointer;background:var(--card2);transition:.15s}
+  .tool:hover{border-color:var(--accent)}
+  .tool.active{border-color:var(--accent);background:rgba(16,163,127,.12)}
+  .tico{font-size:22px;line-height:1}
+  .tname{font-weight:700;display:flex;align-items:center;gap:6px}
+  .tdesc{color:var(--mut);font-size:11px;margin-top:3px;line-height:1.4}
+  .dot{width:8px;height:8px;border-radius:50%;background:var(--mut);display:inline-block;flex:0 0 auto}
+  .dot.on{background:var(--ok)}
+  .hint{color:var(--mut);font-size:11px;margin-top:auto;padding-top:12px;line-height:1.5}
+  .main{flex:1;display:flex;flex-direction:column;min-width:0}
+  .topbar{display:flex;align-items:center;gap:12px;padding:10px 14px;border-bottom:1px solid var(--line);background:var(--card)}
+  #curName{font-weight:700}
+  .topbar .right{margin-left:auto;display:flex;gap:8px}
+  button{background:var(--card2);border:1px solid var(--line);color:var(--txt);border-radius:8px;
+    padding:7px 12px;font-size:13px;cursor:pointer;font-weight:600}
+  button:hover{border-color:var(--accent)}
+  .frameWrap{flex:1;position:relative;background:var(--bg)}
+  iframe{position:absolute;inset:0;width:100%;height:100%;border:0;background:#fff}
+  .overlay,.welcome{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;
+    justify-content:center;gap:12px;background:var(--bg);color:var(--mut);text-align:center;padding:20px}
+  .overlay{display:none}
+  .overlay.show{display:flex}
+  .spin{width:34px;height:34px;border:3px solid var(--line);border-top-color:var(--accent);
+    border-radius:50%;animation:sp 1s linear infinite}
+  @keyframes sp{to{transform:rotate(360deg)}}
+  .big{font-size:40px}
+  .searchbox{display:flex;gap:6px;margin-bottom:12px}
+  .searchbox input{flex:1;min-width:0;background:var(--card2);border:1px solid var(--line);color:var(--txt);
+    border-radius:8px;padding:8px 10px;font-size:13px;outline:none}
+  .searchbox input:focus{border-color:var(--accent)}
+  .searchbox button{background:var(--accent);border:1px solid var(--accent);color:#fff;border-radius:8px;
+    padding:8px 12px;font-size:13px;font-weight:700;cursor:pointer}
+  .searchview{position:absolute;inset:0;overflow:auto;background:var(--bg);padding:18px;display:none}
+  .searchview.show{display:block}
+  .svhead{display:flex;align-items:center;gap:10px;margin-bottom:14px}
+  .svhead h2{margin:0;font-size:17px}
+  .rescard{background:var(--card);border:1px solid var(--line);border-radius:11px;padding:13px;margin-bottom:10px}
+  .rescard .top{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:8px}
+  .rescard .tt{font-weight:700}
+  .rescard .tm{color:var(--mut);font-size:12px}
+  .st{padding:2px 9px;border-radius:99px;font-size:11px;font-weight:700}
+  .st.ok{background:rgba(34,197,94,.16);color:#86efac}
+  .st.bad{background:rgba(239,68,68,.18);color:#fca5a5}
+  .st.skip{background:rgba(100,116,139,.22);color:#cbd5e1}
+  .kv{display:flex;gap:8px;font-size:13px;margin:3px 0;flex-wrap:wrap}
+  .kv .k{color:var(--mut);min-width:74px}
+  .chip{display:inline-block;background:rgba(16,163,127,.15);color:#6ee7c0;border-radius:99px;padding:1px 8px;font-size:11px;margin:1px 3px 1px 0}
+  code{font-family:Consolas,monospace;font-size:12px;background:var(--card2);padding:2px 6px;border-radius:5px;color:#cbd5e1;word-break:break-all}
+  .mini{background:var(--card2);border:1px solid var(--line);color:var(--txt);border-radius:6px;padding:1px 7px;font-size:12px;cursor:pointer;font-weight:600}
+  .proxybox{border:1px solid var(--line);border-radius:10px;padding:10px;margin-bottom:10px;background:var(--card2)}
+  .pbhead{font-weight:700;font-size:12px;margin-bottom:6px;display:flex;gap:6px;align-items:center}
+  .proxybox textarea{width:100%;background:#0b0e12;border:1px solid var(--line);color:var(--txt);border-radius:7px;
+    padding:7px;font-family:Consolas,monospace;font-size:11px;resize:vertical;outline:none}
+  .proxybox textarea:focus{border-color:var(--accent)}
+  .proxybox button{width:100%;margin-top:6px;background:var(--card);border:1px solid var(--line);color:var(--txt);
+    border-radius:7px;padding:6px;font-size:12px;font-weight:600;cursor:pointer}
+  .proxybox button:hover{border-color:var(--accent)}
+</style>
+</head>
+<body>
+<div class="app">
+  <aside class="side">
+    <div class="brand">🚀 Tool MMO</div>
+    <div class="searchbox">
+      <input id="q" placeholder="🔎 Tra cứu email..." onkeydown="if(event.key==='Enter')doSearch()">
+      <button onclick="doSearch()">Tìm</button>
+    </div>
+    <div id="toolList"></div>
+    <div class="proxybox">
+      <div class="pbhead">🌐 Proxy chung <span id="pbcount" class="tm"></span></div>
+      <textarea id="proxies" rows="3" placeholder="ip:port:user:pass&#10;(mỗi dòng 1 proxy)"></textarea>
+      <button onclick="saveProxies()">💾 Lưu proxy chung</button>
+      <div class="tm" style="font-size:10px;margin-top:5px;line-height:1.4">Áp cho mọi tool (xoay vòng mỗi acc 1 proxy). Proxy gắn riêng ở dòng acc / ô proxy trong tool sẽ ưu tiên hơn.</div>
+    </div>
+    <div class="hint">Bấm 1 tool để mở. Tool tự khởi động nếu chưa chạy (chờ vài giây lần đầu).<br><br>⚠️ Nhớ mở <b>GPM Login</b> + bật API trước khi dùng các tool.</div>
+  </aside>
+  <main class="main">
+    <div class="topbar">
+      <span id="curName">Chọn một tool bên trái →</span>
+      <div class="right">
+        <button onclick="reloadFrame()" title="Tải lại giao diện tool (KHÔNG nạp code mới)">🔄</button>
+        <button onclick="restartTool()" title="Kill server tool + chạy lại để NẠP CODE MỚI (sau khi sửa code)">♻️ Nạp code mới</button>
+        <button onclick="openTab()" title="Mở ra tab riêng">↗ Tab mới</button>
+      </div>
+    </div>
+    <div class="frameWrap">
+      <iframe id="frame" title="tool" allow="clipboard-read; clipboard-write"></iframe>
+      <div id="welcome" class="welcome"><div class="big">🚀</div><div>Chọn tool ở cột bên trái để bắt đầu.</div></div>
+      <div id="overlay" class="overlay"><div class="spin"></div><div id="ovText">Đang khởi động tool…</div></div>
+      <div id="searchView" class="searchview">
+        <div class="svhead"><h2>🔎 Kết quả tra cứu</h2><span id="svCount" class="tm"></span>
+          <button class="mini" style="margin-left:auto" onclick="closeSearch()">✕ Đóng</button></div>
+        <div id="svBody"></div>
+      </div>
+    </div>
+  </main>
+</div>
+
+<script>
+const $ = id => document.getElementById(id);
+let TOOLS = [], curKey = null, curUrl = null;
+
+async function jget(u){ return (await fetch(u)).json(); }
+async function jpost(u,b){ return (await fetch(u,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(b||{})})).json(); }
+
+async function loadTools(){
+  const r = await jget('/api/tools'); TOOLS = r.tools || [];
+  $('toolList').innerHTML = TOOLS.map(t => `
+    <div class="tool" id="tool-${t.key}" onclick="selectTool('${t.key}')">
+      <div class="tico">${t.icon}</div>
+      <div style="min-width:0">
+        <div class="tname"><span class="dot ${t.running?'on':''}" id="dot-${t.key}"></span>${t.name}</div>
+        <div class="tdesc">${t.desc}</div>
+      </div>
+    </div>`).join('');
+}
+
+async function refreshDots(){
+  const r = await jget('/api/tools');
+  (r.tools||[]).forEach(t => { const d=$('dot-'+t.key); if(d) d.className='dot '+(t.running?'on':''); });
+}
+
+async function selectTool(key){
+  const t = TOOLS.find(x=>x.key===key); if(!t) return;
+  curKey = key; curUrl = null;
+  document.querySelectorAll('.tool').forEach(e=>e.classList.remove('active'));
+  $('tool-'+key).classList.add('active');
+  $('curName').textContent = t.icon+' '+t.name;
+  $('welcome').style.display='none';
+  $('frame').src = 'about:blank';
+  $('ovText').textContent = 'Đang khởi động '+t.name+'…';
+  $('overlay').classList.add('show');
+  let started;
+  try{
+    started = await jget('/api/start?tool='+encodeURIComponent(key));
+  }catch(e){ $('ovText').textContent = '❌ Không gọi được hub: '+e; return; }
+  if(!started.ok){ $('ovText').textContent = '❌ '+(started.error||'không khởi động được'); return; }
+  // poll cho tool len (toi da 45s), roi moi nhung iframe
+  for(let i=0;i<45;i++){
+    if(curKey!==key) return;                 // user da chuyen tool khac
+    let rd;
+    try{ rd = await jget('/api/ready?tool='+encodeURIComponent(key)); }catch(e){ rd={ready:false}; }
+    if(rd.ready){ curUrl = started.url; $('frame').src = started.url; refreshDots(); return; }
+    $('ovText').textContent = 'Đang khởi động '+t.name+'… ('+(i+1)+'s)';
+    await new Promise(res=>setTimeout(res,1000));
+  }
+  $('ovText').textContent = '❌ Tool khởi động lâu bất thường. Kiểm tra GPM/log rồi bấm lại.';
+}
+
+$('frame').addEventListener('load', ()=>{ if(curUrl) $('overlay').classList.remove('show'); refreshDots(); });
+function reloadFrame(){ if(curUrl){ $('overlay').classList.add('show'); $('frame').src = curUrl; } }
+function openTab(){ if(curUrl) window.open(curUrl, '_blank'); }
+async function restartTool(){
+  if(!curKey){ alert('Chưa chọn tool để nạp lại'); return; }
+  const key=curKey;
+  $('frame').src='about:blank'; curUrl=null;
+  $('ovText').textContent='Đang kill server cũ + nạp code mới…'; $('overlay').classList.add('show');
+  let r;
+  try{ r=await jget('/api/restart?tool='+encodeURIComponent(key)); }
+  catch(e){ $('ovText').textContent='❌ '+e; return; }
+  if(!r.ok){ $('ovText').textContent='❌ '+(r.error||'lỗi'); return; }
+  for(let i=0;i<45;i++){
+    if(curKey!==key) return;                 // user đã chuyển tool khác
+    let rd; try{ rd=await jget('/api/ready?tool='+encodeURIComponent(key)); }catch(e){ rd={ready:false}; }
+    if(rd.ready){ curUrl=r.url; $('frame').src=r.url; refreshDots(); return; }
+    $('ovText').textContent='Đang nạp code mới… ('+(i+1)+'s)';
+    await new Promise(res=>setTimeout(res,1000));
+  }
+  $('ovText').textContent='❌ Tool khởi động lâu bất thường. Kiểm tra GPM/log.';
+}
+
+// ---------- tra cứu tổng hợp ----------
+function esc(s){ return (s==null?'':s.toString()).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+async function cp(btn,text){ try{ await navigator.clipboard.writeText(text); const o=btn.textContent; btn.textContent='✓'; setTimeout(()=>btn.textContent=o,1200);}catch(e){ alert('Copy lỗi'); } }
+function stBadge(s){
+  if(s==='ok') return '<span class="st ok">OK</span>';
+  if(s==='skip') return '<span class="st skip">chưa login</span>';
+  return '<span class="st bad">'+esc(s||'lỗi')+'</span>';
+}
+function kv(k,v){ return v?`<div class="kv"><span class="k">${k}</span><span>${v}</span></div>`:''; }
+function resCard(r){
+  const a=r.rec||{};
+  const email=esc(a.email||a.profile||'');
+  const line=a.line?`<code>${esc(a.line)}</code> <button class="mini" onclick='cp(this,${JSON.stringify(a.line)})'>📋</button>`:'';
+  let d='';
+  if(a.actions&&a.actions.length) d+=kv('Thao tác', a.actions.map(x=>'<span class="chip">'+esc(x)+'</span>').join(''));
+  if(a.role) d+=kv('Vai trò', esc(a.role));
+  if(a.member_count!=null || a.free_slots!=null) d+=kv('Family', `${a.member_count==null?'?':a.member_count} thành viên · còn ${a.free_slots==null?'?':a.free_slots} slot`);
+  if(a.members&&a.members.length) d+=kv('Thành viên', a.members.map(esc).join('<br>'));
+  if(a.newpass) d+=kv('Pass mới', '<code>'+esc(a.newpass)+'</code>');
+  if(a.new_token!=null) d+=kv('Token mới', a.new_token?'có':'không');
+  if(a.provider) d+=kv('Recovery', esc(a.provider));
+  if(a.note && !(a.actions&&a.actions.length)) d+=kv('Ghi chú', esc(a.note));
+  if(a.reason) d+=kv('Lỗi', esc(a.reason));
+  return `<div class="rescard"><div class="top"><span>${r.icon}</span><span class="tt">${esc(r.tool)}</span>${stBadge(a.status)}<span class="tm" style="margin-left:auto">🕒 ${esc(r.time)}</span></div>${kv('Email', email)}${line?kv('Kết quả', line):''}${d}</div>`;
+}
+async function doSearch(){
+  const q=($('q').value||'').trim(); if(!q) return;
+  $('searchView').classList.add('show');
+  $('svBody').innerHTML='<div class="tm">Đang tìm…</div>'; $('svCount').textContent='';
+  try{
+    const r=await jget('/api/search?q='+encodeURIComponent(q));
+    if(!r.results || !r.results.length){ $('svBody').innerHTML='<div class="tm">Không tìm thấy bản ghi nào cho "'+esc(q)+'".<br>(Chỉ tra được các acc đã TỪNG chạy qua tool — lịch sử tích lũy dần.)</div>'; return; }
+    $('svCount').textContent=r.count+' bản ghi (mới nhất trước)';
+    $('svBody').innerHTML=r.results.map(resCard).join('');
+  }catch(e){ $('svBody').innerHTML='<div class="tm">❌ Lỗi tra cứu: '+esc(''+e)+'</div>'; }
+}
+function closeSearch(){ $('searchView').classList.remove('show'); }
+
+// ---------- proxy chung ----------
+function updatePbCount(){ const n=($('proxies').value||'').split('\n').filter(l=>l.trim()&&!l.trim().startsWith('#')).length; $('pbcount').textContent=n?('('+n+')'):''; }
+$('proxies').addEventListener('input', updatePbCount);
+async function loadProxies(){ try{ const r=await jget('/api/proxies'); $('proxies').value=r.proxies||''; updatePbCount(); }catch(e){} }
+async function saveProxies(){
+  try{
+    const r=await jpost('/api/proxies',{proxies:$('proxies').value});
+    if(r.ok) alert('✅ Đã lưu '+r.count+' proxy chung → áp cho '+r.tools+' tool (xoay vòng).');
+    else alert('❌ Lỗi lưu proxy');
+  }catch(e){ alert('❌ Lỗi: '+e); }
+  updatePbCount();
+}
+
+loadTools();
+loadProxies();
+setInterval(refreshDots, 5000);
+</script>
+</body>
+</html>

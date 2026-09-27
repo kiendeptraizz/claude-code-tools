@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Login ChatGPT hàng loạt — GPM</title>
+<style>
+  :root{--bg:#0f1216;--card:#181c22;--card2:#1f242c;--line:#2a313b;--txt:#e6e9ee;
+    --mut:#9aa4b2;--accent:#10a37f;--accent2:#0d8c6d;--ok:#22c55e;--bad:#ef4444;--skip:#64748b;}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--txt);font-family:system-ui,Segoe UI,Roboto,Arial,sans-serif;font-size:14px}
+  .wrap{max-width:1180px;margin:0 auto;padding:18px}
+  h1{font-size:20px;margin:0 0 2px;display:flex;align-items:center;gap:8px}
+  .sub{color:var(--mut);font-size:12px;margin-bottom:14px}
+  .grid{display:grid;grid-template-columns:3fr 2fr;gap:12px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;margin-bottom:12px}
+  .card h2{font-size:12px;margin:0 0 8px;color:var(--mut);text-transform:uppercase;letter-spacing:.04em}
+  label{font-size:12px;color:var(--mut);display:block;margin-bottom:4px}
+  input,select,textarea{background:var(--card2);border:1px solid var(--line);color:var(--txt);
+    border-radius:8px;padding:8px 10px;font-size:13px;outline:none;width:100%;font-family:inherit}
+  textarea{font-family:Consolas,monospace;resize:vertical}
+  input:focus,textarea:focus,select:focus{border-color:var(--accent)}
+  .rowf{display:flex;gap:10px;flex-wrap:wrap;align-items:flex-end}
+  .rowf>div{flex:0 0 auto}
+  button{background:var(--card2);border:1px solid var(--line);color:var(--txt);border-radius:8px;
+    padding:9px 14px;font-size:14px;cursor:pointer;font-weight:600}
+  button:hover{border-color:var(--accent)}
+  button.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+  button.primary:hover{background:var(--accent2)}
+  button.danger{background:#7f1d1d;border-color:#7f1d1d}
+  button:disabled{opacity:.45;cursor:not-allowed}
+  .dot{width:9px;height:9px;border-radius:50%;display:inline-block;background:var(--mut);margin-right:6px}
+  .dot.on{background:var(--ok)} .dot.off{background:var(--bad)}
+  .muted{color:var(--mut)}
+  .ck{display:flex;align-items:center;gap:8px;color:var(--txt);font-size:13px;margin:7px 0;cursor:pointer}
+  .ck input{width:auto;margin:0}
+  code,.line{font-family:Consolas,monospace;font-size:12px;background:var(--card2);padding:2px 6px;border-radius:5px;color:#cbd5e1;word-break:break-all}
+  .mini{padding:2px 7px;font-size:12px;font-weight:600;border-radius:6px}
+  .opbadge{display:inline-block;background:rgba(16,163,127,.15);color:#6ee7c0;border-radius:99px;padding:1px 7px;font-size:11px;margin:1px 2px}
+  .bar{height:8px;background:var(--card2);border-radius:99px;overflow:hidden;margin:8px 0}
+  .bar>i{display:block;height:100%;width:0;background:var(--accent);transition:width .3s}
+  .counters{display:flex;gap:16px;flex-wrap:wrap;font-weight:600}
+  table{width:100%;border-collapse:collapse;font-size:13px}
+  th,td{text-align:left;padding:7px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{color:var(--mut);font-weight:600;font-size:11px;text-transform:uppercase}
+  .badge{padding:2px 8px;border-radius:99px;font-size:11px;font-weight:700;white-space:nowrap}
+  .b-ok{background:rgba(34,197,94,.15);color:#86efac}
+  .b-fail{background:rgba(239,68,68,.18);color:#fca5a5}
+  #log{background:#0b0e12;border:1px solid var(--line);border-radius:8px;padding:10px;height:190px;
+    overflow:auto;font-family:Consolas,monospace;font-size:12px;white-space:pre-wrap;color:#cbd5e1}
+  .tablewrap{max-height:360px;overflow:auto}
+  .right{margin-left:auto}
+  .modal{position:fixed;inset:0;background:rgba(0,0,0,.6);display:none;align-items:center;justify-content:center;padding:20px;z-index:50}
+  .modal.open{display:flex}
+  .modal .box{background:var(--card);border:1px solid var(--line);border-radius:12px;max-width:820px;width:100%;max-height:80vh;overflow:auto;padding:18px}
+  @media(max-width:900px){.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>🤖 Login ChatGPT hàng loạt <span class="sub" style="margin:0">qua GPM Login</span></h1>
+  <div class="sub">Tạo profile GPM (tên = email) + gắn proxy → đăng nhập OpenAI (email/pass + tự sinh 2FA). Chạy tại máy có GPM.</div>
+
+  <div class="card">
+    <div class="rowf">
+      <div><label>Cổng API GPM</label><input id="port" value="19995" style="width:100px"></div>
+      <button onclick="ping()">🔌 Kiểm tra GPM</button>
+      <div style="align-self:center"><span id="dot" class="dot"></span><span id="connTxt" class="muted">chưa kiểm tra</span></div>
+      <button class="right" onclick="openHistory()">📜 Lịch sử</button>
+    </div>
+  </div>
+
+  <div class="grid">
+    <!-- trái: acc + proxy -->
+    <div>
+      <div class="card">
+        <h2>Tài khoản (mỗi dòng: email|pass|2fa[|proxy])</h2>
+        <textarea id="accs" rows="9" placeholder="email@gmail.com|matkhau|SECRET2FA
+email2@gmail.com|matkhau2|SECRET2FA2"></textarea>
+        <div id="accCount" class="muted" style="margin-top:4px">0 tài khoản</div>
+      </div>
+      <div class="card">
+        <h2>Proxy pool (mỗi dòng: ip:port:user:pass) — gán vòng</h2>
+        <textarea id="proxies" rows="4" placeholder="171.236.166.111:24396:user:pass"></textarea>
+      </div>
+    </div>
+
+    <!-- phải: cài đặt + chạy -->
+    <div>
+      <div class="card">
+        <h2>Cài đặt &amp; chạy</h2>
+        <div class="rowf" style="margin-bottom:10px">
+          <div style="flex:1 1 160px"><label>Nhóm GPM (chứa profile tạo ra)</label>
+            <select id="group"><option value="All">All</option></select></div>
+          <div><label>Số luồng</label><input id="threads" value="2" style="width:70px"></div>
+        </div>
+        <label class="ck" style="margin-bottom:10px"><input type="checkbox" id="keepOpen"> 🔓 Giữ profile MỞ sau khi xong (không đóng — để vào xem/kiểm tra)</label>
+        <label class="ck" style="margin-bottom:10px"><input type="checkbox" id="forceLogin"> 🔄 Đăng nhập lại — làm tươi phiên (bỏ qua phiên cũ dù còn login sẵn, xoá cookie + login lại bằng mật khẩu). <b>Nên bật khi ĐỔI PASS / THAY 2FA</b> để tránh OpenAI đòi xác minh email.</label>
+        <label class="ck" style="margin-bottom:10px"><input type="checkbox" id="deleteAfter"> 🗑️ Xóa profile GPM sau khi xong (dọn sạch — lần sau acc phải login lại từ đầu). Ưu tiên hơn "Giữ profile mở".</label>
+        <button class="primary" id="btnRun" onclick="run()" style="width:100%;height:42px;font-size:15px">▶ Bắt đầu login</button>
+        <button class="danger" id="btnStop" onclick="stop()" disabled style="width:100%;margin-top:8px">⏹ Dừng</button>
+        <div class="muted" style="font-size:11px;margin-top:10px">⚠️ Login OpenAI: chạy 1-2 luồng + proxy tốt cho an toàn. Thiết bị/proxy mới có thể bị hỏi xác minh.</div>
+      </div>
+      <div class="card">
+        <h2>Thao tác sau đăng nhập (tùy chọn)</h2>
+        <label class="ck"><input type="checkbox" id="actCancel"> 💳 Hủy gói đăng ký (Cancel plan)</label>
+        <label class="ck"><input type="checkbox" id="actDelChat"> 🗑️ Xóa tất cả đoạn chat</label>
+        <label class="ck"><input type="checkbox" id="actReset2fa"> 🔐 Thay mã 2FA (tắt cũ → bật mới, lưu secret mới)</label>
+        <label class="ck"><input type="checkbox" id="actLogout"> 🚪 Đăng xuất tất cả phiên hiện tại</label>
+        <label class="ck"><input type="checkbox" id="actPass" onchange="togglePass()"> 🔑 Đổi mật khẩu (chung 1 pass cho tất cả)</label>
+        <div id="passWrap" style="display:none;margin-top:6px">
+          <label>Mật khẩu mới (áp cho tất cả tài khoản)</label>
+          <input id="newPass" placeholder="VD: MoiPass@2026">
+        </div>
+        <div class="muted" style="font-size:11px;margin-top:8px">⚠️ PHÁ HỦY tài khoản. Đổi mật khẩu sẽ tự đăng xuất mọi phiên (nên không cần tick cả hai).</div>
+        <div class="muted" style="font-size:11px;margin-top:4px">🔐 Thay 2FA cần acc <b>đã có 2FA</b> (cột thứ 3 email|pass|<b>2fa</b>). Secret MỚI ghi vào cột kết quả. Lưu ý OpenAI có thể chặn bước tắt — acc nào chặn sẽ bị bỏ qua.</div>
+      </div>
+      <div class="card">
+        <div class="counters">
+          <span id="cDone" class="muted">Sẵn sàng</span>
+          <span style="color:var(--ok)" id="cOk">✅ 0</span>
+          <span style="color:var(--bad)" id="cFail">❌ 0</span>
+        </div>
+        <div class="bar"><i id="barFill"></i></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="rowf" style="align-items:center;gap:8px">
+      <h2 style="margin:0">Kết quả</h2>
+      <span id="failCount" class="muted" style="font-size:12px"></span>
+      <button class="right" onclick="copyLines()">📋 Copy tất cả dòng (email|pass|2fa)</button>
+      <button onclick="rerunFailed()" title="Đưa các acc lỗi (login fail hoặc có thao tác ✗) lên ô Tài khoản để chạy lại">↻ Chạy lại acc lỗi</button>
+    </div>
+    <div class="tablewrap" style="margin-top:8px">
+      <table><thead><tr><th>#</th><th>Email</th><th>TT</th><th>Thao tác</th><th>Kết quả (email|pass|2fa)</th></tr></thead>
+      <tbody id="rows"><tr><td colspan="5" class="muted">Chưa có kết quả.</td></tr></tbody></table>
+    </div>
+    <div class="muted" style="font-size:11px;margin-top:6px">Dòng kết quả = <b>email|pass|2fa</b> (pass MỚI nếu đã đổi). Cũng lưu tại <code>data/tai_khoan_moi.txt</code> + <code>data/ket_qua_chi_tiet.txt</code>.</div>
+  </div>
+
+  <div class="card"><h2>Log</h2><div id="log"></div></div>
+</div>
+
+<div class="modal" id="histModal" onclick="if(event.target===this)this.classList.remove('open')">
+  <div class="box">
+    <div class="rowf" style="align-items:center"><h2 style="margin:0">📜 Lịch sử &amp; tra cứu</h2>
+      <button class="right" onclick="document.getElementById('histModal').classList.remove('open')">Đóng</button></div>
+    <input id="histSearch" placeholder="🔎 Tìm theo email / mật khẩu / thao tác..." style="margin-top:10px" oninput="renderHist()">
+    <div class="rowf" style="align-items:center;gap:10px;margin-top:8px">
+      <label class="ck" style="margin:0"><input type="checkbox" id="ckAll" onclick="toggleAll(this)"> Chọn tất cả</label>
+      <span id="selCount" class="muted"></span>
+      <button class="mini right" onclick="copySelected()">📋 Copy đã chọn</button>
+      <button class="mini" onclick="rerunSelected()">▶ Chạy lại đã chọn</button>
+    </div>
+    <div id="histBody" style="margin-top:12px"></div>
+  </div>
+</div>
+
+<script>
+const $ = id => document.getElementById(id);
+let polling = null;
+async function jget(u){ return (await fetch(u)).json(); }
+async function jpost(u,b){ return (await fetch(u,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(b||{})})).json(); }
+
+function countAccs(){ const n=$('accs').value.split('\n').filter(l=>l.trim()&&!l.trim().startsWith('#')&&l.includes('|')).length; $('accCount').textContent=n+' tài khoản'; }
+$('accs') && $('accs').addEventListener('input', countAccs);
+
+async function ping(){
+  $('connTxt').textContent='đang kiểm tra...';
+  const r=await jget('/api/ping?port='+encodeURIComponent($('port').value));
+  $('dot').className='dot '+(r.ok?'on':'off');
+  $('connTxt').textContent=r.ok?('GPM OK (cổng '+r.port+')'):'Không kết nối GPM — mở GPM Login + bật API';
+  if(r.ok) loadGroups();
+  return r.ok;
+}
+async function loadGroups(){
+  const r=await jget('/api/groups?port='+encodeURIComponent($('port').value));
+  if(r.ok && r.groups && r.groups.length){
+    const cur=$('group').value||'All';
+    $('group').innerHTML=r.groups.map(g=>`<option value="${esc(g.name)}">${esc(g.name)}</option>`).join('');
+    if([...$('group').options].some(o=>o.value===cur)) $('group').value=cur;   // giữ lựa chọn cũ
+  }
+}
+function togglePass(){ $('passWrap').style.display = $('actPass').checked ? 'block' : 'none'; }
+async function run(){
+  const accs=$('accs').value.trim();
+  if(!accs){ alert('Chưa dán tài khoản'); return; }
+  const actions=[];
+  if($('actCancel').checked) actions.push('cancel');
+  if($('actDelChat').checked) actions.push('delchat');
+  if($('actReset2fa').checked) actions.push('reset2fa');
+  if($('actLogout').checked) actions.push('logout');
+  if($('actPass').checked) actions.push('password');
+  const new_password=($('newPass').value||'').trim();
+  if(actions.includes('password') && !new_password){ alert('Đã chọn ĐỔI MẬT KHẨU — hãy nhập mật khẩu mới chung'); return; }
+  let warn='Bắt đầu?';
+  if(actions.length) warn='Sẽ chạy thao tác PHÁ HỦY: '+actions.join(', ')+'. Chắc chắn?';
+  if(actions.length && !confirm(warn)) return;
+  const r=await jpost('/api/run',{accounts:accs, proxies:$('proxies').value, group:$('group').value||'All',
+    threads:parseInt($('threads').value)||1, port:parseInt($('port').value)||19995,
+    actions:actions, new_password:new_password, keep_open:$('keepOpen').checked, force_login:$('forceLogin').checked, delete_after:$('deleteAfter').checked});
+  if(!r.ok){ alert(r.error||'lỗi'); return; }
+  $('btnRun').disabled=true; $('btnStop').disabled=false; $('rows').innerHTML=''; $('log').textContent='';
+  if(polling) clearInterval(polling); polling=setInterval(poll,1000); poll();
+}
+async function stop(){ await jpost('/api/stop'); }
+let LAST=[];
+function esc(s){ return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+function ops2html(r){
+  if(r.status!=='ok') return '<span class="muted">'+esc(r.reason||r.note||'lỗi')+'</span>';
+  const a=(r.actions&&r.actions.length)?r.actions:(r.note?r.note.split(' | '):[]);
+  return a.map(x=>'<span class="opbadge">'+esc(x)+'</span>').join('') || '<span class="muted">-</span>';
+}
+// Copy BỀN: thử navigator.clipboard, thất bại (vd chạy trong iframe Hub) thì fallback execCommand.
+async function copyText(text){
+  try{ if(navigator.clipboard && window.isSecureContext){ await navigator.clipboard.writeText(text); return true; } }catch(e){}
+  try{
+    const ta=document.createElement('textarea'); ta.value=text;
+    ta.setAttribute('readonly',''); ta.style.position='fixed'; ta.style.top='-9999px'; ta.style.opacity='0';
+    document.body.appendChild(ta); ta.focus(); ta.select();
+    try{ ta.setSelectionRange(0, text.length); }catch(e){}
+    const ok=document.execCommand('copy'); document.body.removeChild(ta); return ok;
+  }catch(e){ return false; }
+}
+async function cp(btn,text){
+  const ok=await copyText(text);
+  if(ok){ const o=btn.textContent; btn.textContent='✓'; setTimeout(()=>btn.textContent=o,1200); }
+  else{ alert('Copy lỗi — hãy bôi đen & Ctrl+C thủ công'); }
+}
+async function copyLines(){
+  const arr=LAST.filter(r=>r.line).map(r=>r.line);
+  if(!arr.length){ alert('Chưa có dòng kết quả'); return; }
+  const ok=await copyText(arr.join('\n'));
+  alert(ok? ('Đã copy '+arr.length+' dòng (email|pass|2fa)') : 'Copy lỗi — hãy bôi đen & Ctrl+C thủ công');
+}
+// ---- chọn/copy/chạy-lại hàng loạt trong Lịch sử ----
+function selectedLines(){ return [...document.querySelectorAll('.rowck:checked')].map(c=>c.value).filter(Boolean); }
+function updateSel(){ const n=document.querySelectorAll('.rowck:checked').length; $('selCount').textContent=n?('Đã chọn '+n):''; }
+function toggleAll(cb){ document.querySelectorAll('.rowck').forEach(c=>c.checked=cb.checked); updateSel(); }
+async function copySelected(){
+  const lines=selectedLines();
+  if(!lines.length){ alert('Chưa chọn dòng nào (tích ô bên trái)'); return; }
+  const ok=await copyText(lines.join('\n'));
+  alert(ok? ('Đã copy '+lines.length+' dòng đã chọn') : 'Copy lỗi — hãy bôi đen & Ctrl+C thủ công');
+}
+function rerunSelected(){
+  const lines=selectedLines();
+  if(!lines.length){ alert('Chưa chọn dòng nào (tích ô bên trái)'); return; }
+  $('accs').value=lines.join('\n'); countAccs();
+  $('histModal').classList.remove('open'); window.scrollTo(0,0);
+  alert('Đã đưa '+lines.length+' tài khoản lên ô Tài khoản.\nChọn thao tác (nếu cần) rồi bấm ▶ Bắt đầu để chạy lại.');
+}
+// acc LỖI = login fail HOẶC có thao tác nào ✗ (xóa chat/đổi pass/logout... thất bại)
+function isFailedRec(r){
+  if(!r) return false;
+  if(r.status!=='ok') return true;
+  return (r.actions||[]).some(x=>String(x).includes('✗'));
+}
+function rerunFailed(){
+  const lines=LAST.filter(isFailedRec).map(r=>r.line).filter(Boolean);
+  if(!lines.length){ alert('Không có tài khoản lỗi nào để chạy lại 🎉'); return; }
+  $('accs').value=lines.join('\n'); countAccs(); window.scrollTo(0,0);
+  alert('Đã đưa '+lines.length+' tài khoản LỖI lên ô Tài khoản.\nChọn lại thao tác (nếu cần) rồi bấm ▶ Bắt đầu để chạy lại.');
+}
+function renderRows(res){
+  const nfail=(res||[]).filter(isFailedRec).length;
+  $('failCount').textContent = nfail ? ('⚠️ '+nfail+' acc lỗi') : '';
+  if(!res.length){ $('rows').innerHTML='<tr><td colspan="5" class="muted">Chưa có kết quả.</td></tr>'; return; }
+  $('rows').innerHTML=res.map((r,i)=>{
+    const ok=r.status==='ok';
+    const badge=ok?'<span class="badge b-ok">OK</span>':'<span class="badge b-fail">lỗi</span>';
+    const line=esc(r.line||'');
+    const cpbtn=r.line?` <button class="mini" onclick='cp(this,${JSON.stringify(r.line)})'>📋</button>`:'';
+    return `<tr><td>${i+1}</td><td>${esc(r.email)}</td><td>${badge}</td><td>${ops2html(r)}</td><td><code class="line">${line}</code>${cpbtn}</td></tr>`;
+  }).join('');
+}
+async function poll(){
+  const s=await jget('/api/status');
+  $('barFill').style.width=(s.total?Math.round(s.done/s.total*100):0)+'%';
+  $('cDone').textContent=s.done+'/'+s.total+(s.group?('  ·  nhóm '+s.group):'');
+  $('cOk').textContent='✅ '+s.ok; $('cFail').textContent='❌ '+s.fail;
+  LAST=s.results||[]; renderRows(s.results);
+  $('log').textContent=(s.logs||[]).join('\n'); $('log').scrollTop=$('log').scrollHeight;
+  if(!s.running && s.finished){ clearInterval(polling); polling=null; $('btnRun').disabled=false; $('btnStop').disabled=true; }
+}
+let HIST=[];
+function acctRow(a, time){
+  const ok=a.status==='ok';
+  const badge=ok?'<span class="badge b-ok">OK</span>':'<span class="badge b-fail">lỗi</span>';
+  const line=esc(a.line||'');
+  const ckval=(a.line||'').replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;');
+  const ck=a.line?`<input type="checkbox" class="rowck" value="${ckval}" onchange="updateSel()">`:'';
+  const cpbtn=a.line?` <button class="mini" onclick='cp(this,${JSON.stringify(a.line||'')})'>📋</button>`:'';
+  const tcol=time?('<td class="muted" style="white-space:nowrap">'+esc(time)+'</td>'):'';
+  return `<tr><td>${ck}</td><td>${esc(a.email)}</td><td>${badge}</td><td>${ops2html(a)}</td><td><code class="line">${line}</code>${cpbtn}</td>${tcol}</tr>`;
+}
+async function openHistory(){
+  const r=await jget('/api/history'); HIST=r.runs||[];
+  $('histSearch').value=''; renderHist();
+  $('histModal').classList.add('open');
+}
+function renderHist(){
+  const q=($('histSearch').value||'').trim().toLowerCase(); const el=$('histBody');
+  if($('ckAll')) $('ckAll').checked=false; if($('selCount')) $('selCount').textContent='';
+  if(!HIST.length){ el.innerHTML='<div class="muted">Chưa có lịch sử.</div>'; return; }
+  if(q){
+    const rows=[];
+    HIST.forEach(run=>(run.accounts||[]).forEach(a=>{
+      const hay=((a.email||'')+' '+(a.line||'')+' '+((a.actions||[]).join(' '))+' '+(a.note||'')).toLowerCase();
+      if(hay.includes(q)) rows.push(acctRow(a, run.time));
+    }));
+    el.innerHTML = rows.length
+      ? `<div class="muted" style="margin-bottom:6px">${rows.length} kết quả khớp "${esc(q)}" (mới nhất trước)</div><table><thead><tr><th style="width:22px"></th><th>Email</th><th>TT</th><th>Thao tác</th><th>Kết quả (email|pass|2fa)</th><th>Thời gian</th></tr></thead><tbody>${rows.join('')}</tbody></table>`
+      : `<div class="muted">Không tìm thấy "${esc(q)}"</div>`;
+    return;
+  }
+  el.innerHTML=HIST.map(run=>{
+    const head=`<div style="margin:12px 0 4px;font-weight:700">🕒 ${esc(run.time||'')} · nhóm "${esc(run.group||'')}" · ✅ ${run.ok||0} / ❌ ${run.failed||0} (${run.total||0} acc)</div>`;
+    const rows=(run.accounts||[]).map(a=>acctRow(a)).join('');
+    return head+'<table><thead><tr><th style="width:22px"></th><th>Email</th><th>TT</th><th>Thao tác</th><th>Kết quả (email|pass|2fa)</th></tr></thead><tbody>'+rows+'</tbody></table>';
+  }).join('<hr style="border-color:var(--line)">');
+}
+ping();
+</script>
+</body>
+</html>

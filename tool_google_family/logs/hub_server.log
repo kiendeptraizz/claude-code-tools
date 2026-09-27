@@ -1,0 +1,84 @@
+INFO:     Started server process [30724]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8500 (Press CTRL+C to quit)
+INFO:     127.0.0.1:50555 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     Started server process [10556]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8500 (Press CTRL+C to quit)
+INFO:     127.0.0.1:59437 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59437 - "GET /api/ping?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59437 - "GET /api/groups?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59437 - "GET /api/profiles?group_id=1&port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62515 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62515 - "GET /api/ping?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62515 - "GET /api/groups?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62515 - "GET /api/profiles?group_id=1&port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57410 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57410 - "GET /api/ping?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57410 - "GET /api/groups?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57410 - "GET /api/profiles?group_id=1&port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64303 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64303 - "GET /api/ping?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64303 - "GET /api/groups?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64303 - "GET /api/profiles?group_id=1&port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57528 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57528 - "GET /api/ping?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57528 - "GET /api/groups?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57528 - "GET /api/profiles?group_id=1&port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57528 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57528 - "GET /api/ping?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57528 - "GET /api/groups?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57528 - "GET /api/profiles?group_id=1&port=19995 HTTP/1.1" 200 OK
+INFO:     Started server process [29832]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8500 (Press CTRL+C to quit)
+INFO:     127.0.0.1:57441 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57441 - "GET /api/ping?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57441 - "GET /api/groups?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57441 - "GET /api/profiles?group_id=1&port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57441 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57441 - "GET /api/ping?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57441 - "GET /api/groups?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57441 - "GET /api/profiles?group_id=1&port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55498 - "GET /api/history HTTP/1.1" 200 OK
+INFO:     Started server process [31652]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8500 (Press CTRL+C to quit)
+INFO:     127.0.0.1:64727 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64727 - "GET /api/ping?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64727 - "GET /api/groups?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64727 - "GET /api/profiles?group_id=1&port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56856 - "GET /api/history HTTP/1.1" 200 OK
+INFO:     Started server process [32928]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8500 (Press CTRL+C to quit)
+INFO:     127.0.0.1:49880 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49880 - "GET /api/ping?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49880 - "GET /api/groups?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49880 - "GET /api/profiles?group_id=1&port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49880 - "GET /api/history HTTP/1.1" 200 OK
+INFO:     Started server process [33752]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8500 (Press CTRL+C to quit)
+INFO:     Started server process [12616]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8500 (Press CTRL+C to quit)
+INFO:     127.0.0.1:54189 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54189 - "GET /api/ping?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54189 - "GET /api/groups?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54189 - "GET /api/profiles?group_id=1&port=19995 HTTP/1.1" 200 OK
+INFO:     Started server process [14048]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8500 (Press CTRL+C to quit)
+INFO:     Started server process [23068]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8500 (Press CTRL+C to quit)

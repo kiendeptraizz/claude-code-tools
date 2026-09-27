@@ -1,0 +1,8 @@
+{
+  "password_mode": "fixed",
+  "new_password": "Doipass@2026Abc",
+  "random_length": 14,
+  "delay": 5,
+  "headless": true,
+  "proxy": "171.236.166.111:24396:muaproxy6a0963f89030b:svImMIlrYvd5AMaA"
+}

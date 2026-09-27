@@ -1,0 +1,1022 @@
+rhumae_arleail5@hotmail.com|fail|chưa xác nhận đăng nhập (thử thách?): Lịch sử đoạn chat | Chúng ta nên bắt đầu từ đâu? | Chúng ta nên bắt đầu từ đâu?
+lachune_sentaws@hotmail.com|fail|chưa xác nhận đăng nhập (thử thách?): Lịch sử đoạn chat | Chúng ta nên bắt đầu từ đâu? | Chúng ta nên bắt đầu từ đâu?
+vilaliy.fneresa@hotmail.com|fail|chưa xác nhận đăng nhập (thử thách?): Lịch sử đoạn chat | Khi bạn sẵn sàng là chúng ta có thể bắt đầu. | Khi bạn sẵn sàng là chúng ta có thể bắt đầu.
+binhhoangquoc37@gmail.com|fail|không thấy form mật khẩu mới (re-auth có thể chưa qua)
+jupitermxyanz+t1@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+rhodakai.342734652@gmail.com|fail|không thấy mục 'Mật khẩu'
+vietthangphan149@gmail.com|ok|login | đổi pass | logout
+egcollier301+u48h6d@gmail.com|fail|BrowserType.connect_over_cdp: connect ECONNREFUSED 127.0.0.1:63453
+Call log:
+  - <ws preparing> retrieving websocket url from http://127.0.0.1:63453
+
+williamwarren3686+k9yt32@gmail.com|fail|BrowserType.connect_over_cdp: connect ECONNREFUSED 127.0.0.1:63450
+Call log:
+  - <ws preparing> retrieving websocket url from http://127.0.0.1:63450
+
+sojibicnzungu+8v6o9@gmail.com|fail|không thấy nút Cancel (acc có gói trả phí không?)
+elk_sunk_6c@icloud.com|fail|không thấy nút Cancel (acc có gói trả phí không?)
+sokite803+6hi8n@gmail.com|ok|login | hủy gói | logout
+anodes_readier.4t@icloud.com|ok|login | hủy gói | logout
+jacoblittle1850+yd8dj@gmail.com|fail|không thấy nút Cancel (acc có gói trả phí không?)
+amirreza248shee+b15@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+that_typo8y@icloud.com|ok|login | hủy gói | logout
+elk_sunk_6c@icloud.com|fail|không thấy nút Cancel (acc có gói trả phí không?)
+hjdjd9902+y3@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+christianlittle3349+6eo0@gmail.com|ok|đã login sẵn | hủy gói | logout
+sojibicnzungu+8v6o9@gmail.com|fail|không thấy nút Cancel (acc có gói trả phí không?)
+elk_sunk_6c@icloud.com|fail|không thấy nút Cancel (acc có gói trả phí không?)
+elk_sunk_6c@icloud.com|fail|không thấy nút Cancel (acc có gói trả phí không?)
+jacoblittle1850+yd8dj@gmail.com|fail|không thấy nút Cancel (acc có gói trả phí không?)
+sojibicnzungu+8v6o9@gmail.com|fail|không thấy nút Cancel (acc có gói trả phí không?)
+elk_sunk_6c@icloud.com|fail|không thấy nút Cancel (acc có gói trả phí không?)
+jacoblittle1850+yd8dj@gmail.com|fail|không thấy nút Cancel (acc có gói trả phí không?)
+elk_sunk_6c@icloud.com|fail|không thấy nút Cancel (acc có gói trả phí không?)
+yanousovitch+11@gmail.com|ok|login | hủy gói ✓ | logout ✓
+paolotall+9@gmail.com|ok|login | hủy gói ✓ | logout ✓
+01091910803aa+1@gmail.com|ok|login | hủy gói ✓ | logout ✓
+nahidislam24679+u6i7d@gmail.com|ok|login | hủy gói ✓ | logout ✓
+t01033609231+5@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+laritzawanek57+3@gmail.com|ok|login | hủy gói ✓ | logout ✓
+fek75822+sfjs23@gmail.com|ok|login | hủy gói ✓ | logout ✓
+longfmaily213+1@gmail.com|ok|login | hủy gói ✓ | logout ✓
+hashimurahossein+1@gmail.com|ok|login | hủy gói ✓ | logout ✓
+rahimgso11+1@gmail.com|ok|login | hủy gói ✓ | logout ✓
+hashimurahossein+2@gmail.com|ok|login | hủy gói ✓ | logout ✓
+hashimurahossein+3@gmail.com|ok|login | hủy gói ✓ | logout ✗  —  logout: Page.goto: Navigation to "https://chatgpt.com/#settings/Security/active-sessions" is interrupted by another navigation to "https://chatgpt.com/?refresh_account=true"
+Call log:
+  - navigating to "https://chatgpt.com/#settings/Security/active-sessions", waiting until "load"
+
+bjpkays+4@gmail.com|ok|login | hủy gói ✗ | logout ✓  —  hủy gói: Locator.click: Timeout 60000ms exceeded.
+Call log:
+  - waiting for locator("button:has-text(\"Hủy\")").first
+    - locator resolved to <button class="btn relative group-focus-within/dialog:focus-visible:[outline-width:1.5px] group-focus-within/dialog:focus-visible:[outline-offset:2.5px] group-focus-within/dialog:focus-visible:[outline-style:solid] group-focus-within/dialog:focus-visible:[outline-color:var(--text-primary)] btn-danger-outline rounded-full px-5">…</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div data-state="open" class="fixed inset-0 z-50 before:starting:backdrop-blur-0 before:absolute before:inset-0 before:bg-gray-200/50 before:backdrop-blur-[1px] not-motion-reduce:before:transition not-motion-reduce:before:duration-250 dark:before:bg-black/50 before:starting:opacity-0">…</div> from <div id="modal-beacon" class="absolute inset-0" data-testid="modal-beacon" data-ignore-for-page-load="true">…</div> subtree intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div data-state="open" class="fixed inset-0 z-50 before:starting:backdrop-blur-0 before:absolute before:inset-0 before:bg-gray-200/50 before:backdrop-blur-[1px] not-motion-reduce:before:transition not-motion-reduce:before:duration-250 dark:before:bg-black/50 before:starting:opacity-0">…</div> from <div id="modal-beacon" class="absolute inset-0" data-testid="modal-beacon" data-ignore-for-page-load="true">…</div> subtree intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    116 × waiting for element to be visible, enabled and stable
+        - element is visible, enabled and stable
+        - scrolling into view if needed
+        - done scrolling
+        - <div data-state="open" class="fixed inset-0 z-50 before:starting:backdrop-blur-0 before:absolute before:inset-0 before:bg-gray-200/50 before:backdrop-blur-[1px] not-motion-reduce:before:transition not-motion-reduce:before:duration-250 dark:before:bg-black/50 before:starting:opacity-0">…</div> from <div id="modal-beacon" class="absolute inset-0" data-testid="modal-beacon" data-ignore-for-page-load="true">…</div> subtree intercepts pointer events
+      - retrying click action
+        - waiting 500ms
+
+laritzawanek57+2@gmail.com|fail|không thấy ô email (trang lạ / Cloudflare?)
+vuhamy040405+3@gmail.com|ok|login | hủy gói ✓ | logout ✓
+laritzawanek57+2@gmail.com|ok|đã login sẵn | reset 2FA ✓
+fek75822+sfjs23@gmail.com|ok|login | reset 2FA ✓
+longfmaily213+1@gmail.com|ok|login | reset 2FA ✓
+hashimurahossein+1@gmail.com|ok|login | reset 2FA ✓
+fek75822+sfjs23@gmail.com|ok|đã login sẵn | reset 2FA ✗ | logout ✓  —  reset 2FA: OpenAI chặn TẮT 2FA (toggle vẫn bật sau pass+OTP) — bỏ qua acc này
+longfmaily213+1@gmail.com|ok|đã login sẵn | reset 2FA ✗ | logout ✓  —  reset 2FA: OpenAI chặn TẮT 2FA (toggle vẫn bật sau pass+OTP) — bỏ qua acc này
+hashimurahossein+1@gmail.com|ok|đã login sẵn | reset 2FA ✗ | logout ✓  —  reset 2FA: OpenAI chặn TẮT 2FA (toggle vẫn bật sau pass+OTP) — bỏ qua acc này
+laritzawanek57+3@gmail.com|ok|login | reset 2FA ✗ | logout ✓  —  reset 2FA: bật lại 2FA nhưng không đọc được secret mới
+hashimurahossein+3@gmail.com|ok|đã login sẵn | reset 2FA ✓ | logout ✓
+rahimgso11+1@gmail.com|ok|login | reset 2FA ✓ | logout ✓
+hashimurahossein+2@gmail.com|ok|login | reset 2FA ✓ | logout ✓
+longfmaily213+1@gmail.com|ok|login | reset 2FA ✓ | logout ✓
+hashimurahossein+1@gmail.com|ok|login | reset 2FA ✓ | logout ✓
+fek75822+sfjs23@gmail.com|ok|login | reset 2FA ✓ | logout ✓
+bjpkays+4@gmail.com|ok|login | reset 2FA ✓ | logout ✗  —  logout: không thấy nút 'Đăng xuất tất cả'
+siyamkhan11.22kakak+i9d3@gmail.com|fail|không tới được ô mật khẩu
+rhodakai.342734652@gmail.com|fail|không thấy ô email (trang lạ / Cloudflare?)
+bjpkays+5@gmail.com|ok|đã login sẵn | reset 2FA ✗ | logout ✗  —  reset 2FA: không thấy toggle Authenticator (2FA) trong Security; logout: không thấy nút 'Đăng xuất tất cả'
+truongcv599+5@gmail.com|ok|login | reset 2FA ✓ | logout ✓
+joseph37794221724+sdsg6b@gmail.com|ok|login | hủy gói ✓ | reset 2FA ✗ | logout ✗  —  reset 2FA: Page.goto: Navigation to "https://chatgpt.com/#settings/Security" is interrupted by another navigation to "https://chatgpt.com/?refresh_account=true"
+Call log:
+  - navigating to "https://chatgpt.com/#settings/Security", waiting until "load"
+; logout: Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://chatgpt.com/#settings/Security/active-sessions", waiting until "load"
+
+voyen5100082+mi4sudy@gmail.com|ok|login | hủy gói ✗ | reset 2FA ✓ | logout ✓  —  hủy gói: gói KHÔNG quản lý qua web (thiếu mục Thanh toán — thường do mua qua App/Apple/Google) → không hủy được ở đây
+joseph37794221724+sds8gb@gmail.com|ok|login | hủy gói ✓ | reset 2FA ✗ | logout ✗  —  reset 2FA: Page.goto: Navigation to "https://chatgpt.com/#settings/Security" is interrupted by another navigation to "https://chatgpt.com/?refresh_account=true"
+Call log:
+  - navigating to "https://chatgpt.com/#settings/Security", waiting until "load"
+; logout: Page.goto: Navigation to "https://chatgpt.com/#settings/Security/active-sessions" is interrupted by another navigation to "https://chatgpt.com/"
+Call log:
+  - navigating to "https://chatgpt.com/#settings/Security/active-sessions", waiting until "load"
+
+joseph37794221724+sdsg6b@gmail.com|ok|đã login sẵn | reset 2FA ✗ | logout ✓  —  reset 2FA: OpenAI đòi xác minh EMAIL khi bật 2FA (tool không đọc được email acc này) — thử chạy lại ngay sau khi login để phiên còn 'tươi'
+joseph37794221724+sds8gb@gmail.com|ok|đã login sẵn | reset 2FA ✗ | logout ✓  —  reset 2FA: OpenAI đòi xác minh EMAIL khi bật 2FA (tool không đọc được email acc này) — thử chạy lại ngay sau khi login để phiên còn 'tươi'
+borax.print0r@icloud.com|ok|login | reset 2FA ✓ | logout ✓
+names-bonnet0d@icloud.com|ok|login | reset 2FA ✓ | logout ✓
+soot.42.faxes@icloud.com|ok|login | reset 2FA ✓ | logout ✓
+35_are_respite@icloud.com|ok|login | reset 2FA ✗ | logout ✓  —  reset 2FA: đã nhập secret mới (LZ3OAV5W4I5BXCEM6RETVPHUDXX46PCM) nhưng 2FA CHƯA bật (xác minh mã thất bại)
+zones-sweeter.5p@icloud.com|ok|login | reset 2FA ✗ | logout ✓  —  reset 2FA: đã nhập secret mới (NPLUGINAWANDREWWILSONFREENH) nhưng 2FA CHƯA bật (xác minh mã thất bại)
+joseph37794221724+sdsgb@gmail.com|ok|login | reset 2FA ✓ | hủy gói ✓ | logout ✓
+hjohnson964280+4siuhoil@gmail.com|ok|login | reset 2FA ✗ | hủy gói ✓ | logout ✓  —  reset 2FA: đã nhập secret mới (AUTHENTICATORAPPS) nhưng 2FA CHƯA bật (xác minh mã thất bại)
+lizethlambertson+2@gmail.com|ok|login | reset 2FA ✓ | hủy gói ✓ | logout ✓
+Aishakenn729+2@gmail.com|ok|login | reset 2FA ✓ | hủy gói ✓ | logout ✓
+burackcrane88+1@gmail.com|fail|sai mật khẩu
+burackcrane88+3@gmail.com|fail|sai mật khẩu
+lizethlambertson+1@gmail.com|fail|Page.goto: net::ERR_TIMED_OUT at https://chatgpt.com/
+Call log:
+  - navigating to "https://chatgpt.com/", waiting until "load"
+
+gloomyazu29+tu3io@gmail.com|ok|login | reset 2FA ✓ | hủy gói ✓ | logout ✓
+duyv80832+4@gmail.com|ok|login
+flanekcalvo405@gmail.com|ok|login
+cherlysayloezux96@gmail.com|ok|login
+cherlysayloezux96+1@gmail.com|ok|login
+sinscarlow@gmail.com|ok|đã login sẵn
+shanninpuerta@gmail.com|ok|login
+darcelinlisette0@gmail.com|ok|login
+ulveczkysoldat@gmail.com|ok|login
+dolvinalilica@gmail.com|fail|BrowserType.connect_over_cdp: connect ECONNREFUSED 127.0.0.1:60262
+Call log:
+  - <ws preparing> retrieving websocket url from http://127.0.0.1:60262
+
+negreanvago@gmail.com|fail|BrowserType.connect_over_cdp: connect ECONNREFUSED 127.0.0.1:60345
+Call log:
+  - <ws preparing> retrieving websocket url from http://127.0.0.1:60345
+
+xongietacuari834@gmail.com|fail|BrowserType.connect_over_cdp: connect ECONNREFUSED 127.0.0.1:56417
+Call log:
+  - <ws preparing> retrieving websocket url from http://127.0.0.1:56417
+
+debrakwinebarger@gmail.com|fail|BrowserType.connect_over_cdp: connect ECONNREFUSED 127.0.0.1:53274
+Call log:
+  - <ws preparing> retrieving websocket url from http://127.0.0.1:53274
+
+sanleycri@gmail.com|fail|BrowserType.connect_over_cdp: connect ECONNREFUSED 127.0.0.1:53364
+Call log:
+  - <ws preparing> retrieving websocket url from http://127.0.0.1:53364
+
+jansinglejune@gmail.com|fail|BrowserType.connect_over_cdp: connect ECONNREFUSED 127.0.0.1:53394
+Call log:
+  - <ws preparing> retrieving websocket url from http://127.0.0.1:53394
+
+craziermartabano695@gmail.com|fail|BrowserType.connect_over_cdp: connect ECONNREFUSED 127.0.0.1:53459
+Call log:
+  - <ws preparing> retrieving websocket url from http://127.0.0.1:53459
+
+arispecalvano@gmail.com|fail|BrowserType.connect_over_cdp: connect ECONNREFUSED 127.0.0.1:53479
+Call log:
+  - <ws preparing> retrieving websocket url from http://127.0.0.1:53479
+
+vjyhuy456+5@gmail.com|fail|BrowserType.connect_over_cdp: connect ECONNREFUSED 127.0.0.1:62726
+Call log:
+  - <ws preparing> retrieving websocket url from http://127.0.0.1:62726
+
+maripililameira214@gmail.com|fail|BrowserType.connect_over_cdp: connect ECONNREFUSED 127.0.0.1:61593
+Call log:
+  - <ws preparing> retrieving websocket url from http://127.0.0.1:61593
+
+sanleycri@gmail.com|fail|sai mật khẩu
+xongietacuari834@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+negreanvago@gmail.com|fail|sai mật khẩu
+dolvinalilica@gmail.com|ok|login
+jansinglejune@gmail.com|ok|login
+craziermartabano695@gmail.com|ok|login
+arispecalvano@gmail.com|ok|login
+vjyhuy456+5@gmail.com|fail|sai mật khẩu
+maripililameira214@gmail.com|ok|login
+debrakwinebarger@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+e.l.mermarino617076@googlemail.com|fail|create profile thất bại: Collection was modified; enumeration operation may not execute.
+w.i.llkenneth76915@googlemail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+b.r.idgmanbeaumont7712@googlemail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+burnsbeam78879+3@googlemail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+b.urnsbeam78879@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+burrowsdexter28763+1@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+g.rahamjoshua97912@gmail.com|ok|login
+b.ridgmanbeaumont7712@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+b.oykinwillie1585@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+burdettjohn799937+1@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+phituansang@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+Kienvandang778+z1@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+xuantienhiep90+r1@gmail.com|ok|login
+hungtranhien70+e@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+xuantienhiep90+r2@gmail.com|fail|sai mật khẩu
+hungtranhien70+q@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+phituansang+f1@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+hungtranhien70+rt@googlemail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+xuantienhiep90+r3@googlemail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+Kienvandang778+z2@gmail.com|ok|login
+christianbritt461+nuio@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+campbellbradley33136+cuio@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+grecorandolph65751+bu5io@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+francescobrainerd294+niu5o@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+christianbritt461+nui4o@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+christianbritt461+nu5io@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+simonbrough27132@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+christianbritt461+nu3io@gmail.com|ok|login
+simonbrough27132+cuio@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+simonbrough27132+c3uio@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+minhthangtran119+4@gmail.com|ok|login
+thangvo0980+3@gmail.com|ok|login
+minhthangtran119+2@gmail.com|ok|login
+thangvo0980+2@gmail.com|ok|login
+thangvo0980+4@gmail.com|ok|login
+minhthangtran119+5@gmail.com|ok|login
+thangvo0980+5@gmail.com|ok|login
+seedingfabut+1@gmail.com|ok|login
+minhthangtran119+6@gmail.com|ok|login
+thangvo0980+6@gmail.com|ok|login
+thienlagai+zi8q@googlemail.com|ok|login
+baoquyday+q61k@googlemail.com|ok|login
+lyuvaya+r27y@googlemail.com|ok|login
+thienlagai+3nhy@googlemail.com|ok|login
+tuhatliem+m5rw@googlemail.com|ok|login
+tructhekk+aa5h@googlemail.com|ok|login
+tructhekk+powp@googlemail.com|fail|chưa xác nhận đăng nhập (thử thách?): Lịch sử đoạn chat | Chúng ta nên bắt đầu từ đâu? | Chúng ta nên bắt đầu từ đâu?
+buikkhien742+pn55@googlemail.com|ok|login
+totengan52+hue1@googlemail.com|ok|login
+gaukothanh+8qfp@googlemail.com|ok|login
+laritzawanek57+2@gmail.com|ok|đã login sẵn
+jurief.distato8@hotmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+vilaliy.fneresa@hotmail.com|fail|chưa xác nhận đăng nhập (thử thách?): Lịch sử đoạn chat | Khi bạn sẵn sàng là chúng ta có thể bắt đầu. | Khi bạn sẵn sàng là chúng ta có thể bắt đầu.
+rhumae_arleail5@hotmail.com|fail|không thấy ô email (trang lạ / Cloudflare?)
+lachune_sentaws@hotmail.com|ok|login
+charleshuang8000+dhhnje7@gmail.com|ok|login
+hjohnson964280+4siuhoil@gmail.com|fail|không tới được ô mật khẩu
+bjpkays+4@gmail.com|ok|đã login sẵn
+bjpkays+4@gmail.com|ok|đã login sẵn
+joseph37794221724+sdsg6b@gmail.com|fail|Page.goto: Target page, context or browser has been closed
+Call log:
+  - navigating to "https://auth.openai.com/log-in", waiting until "load"
+
+charleshuang8000+dhhnje7@gmail.com|ok|đã login sẵn | xóa chat ✓ | đổi pass ✓ | logout ✓
+farjabaianbayse+sjio8df@gmail.com|ok|login | xóa chat ✓ | đổi pass ✓ | logout ✓
+emon3125top+sg6fysg@gmail.com|ok|login | xóa chat ✓ | đổi pass ✓ | logout ✓
+nila7900sky+sydoiy@gmail.com|ok|login | xóa chat ✓ | đổi pass ✓ | logout ✓
+stephaniemoore1046+djfbsu@gmail.com|ok|login | xóa chat ✓ | đổi pass ✓ | logout ✓
+toddscott2494+sjdyg@gmail.com|ok|login | xóa chat ✓ | đổi pass ✓ | logout ✓
+mondolsky2+uytuiai@gmail.com|ok|login | xóa chat ✓ | đổi pass ✓ | logout ✓
+nicolehernandez7383+7eho8@gmail.com|ok|login | xóa chat ✓ | đổi pass ✓ | logout ✓
+sofatarmudziayatillah+munidokf@gmail.com|ok|login | xóa chat ✓ | đổi pass ✓ | logout ✓
+aass1122252525+nidbdm9@gmail.com|ok|login | xóa chat ✓ | đổi pass ✓ | logout ✓
+noahnikah+muio@gmail.com|ok|login | xóa chat ✗ | đổi pass ✗ | logout ✗  —  xóa chat: không thấy nút 'Xóa tất cả'; đổi pass: không thấy mục 'Mật khẩu'; logout: không thấy nút 'Đăng xuất tất cả'
+Owiwmakjwjwj+vo2iu@gmail.com|ok|login | xóa chat ✗ | đổi pass ✗ | logout ✗  —  xóa chat: không thấy nút 'Xóa tất cả'; đổi pass: không thấy mục 'Mật khẩu'; logout: không thấy nút 'Đăng xuất tất cả'
+noahnikah+m1uio@gmail.com|ok|login | xóa chat ✗ | đổi pass ✗ | logout ✗  —  xóa chat: không thấy nút xác nhận 'Xác nhận xóa'; đổi pass: không thấy mục 'Mật khẩu'; logout: không thấy nút 'Đăng xuất tất cả'
+noahnikah+mu2io@gmail.com|ok|login | xóa chat ✗ | đổi pass ✗ | logout ✗  —  xóa chat: không thấy nút 'Xóa tất cả'; đổi pass: không thấy mục 'Mật khẩu'; logout: không thấy nút 'Đăng xuất tất cả'
+annisakacong9+guio@gmail.com|fail|chưa xác nhận đăng nhập (thử thách?): Chúng ta nên bắt đầu từ đâu? | Nhận phản hồi phù hợp với nhu cầu của bạn | Xóa cuộc trò chuyện hiện tại?
+gaurauttreaglaiten544+m2uioa@gmail.com|fail|chưa xác nhận đăng nhập (thử thách?): Lịch sử đoạn chat | Gần đây | Hôm nay bạn muốn làm gì?
+tammersrdesra828+g3uio@gmail.com|ok|login | xóa chat ✗ | đổi pass ✗ | logout ✗  —  xóa chat: không thấy nút 'Xóa tất cả'; đổi pass: không thấy mục 'Mật khẩu'; logout: không thấy nút 'Đăng xuất tất cả'
+tammersrdesra828+gui7o@gmail.com|ok|login | xóa chat ✗ | đổi pass ✗ | logout ✗  —  xóa chat: không thấy nút 'Xóa tất cả'; đổi pass: không thấy mục 'Mật khẩu'; logout: không thấy nút 'Đăng xuất tất cả'
+gloomyazu29+m1uio@gmail.com|ok|login | xóa chat ✗ | đổi pass ✗ | logout ✗  —  xóa chat: không thấy nút 'Xóa tất cả'; đổi pass: không thấy mục 'Mật khẩu'; logout: không thấy nút 'Đăng xuất tất cả'
+Owiwmakjwjwj+vo2iu@gmail.com|ok|đã login sẵn | xóa chat ✗ | đổi pass ✓ | logout ✓  —  xóa chat: không thấy nút 'Xóa tất cả'
+noahnikah+muio@gmail.com|ok|đã login sẵn | xóa chat ✗ | đổi pass ✗ | logout ✗  —  xóa chat: không thấy nút 'Xóa tất cả'; đổi pass: không thấy mục 'Mật khẩu'; logout: không thấy nút 'Đăng xuất tất cả'
+Owiwmakjwjwj+vo2iu@gmail.com|ok|đã login sẵn | xóa chat ✓ | đổi pass ✗ | logout ✓  —  đổi pass: không thấy form mật khẩu mới (re-auth có thể chưa qua)
+noahnikah+mu2io@gmail.com|ok|đã login sẵn | xóa chat ✗ | đổi pass ✓ | logout ✓  —  xóa chat: không thấy nút xác nhận 'Xác nhận xóa'
+noahnikah+muio@gmail.com|ok|đã login sẵn | xóa chat ✗ | đổi pass ✗ | logout ✓  —  xóa chat: không thấy nút xác nhận 'Xác nhận xóa'; đổi pass: không thấy mục 'Mật khẩu'
+tammersrdesra828+gui7o@gmail.com|ok|đã login sẵn | xóa chat ✗ | đổi pass ✓ | logout ✓  —  xóa chat: không thấy nút xác nhận 'Xác nhận xóa'
+noahnikah+m1uio@gmail.com|ok|đã login sẵn | xóa chat ✓ | đổi pass ✗ | logout ✗  —  đổi pass: không thấy mục 'Mật khẩu'; logout: không thấy nút 'Đăng xuất tất cả'
+gloomyazu29+m1uio@gmail.com|ok|đã login sẵn | xóa chat ✗ | đổi pass ✓ | logout ✓  —  xóa chat: không thấy nút xác nhận 'Xác nhận xóa'
+tammersrdesra828+g3uio@gmail.com|ok|đã login sẵn | xóa chat ✓ | đổi pass ✗ | logout ✗  —  đổi pass: không thấy mục 'Mật khẩu'; logout: không thấy nút 'Đăng xuất tất cả'
+gaurauttreaglaiten544+m2uioa@gmail.com|ok|login | xóa chat ✗ | đổi pass ✓ | logout ✓  —  xóa chat: không thấy nút xác nhận 'Xác nhận xóa'
+gloomyazu29+tu3io@gmail.com|ok|đã login sẵn | xóa chat ✓ | đổi pass ✓ | logout ✓
+annisakacong9+guio@gmail.com|fail|chưa xác nhận đăng nhập (thử thách?): Lịch sử đoạn chat | Hôm nay bạn muốn làm gì? | Hôm nay bạn muốn làm gì?
+laritzawanek57+2@gmail.com|ok|đã login sẵn | xóa chat ✓ | đổi pass ✓
+emon3125top+sg6fysg@gmail.com|ok|đã login sẵn | xóa chat ✓ | đổi pass ✗ | logout ✓  —  đổi pass: không thấy form mật khẩu mới (re-auth có thể chưa qua)
+charleshuang8000+dhhnje7@gmail.com|ok|đã login sẵn | xóa chat ✓ | đổi pass ✗ | logout ✓  —  đổi pass: không thấy form mật khẩu mới (re-auth có thể chưa qua)
+toddscott2494+sjdyg@gmail.com|ok|đã login sẵn | xóa chat ✓ | đổi pass ✗ | logout ✓  —  đổi pass: không thấy form mật khẩu mới (re-auth có thể chưa qua)
+nila7900sky+sydoiy@gmail.com|ok|đã login sẵn | xóa chat ✓ | đổi pass ✗ | logout ✓  —  đổi pass: không thấy form mật khẩu mới (re-auth có thể chưa qua)
+farjabaianbayse+sjio8df@gmail.com|ok|đã login sẵn | xóa chat ✓ | đổi pass ✗ | logout ✓  —  đổi pass: không thấy form mật khẩu mới (re-auth có thể chưa qua)
+aass1122252525+nidbdm9@gmail.com|ok|đã login sẵn | xóa chat ✓ | đổi pass ✓ | logout ✓
+stephaniemoore1046+djfbsu@gmail.com|ok|đã login sẵn | xóa chat ✓ | đổi pass ✗ | logout ✓  —  đổi pass: không thấy form mật khẩu mới (re-auth có thể chưa qua)
+mondolsky2+uytuiai@gmail.com|ok|đã login sẵn | xóa chat ✓ | đổi pass ✗ | logout ✓  —  đổi pass: không thấy form mật khẩu mới (re-auth có thể chưa qua)
+sofatarmudziayatillah+munidokf@gmail.com|ok|đã login sẵn | xóa chat ✓ | đổi pass ✗ | logout ✓  —  đổi pass: không thấy form mật khẩu mới (re-auth có thể chưa qua)
+nicolehernandez7383+7eho8@gmail.com|ok|đã login sẵn | xóa chat ✓ | đổi pass ✗ | logout ✓  —  đổi pass: không thấy form mật khẩu mới (re-auth có thể chưa qua)
+charleshuang8000+dhhnje7@gmail.com|ok|đã login sẵn | đổi pass ✗  —  đổi pass: không thấy form mật khẩu mới (re-auth có thể chưa qua)
+charleshuang8000+dhhnje7@gmail.com|ok|đã login sẵn | đổi pass ✓
+charleshuang8000+dhhnje7@gmail.com|ok|đã login sẵn | xóa chat ✓ | đổi pass ✓ | logout ✓
+toddscott2494+sjdyg@gmail.com|ok|đã login sẵn | xóa chat ✓ | đổi pass ✓ | logout ✓
+farjabaianbayse+sjio8df@gmail.com|ok|đã login sẵn | xóa chat ✓ | đổi pass ✓ | logout ✓
+emon3125top+sg6fysg@gmail.com|ok|đã login sẵn | xóa chat ✓ | đổi pass ✓ | logout ✓
+nila7900sky+sydoiy@gmail.com|ok|đã login sẵn | xóa chat ✓ | đổi pass ✓ | logout ✓
+stephaniemoore1046+djfbsu@gmail.com|ok|đã login sẵn | xóa chat ✓ | đổi pass ✓ | logout ✓
+mondolsky2+uytuiai@gmail.com|ok|đã login sẵn | xóa chat ✓ | đổi pass ✓ | logout ✓
+sofatarmudziayatillah+munidokf@gmail.com|ok|đã login sẵn | xóa chat ✓ | đổi pass ✓ | logout ✓
+aass1122252525+nidbdm9@gmail.com|ok|đã login sẵn | xóa chat ✓ | đổi pass ✓ | logout ✓
+nicolehernandez7383+7eho8@gmail.com|ok|đã login sẵn | xóa chat ✓ | đổi pass ✗ | logout ✓  —  đổi pass: không tới form mật khẩu mới (re-auth chưa qua)
+rdfsohgxkbgxhkhcvjbdfshigxhich+m3uio@gmail.com|fail|sai mật khẩu
+jjanettillman+nu6io@gmail.com|fail|sai mật khẩu
+lupedcurtis43nieadargan67+nuio@gmail.com|ok|login | xóa chat ✓ | đổi pass ✓ | logout ✓
+cahyaira8530v+nui6o@gmail.com|ok|login | xóa chat ✓ | đổi pass ✓ | logout ✓
+ahnafrcn9nf2q+m2u8io@gmail.com|ok|login | xóa chat ✓ | đổi pass ✓ | logout ✓
+ahnafrcn9nf2q+mui4o@gmail.com|ok|login | xóa chat ✓ | đổi pass ✓ | logout ✓
+shuvohcnyid8b+nuio@gmail.com|ok|login | xóa chat ✓ | đổi pass ✓ | logout ✓
+ahnafrcn9nf2q+mu3io@gmail.com|ok|login | xóa chat ✓ | đổi pass ✓ | logout ✓
+rdfsohgxkbgxhkhcvjbdfshigxhich+muio@gmail.com|fail|chưa xác nhận đăng nhập (thử thách?): Chat history | Where should we begin? | Where should we begin?
+shuvohcnyid8b+n5uio@gmail.com|fail|không thấy ô email (trang lạ / Cloudflare?)
+Owiwmakjwjwj+vo2iu@gmail.com|ok|đã login sẵn | xóa chat ✓ | đổi pass ✗ | logout ✓  —  đổi pass: không tới form mật khẩu mới (re-auth chưa qua)
+noahnikah+muio@gmail.com|fail|Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://chatgpt.com/", waiting until "load"
+
+noahnikah+mu2io@gmail.com|fail|sai mật khẩu
+tammersrdesra828+gui7o@gmail.com|ok|đã login sẵn | xóa chat ✓ | đổi pass ✓ | logout ✓
+gaurauttreaglaiten544+m2uioa@gmail.com|fail|sai mật khẩu
+noahnikah+m1uio@gmail.com|ok|đã login sẵn | xóa chat ✓ | đổi pass ✗ | logout ✗  —  đổi pass: không thấy mục 'Mật khẩu'; logout: không thấy nút 'Đăng xuất tất cả'
+tammersrdesra828+g3uio@gmail.com|ok|đã login sẵn | xóa chat ✓ | đổi pass ✗ | logout ✗  —  đổi pass: không thấy mục 'Mật khẩu'; logout: không thấy nút 'Đăng xuất tất cả'
+gloomyazu29+m1uio@gmail.com|ok|đã login sẵn | xóa chat ✓ | đổi pass ✓ | logout ✓
+gloomyazu29+tu3io@gmail.com|ok|đã login sẵn | xóa chat ✓ | đổi pass ✓ | logout ✓
+annisakacong9+guio@gmail.com|fail|chưa xác nhận đăng nhập (thử thách?): Lịch sử đoạn chat | Khi bạn sẵn sàng là chúng ta có thể bắt đầu. | Khi bạn sẵn sàng là chúng ta có thể bắt đầu.
+noahnikah+mu2io@gmail.com|fail|sai mật khẩu
+gaurauttreaglaiten544+m2uioa@gmail.com|fail|sai mật khẩu
+Owiwmakjwjwj+vo2iu@gmail.com|ok|đã login sẵn | xóa chat ✓ | đổi pass ✓ | logout ✓
+noahnikah+m1uio@gmail.com|ok|đã login sẵn | xóa chat ✗ | đổi pass ✓ | logout ✓  —  xóa chat: không thấy nút xác nhận 'Xác nhận xóa'
+tammersrdesra828+g3uio@gmail.com|ok|đã login sẵn | xóa chat ✗ | đổi pass ✓ | logout ✓  —  xóa chat: không thấy nút xác nhận 'Xác nhận xóa'
+noahnikah+muio@gmail.com|ok|login | xóa chat ✗ | đổi pass ✓ | logout ✓  —  xóa chat: không thấy nút xác nhận 'Xác nhận xóa'
+annisakacong9+guio@gmail.com|fail|chưa xác nhận đăng nhập (thử thách?): Lịch sử đoạn chat | Chúng ta nên bắt đầu từ đâu? | Chúng ta nên bắt đầu từ đâu?
+giapn2758+nidk9fo@gmail.com|fail|cần 2FA nhưng không có secret TOTP
+giapn2758+nid5kfo@gmail.com|ok|login | xóa chat ✗ | đổi pass ✓ | logout ✓  —  xóa chat: không thấy nút xác nhận 'Xác nhận xóa'
+trongeleg237+s3bndigf@gmail.com|ok|login | xóa chat ✗ | đổi pass ✓ | logout ✓  —  xóa chat: không thấy nút xác nhận 'Xác nhận xóa'
+giapn2758+ni2dkfo@gmail.com|ok|login | xóa chat ✗ | đổi pass ✓ | logout ✓  —  xóa chat: không thấy nút xác nhận 'Xác nhận xóa'
+giapn2758+nidkfo@gmail.com|ok|login | xóa chat ✗ | đổi pass ✓ | logout ✓  —  xóa chat: không thấy nút xác nhận 'Xác nhận xóa'
+myfrayaugeanu85@gmail.com|ok|login | xóa chat ✗ | đổi pass ✓ | logout ✓  —  xóa chat: không thấy nút xác nhận 'Xác nhận xóa'
+voyen5100082+misu8dy@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+voyen5100082+misu5dy@gmail.com|ok|login | xóa chat ✗ | đổi pass ✓ | logout ✓  —  xóa chat: không thấy nút xác nhận 'Xác nhận xóa'
+giapn2758@gmail.com|ok|login | xóa chat ✗ | đổi pass ✓ | logout ✓  —  xóa chat: không thấy nút xác nhận 'Xác nhận xóa'
+voyen5100082+mi4sudy@gmail.com|ok|đã login sẵn | xóa chat ✓ | đổi pass ✗ | logout ✗  —  đổi pass: không thấy mục 'Mật khẩu'; logout: không thấy nút 'Đăng xuất tất cả'
+boylejustinian+2@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+antionemohammad+5@gmail.com|ok|login
+kingstonmaren+2@gmail.com|ok|login
+antionemohammad+4@gmail.com|ok|login
+boylejustinian@gmail.com|ok|login
+hoangthuythuy6744+5@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+longnguyenhoangvu03+1@gmail.com|ok|login
+nhinguyenngongoc73+5@gmail.com|ok|login
+huyhiynhkimanh+4@gmail.com|ok|login
+tuanhoquangminh+5@gmail.com|ok|login
+huyhiynhkimanh+5@gmail.com|ok|login
+ground.kettles_5s@icloud.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+haywire.48-bluff@icloud.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+heaths.pubs8s@icloud.com|fail|sai mật khẩu
+haze_penguin_5t@icloud.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+hibachi_warble0z@icloud.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+heaves.haw_17@icloud.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+homing-paws-7j@icloud.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+hows-maxima.1p@icloud.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+gulp.dresses-4r@icloud.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+human_midden.2c@icloud.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+hull_86_roadie@icloud.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+hygiene-flux5p@icloud.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+hyper-slipped-31@icloud.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+thienlagai+zi8q@googlemail.com|ok|đã login sẵn
+baoquyday+q61k@googlemail.com|ok|đã login sẵn
+thienlagai+3nhy@googlemail.com|ok|đã login sẵn
+tructhekk+aa5h@googlemail.com|ok|đã login sẵn
+lyuvaya+r27y@googlemail.com|ok|đã login sẵn
+tuhatliem+m5rw@googlemail.com|ok|đã login sẵn
+totengan52+hue1@googlemail.com|ok|đã login sẵn
+buikkhien742+pn55@googlemail.com|ok|đã login sẵn
+gaukothanh+8qfp@googlemail.com|ok|đã login sẵn
+thaomyha041+lxr6@googlemail.com|ok|login
+phihannhan+fglx@googlemail.com|ok|login
+vancumoc+duwm@googlemail.com|ok|login
+pakoihieu+0ncl@googlemail.com|ok|login
+thaomyha041+h6vu@googlemail.com|ok|login
+tructhekk+powp@googlemail.com|fail|chưa xác nhận đăng nhập (thử thách?): 
+b.ridgmanbeaumont7712@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+burnsbeam78879+3@googlemail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+e.l.mermarino617076@googlemail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+w.i.llkenneth76915@googlemail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+Sanchezbeard57142+5@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+B.r.idgmanbeaumont7712@googlemail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+hungtranhien70+e@gmail.com GPTPLUSVIP111 ZFLLVS247RV4DH2EUFGZKSSY3XVYWZLO|ok|login
+xuantienhiep90+r1@gmail.com GPTPLUSVIP111 QTP2T4N77B2E6G5SHZ3EV3KAJH7TPPLG|fail|không tới được ô mật khẩu
+hungtranhien70+q@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+Kienvandang778+z1@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+phituansang@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+hungtranhien70+e@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+xuantienhiep90+r1@gmail.com|ok|login
+phituansang+f1@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+hungtranhien70+rt@googlemail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+xuantienhiep90+r2@gmail.com|fail|sai mật khẩu
+xuantienhiep90+r3@googlemail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+Kienvandang778+z2@gmail.com|ok|login
+francescobrainerd294+niu5o@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+grecorandolph65751+bu5io@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+campbellbradley33136+cuio@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+christianbritt461+nuio@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+christianbritt461+nu3io@gmail.com|ok|login
+christianbritt461+nui4o@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+christianbritt461+nu5io@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+simonbrough27132+cuio@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+simonbrough27132+c3uio@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+minhthangtran119+2@gmail.com|ok|login
+thangvo0980+2@gmail.com|ok|login
+simonbrough27132@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+thangvo0980+3@gmail.com|ok|login
+minhthangtran119+4@gmail.com|ok|login
+thangvo0980+4@gmail.com|ok|login
+minhthangtran119+5@gmail.com|ok|login
+thangvo0980+5@gmail.com|ok|login
+minhthangtran119+6@gmail.com|ok|login
+thangvo0980+6@gmail.com|ok|login
+seedingfabut+1@gmail.com|ok|login
+tisanogamanikelpa+cuio@gmail.com|ok|login
+tisanogamanikelpa+c3io@gmail.com|ok|login
+tisanogamanikelpa+c2uio@gmail.com|ok|login
+hasanprayoga255+m2uio@gmail.com|ok|login
+irvingprince9+m2uio@gmail.com|ok|login
+cedricmartinedgv4306+cuio@gmail.com|ok|login
+robertgutierrezzaop5616+vuio@gmail.com|ok|login
+isnaningrummegahaig+cuio@gmail.com|ok|login
+hasanprayoga255+muio@gmail.com|ok|login
+moglicrow7+m2uio@gmail.com|ok|đã login sẵn
+moglicrow7+muio@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+mahimrcnrolmj+m2uio@gmail.com|ok|login
+isnaningrummegahaig+c2uio@gmail.com|ok|login
+mahimrcnrolmj+mu3io@gmail.com|ok|login
+ajismahesa05+n2uio@gmail.com|ok|login
+jesikarikren+vuio@gmail.com|ok|login
+jayawardanachai07+nuwio@gmail.com|ok|login
+kiplirapael02+cuio@gmail.com|ok|login
+kenziewinata28+m2uiio@gmail.com|ok|login
+kenziewinata28+mu3iio@gmail.com|ok|login
+ahnafrcn9nf2q+m2u8io@gmail.com|fail|sai mật khẩu
+ahnafrcn9nf2q+mu3io@gmail.com|fail|sai mật khẩu
+shuvohcnyid8b+nuio@gmail.com|fail|sai mật khẩu
+ahnafrcn9nf2q+mui4o@gmail.com|fail|sai mật khẩu
+cahyaira8530v+nui6o@gmail.com|fail|sai mật khẩu
+lupedcurtis43nieadargan67+nuio@gmail.com|fail|sai mật khẩu
+rdfsohgxkbgxhkhcvjbdfshigxhich+m3uio@gmail.com|fail|sai mật khẩu
+jjanettillman+nu6io@gmail.com|fail|sai mật khẩu
+rdfsohgxkbgxhkhcvjbdfshigxhich+muio@gmail.com|ok|login
+tipster.genial4q@icloud.com|ok|login | xóa chat ✓ | đổi pass ✓ | logout ✓
+retort_herons.4r@icloud.com|ok|login | xóa chat ✓ | đổi pass ✓ | logout ✓
+fierier.98oboes@icloud.com|ok|login | xóa chat ✓ | đổi pass ✓ | logout ✓
+detours.bier-5f@icloud.com|ok|login | xóa chat ✓ | đổi pass ✓ | logout ✓
+blooms-violas-9s@icloud.com|ok|login | xóa chat ✓ | đổi pass ✓ | logout ✓
+SamrobenjKirleejonix+22@hotmail.com|ok|login | xóa chat ✗ | đổi pass ✓ | logout ✓  —  xóa chat: không thấy nút xác nhận 'Xác nhận xóa'
+kiplirapael02+cuio@gmail.com|ok|login | hủy gói ✗ | logout ✓  —  hủy gói: không vào được flow hủy gói (không có gói trả phí / đã hủy / UI lạ)
+kenziewinata28+m2uiio@gmail.com|ok|login | hủy gói ✗ | logout ✓  —  hủy gói: không vào được flow hủy gói (không có gói trả phí / đã hủy / UI lạ)
+blakelyruss28340+s@gmail.com|fail|create profile thất bại: Collection was modified; enumeration operation may not execute.
+walterbliss588331+e@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+atwellotis36646+s@gmail.com|ok|login
+reginaldralph26012+p@gmail.com|ok|login
+terenceethan4228+5@gmail.com|ok|login
+walterbliss588331+p@gmail.com|ok|login
+donbryant5814+o@gmail.com|ok|login
+arndtbailey063185+q@gmail.com|ok|login
+arndtbailey063185+i@gmail.com|ok|login
+walterbliss588331+e@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+atwellotis36646+a@gmail.com|ok|login
+blakelyruss28340+s@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+kenziewinata28+mu3iio@gmail.com|ok|login | xóa chat ✓ | đổi pass ✗ | logout ✓  —  đổi pass: không tới form mật khẩu mới (re-auth chưa qua)
+kenziewinata28+m2uiio@gmail.com|ok|login | xóa chat ✓ | đổi pass ✗ | logout ✓  —  đổi pass: không tới form mật khẩu mới (re-auth chưa qua)
+kiplirapael02+cuio@gmail.com|ok|login | xóa chat ✓ | đổi pass ✗ | logout ✓  —  đổi pass: không tới form mật khẩu mới (re-auth chưa qua)
+kenziewinata28+m2uiio@gmail.com|ok|đã login sẵn | đổi pass ✗  —  đổi pass: không tới form mật khẩu mới (re-auth chưa qua)
+kiplirapael02+cuio@gmail.com|ok|đã login sẵn | đổi pass ✗  —  đổi pass: không tới form mật khẩu mới (re-auth chưa qua)
+kenziewinata28+mu3iio@gmail.com|ok|đã login sẵn | đổi pass ✗  —  đổi pass: không tới form mật khẩu mới (re-auth chưa qua)
+kiplirapael02+cuio@gmail.com|ok|đã login sẵn | đổi pass ✗  —  đổi pass: acc KHÔNG có mục 'Mật khẩu' trong Bảo mật (thường do đăng nhập qua Google/SSO, hoặc chưa đặt mật khẩu OpenAI) → không đổi pass qua web được
+h.abao26bsh@gmail.com|ok|login | xóa chat ✓ | đổi pass ✗ | logout ✓  —  đổi pass: acc KHÔNG có mục 'Mật khẩu' trong Bảo mật (thường do đăng nhập qua Google/SSO, hoặc chưa đặt mật khẩu OpenAI) → không đổi pass qua web được
+thuyetdangthangvan+1@gmail.com|ok|login | xóa chat ✓ | đổi pass ✗ | logout ✓  —  đổi pass: acc KHÔNG có mục 'Mật khẩu' trong Bảo mật (thường do đăng nhập qua Google/SSO, hoặc chưa đặt mật khẩu OpenAI) → không đổi pass qua web được
+fredericked22890@gmail.com|ok|login | đổi pass ✗  —  đổi pass: acc KHÔNG có mục 'Mật khẩu' trong Bảo mật (thường do đăng nhập qua Google/SSO, hoặc chưa đặt mật khẩu OpenAI) → không đổi pass qua web được
+williamsian882456+49017@googlemail.com|ok|login | đổi pass ✗  —  đổi pass: acc KHÔNG có mục 'Mật khẩu' trong Bảo mật (thường do đăng nhập qua Google/SSO, hoặc chưa đặt mật khẩu OpenAI) → không đổi pass qua web được
+laurenharmon485037+94454@googlemail.com|ok|login | đổi pass ✗  —  đổi pass: acc KHÔNG có mục 'Mật khẩu' trong Bảo mật (thường do đăng nhập qua Google/SSO, hoặc chưa đặt mật khẩu OpenAI) → không đổi pass qua web được
+phituansang@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+johanthonyjoel509@gmail.com|ok|login | logout ✓
+gualdemarmaic@gmail.com|ok|login | logout ✓
+Hungtranhien70+q@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+christianbritt461+nuio@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+xuantienhiep90+r1@gmail.com|fail|chưa xác nhận đăng nhập (thử thách?): Lịch sử đoạn chat | Hôm nay bạn muốn làm gì? | Hôm nay bạn muốn làm gì?
+indaleciorosu102@gmail.com|fail|chưa xác nhận đăng nhập (thử thách?): 
+gualdemarmaic@gmail.com|ok|login | xóa chat ✓
+johanthonyjoel509@gmail.com|ok|login | xóa chat ✓
+laritzawanek57+2@gmail.com|ok|đã login sẵn | logout ✗  —  logout: không thấy nút xác nhận 'Đăng xuất khỏi tất cả thiết bị'
+laritzawanek57+2@gmail.com|ok|đã login sẵn | logout ✗  —  logout: đã bấm 'Đăng xuất tất cả' nhưng phiên VẪN đăng nhập — thiết bị CHƯA bị đăng xuất (OpenAI đòi xác minh lại / UI đổi). Kiểm tra lại.
+laritzawanek57+2@gmail.com|fail|sai mật khẩu
+kiplirapael02+cuio@gmail.com|fail|Page.goto: Target page, context or browser has been closed
+Call log:
+  - navigating to "https://chatgpt.com/", waiting until "load"
+
+edwinperez58652@googlemail.com|fail|sai mật khẩu
+scottmccormick22030@gmail.com|fail|sai mật khẩu
+scottmccormick22030@googlemail.com|fail|sai mật khẩu
+edwinperez58652+titby@googlemail.com|fail|sai mật khẩu
+scottmccormick22030+kglmzu@gmail.com|fail|sai mật khẩu
+scottmccormick22030+itglh@googlemail.com|fail|sai mật khẩu
+scottmccormick22030+itglh@googlemail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+scottmccormick22030+kglmzu@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+scottmccormick22030@googlemail.com|ok|login
+edwinperez58652+titby@googlemail.com|ok|login
+edwinperez58652@googlemail.com|fail|chưa xác nhận đăng nhập (thử thách?): Lịch sử đoạn chat | Khi bạn sẵn sàng là chúng ta có thể bắt đầu. | Khi bạn sẵn sàng là chúng ta có thể bắt đầu.
+gualdemarmaic@gmail.com|ok|đã login sẵn
+maripililameira214@gmail.com|ok|đã login sẵn
+johanthonyjoel509@gmail.com|ok|đã login sẵn
+flanekcalvo405@gmail.com|ok|đã login sẵn
+sinscarlow@gmail.com|ok|đã login sẵn
+shanninpuerta@gmail.com|ok|đã login sẵn
+darcelinlisette0@gmail.com|ok|đã login sẵn
+ulveczkysoldat@gmail.com|ok|đã login sẵn
+dolvinalilica@gmail.com|ok|đã login sẵn
+gmoneylosh@gmail.com|ok|login
+sanleycri@gmail.com|fail|sai mật khẩu
+jansinglejune@gmail.com|ok|đã login sẵn
+negreanvago@gmail.com|fail|sai mật khẩu
+xongietacuari834@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+craziermartabano695@gmail.com|ok|đã login sẵn
+arispecalvano@gmail.com|ok|đã login sẵn
+debrakwinebarger@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+cherlysayloezux96@gmail.com|ok|đã login sẵn
+cherlysayloezux96+1@gmail.com|ok|đã login sẵn
+vjyhuy456+5@gmail.com|fail|sai mật khẩu
+indaleciorosu102@gmail.com|ok|login
+tuhatliem+m5rw@googlemail.com|ok|đã login sẵn | hủy gói ✓ | logout ✓
+gaukothanh+8qfp@googlemail.com|ok|đã login sẵn | hủy gói ✓ | logout ✓
+lanhbbkim+6zeb@googlemail.com|ok|login | hủy gói ✓ | logout ✓
+tuhatliem+m5rw@googlemail.com|ok|login
+lanhbbkim+6zeb@googlemail.com|fail|HTTPConnectionPool(host='127.0.0.1', port=19995): Read timed out. (read timeout=60)
+gaukothanh+8qfp@googlemail.com|fail|mở profile thất bại: Không thể kết nối tới proxy
+edwinperez58652+titby@googlemail.com|ok|đã login sẵn
+scottmccormick22030+kglmzu@gmail.com|ok|login
+scottmccormick22030+itglh@googlemail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+scottmccormick22030@googlemail.com|fail|sai mật khẩu
+edwinperez58652@googlemail.com|fail|chưa xác nhận đăng nhập (thử thách?): Lịch sử đoạn chat | Hôm nay bạn có ý tưởng gì? | Hôm nay bạn có ý tưởng gì?
+atwellotis36646+s@gmail.com|ok|đã login sẵn
+atwellotis36646+a@gmail.com|ok|đã login sẵn
+terenceethan4228+5@gmail.com|ok|đã login sẵn
+donbryant5814+o@gmail.com|ok|đã login sẵn
+blakelyruss28340+s@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+arndtbailey063185+q@gmail.com|ok|đã login sẵn
+walterbliss588331+p@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+walterbliss588331+e@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+arndtbailey063185+i@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+reginaldralph26012+p@gmail.com|fail|mở profile thất bại: Không thể kết nối tới proxy
+seedingfabut+1@gmail.com|ok|đã login sẵn | hủy gói ✓ | logout ✓
+minhthangtran119+6@gmail.com|ok|đã login sẵn | hủy gói ✓ | logout ✓
+bartlettearl7945@googlemail.com|fail|Page.goto: net::ERR_EMPTY_RESPONSE at https://auth.openai.com/log-in
+Call log:
+  - navigating to "https://auth.openai.com/log-in", waiting until "load"
+
+biddlechristian1599@gmail.com|ok|login
+jaredjames4761@gmail.com|ok|login
+kimberlygonzalez4888+20213@googlemail.com|ok|login
+donnaherrera1830@googlemail.com|ok|login
+bartlettearl7945@googlemail.com|ok|login
+Bardezekiel0570+82180@googlemail.com|ok|login
+battbranham630187@googlemail.com|ok|login
+bartlettearl7945@googlemail.com|ok|login
+bartlettearl7945@googlemail.com|ok|đã login sẵn
+Bardezekiel0570+82180@googlemail.com|ok|đã login sẵn
+battbranham630187@googlemail.com|ok|login
+bartlettearl7945@googlemail.com|ok|đã login sẵn
+kimberlygonzalez4888+20213@googlemail.com|ok|đã login sẵn
+battbranham630187@googlemail.com|ok|đã login sẵn
+biddlechristian1599@gmail.com|ok|đã login sẵn
+bartlettearl7945@googlemail.com|ok|đã login sẵn
+jaredjames4761@gmail.com|ok|đã login sẵn
+donnaherrera1830@googlemail.com|ok|login
+Fahrullyadiman44+05r@gmail.com|ok|login
+reubenriccardo74603@gmail.com|ok|login
+butterswade00260+@gmail.com|ok|login
+nelsonatwood14207+@gmail.com|ok|login
+nathanieljulian014+77142@gmail.com|ok|login
+barberterry113783+jq5@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+scottmccormick22030+itglh@googlemail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+bondbrundage6081++23@gmail.com|ok|login
+nelsonatwood14207@gmail.com|ok|login
+biddlechristian1599@gmail.com|ok|đã login sẵn
+allenbremer1101+@gmail.com|ok|login
+buellgrayson8267@gmail.com|fail|không thấy ô email (trang lạ / Cloudflare?)
+beardlee538544@gmail.com|ok|login
+bracketthubert39995@gmail.com|ok|login
+benjaminedgar7136+w6s@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+bissellkurt02761+kp9@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+t.hongsang195@gmail.com|ok|login
+frost-inhaler.08@icloud.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+tablets-36-toolbox@icloud.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+unlined.fours3e@icloud.com|ok|login
+sprint-framers3f@icloud.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+niftier.sitting.0f@icloud.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+vuan.hlong655@gmail.com|ok|login
+mori.tzupin@gmail.com|ok|login
+le.nawifow@gmail.com|ok|login
+tobi.asakira04@gmail.com|ok|login
+len.awifow@gmail.com|ok|login
+kh.ongconchungta1994@gmail.com|ok|login
+muanaodfke9472@gmail.com|ok|login
+miro.fflorian@gmail.com|ok|login
+bu.ewancasce@gmail.com|ok|login
+b.ue.wancasce@gmail.com|ok|login
+e.i.aecawawc@gmail.com|ok|login
+dangthanhvanthueh+1@gmail.com|ok|login
+rhuyetdangthanhvan@gmail.com|ok|login
+dangthanhvanthueh@gmail.com|ok|login
+huyrbdangthanhvab2@gmail.com|fail|sai mật khẩu
+dangthanhvant662+1@gmail.com|ok|login
+dangthanhvanthhyen213+1@gmail.com|ok|login
+vanthanhdangthanh528+1@gmail.com|ok|login
+Donburley6904+2j@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+walterbliss588331+p@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+atwellotis36646+a@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+donbryant5814+o@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+walterbliss588331+e@gmail.com|ok|login
+arndtbailey063185+i@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+nguyennguyen18322an+td6@gmail.com|ok|login
+arndtbailey063185+q@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+Euyw.amcsea@gmail.com|ok|login
+ma.nhhhoang62@gmail.com|ok|login
+atwellotis36646+s@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+ha.bao26bsh@gmail.com|ok|login
+quo.cvinh26sb@gmail.com|ok|login
+haba.o26bsh@gmail.com|ok|login
+hungm.anh2gb@gmail.com|ok|login
+lem.anh2bs@gmail.com|ok|login
+athanhvuminh2@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+lemanh2bs@gmail.com|ok|login
+tuanmyminhduong+1@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+le.manh2bs@gmail.com|ok|login
+vuthanhminhle9@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+vuthanhminhle9@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+raymondwilliams1588+uhuxkk@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+b.urnsbeam78879@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+burrowsdexter28763+1@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+g.rahamjoshua97912@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+b.oykinwillie1585@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+Kienvandang778+z2@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+xuantienhiep90+r2@gmail.com|fail|sai mật khẩu
+Laurentlevi6275@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+phituansang+f1@gmail.com|ok|login
+hungtranhien70+rt@googlemail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+xuantienhiep90+r3@googlemail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+sanleycri@gmail.com|fail|sai mật khẩu
+burdettjohn799937+1@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+ulveczkysoldat@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+duyv80832+4@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+dolvinalilica@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+cherlysayloezux96@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+cherlysayloezux96+1@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+xongietacuari834@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+jansinglejune@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+craziermartabano695@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+arispecalvano@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+vjyhuy456+5@gmail.com|fail|sai mật khẩu
+christianbritt461+nu3io@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+debrakwinebarger@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+negreanvago@gmail.com|fail|sai mật khẩu
+christianbritt461+nui4o@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+christianbritt461+nu5io@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+simonbrough27132@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+thangvo0980+4@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+minhthangtran119+4@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+simonbrough27132+cuio@gmail.com|ok|login
+simonbrough27132+c3uio@gmail.com|ok|login
+minhthangtran119+5@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+thangvo0980+5@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+thangvo0980+6@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+seedingfabut+1@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+buellgrayson8267@gmail.com|ok|login
+minhthangtran119+6@gmail.com|ok|login
+phituansang@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+Kienvandang778+z1@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+hungtranhien70+q@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+hungtranhien70+e@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+Kienvandang778+z2@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+phituansang+f1@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+hungtranhien70+rt@googlemail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+terenceethan4228+5@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+reginaldralph26012+p@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+xuantienhiep90+r2@gmail.com|fail|sai mật khẩu
+blakelyruss28340+s@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+xuantienhiep90+r1@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+atwellotis36646+a@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+walterbliss588331+p@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+donbryant5814+o@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+walterbliss588331+e@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+arndtbailey063185+i@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+arndtbailey063185+q@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+xuantienhiep90+r3@googlemail.com|fail|không thấy ô email (trang lạ / Cloudflare?)
+atwellotis36646+s@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+nelsonatwood14207@gmail.com|ok|đã login sẵn
+butterswade00260+@gmail.com|ok|đã login sẵn
+nelsonatwood14207+@gmail.com|ok|đã login sẵn
+bissellkurt02761+kp9@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+bertrammuller9784+@gmail.com|ok|login
+buellgrayson8267@gmail.com|ok|đã login sẵn
+reubenriccardo74603@gmail.com|ok|login
+fischeratkinson18940+70646@gmail.com|ok|login
+sarahwilliamson841+75000@gmail.com|ok|login
+bardezekiel0570+82180@googlemail.com|ok|đã login sẵn
+rakadinata227+dfv@gmail.com|ok|login
+deasda4+502@gmail.com|ok|login
+deasda4+g2e@gmail.com|ok|login
+battbranham630187@googlemail.com|ok|đã login sẵn
+fahrullyadiman44+b56@gmail.com|ok|login
+donnaherrera1830@googlemail.com|ok|đã login sẵn
+bartlettearl7945@googlemail.com|ok|đã login sẵn
+kimberlygonzalez4888+20213@googlemail.com|ok|đã login sẵn
+fahrullyadiman44+05r@gmail.com|ok|đã login sẵn
+nathanieljulian014+77142@gmail.com|ok|đã login sẵn
+spencerfletcher7497@googlemail.com|ok|login
+brockmanberg99074+50912@gmail.com|ok|login
+bertrammuller9784+@gmail.com|ok|đã login sẵn
+reubenriccardo74603@gmail.com|ok|đã login sẵn
+butterswade00260+@gmail.com|ok|đã login sẵn
+nelsonatwood14207@gmail.com|ok|đã login sẵn
+nelsonatwood14207+@gmail.com|ok|đã login sẵn
+fischeratkinson18940+70646@gmail.com|ok|đã login sẵn
+buellgrayson8267@gmail.com|ok|đã login sẵn
+sarahwilliamson841+75000@gmail.com|ok|đã login sẵn
+rakadinata227+dfv@gmail.com|ok|đã login sẵn
+deasda4+g2e@gmail.com|ok|đã login sẵn
+deasda4+502@gmail.com|ok|đã login sẵn
+fahrullyadiman44+b56@gmail.com|ok|đã login sẵn
+bardezekiel0570+82180@googlemail.com|ok|đã login sẵn
+bissellkurt02761+kp9@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+spencerfletcher7497@googlemail.com|ok|đã login sẵn
+brockmanberg99074+50912@gmail.com|ok|đã login sẵn
+battbranham630187@googlemail.com|ok|đã login sẵn
+jaredjames4761@gmail.com|ok|đã login sẵn
+donnaherrera1830@googlemail.com|ok|đã login sẵn
+kimberlygonzalez4888+20213@googlemail.com|ok|đã login sẵn
+bartlettearl7945@googlemail.com|ok|đã login sẵn
+nathanieljulian014+77142@gmail.com|ok|đã login sẵn
+fahrullyadiman44+05r@gmail.com|ok|đã login sẵn
+ma.nhhhoang62@gmail.com|ok|đã login sẵn
+quo.cvinh26sb@gmail.com|ok|đã login sẵn
+h.abao26bsh@gmail.com|fail|sai mật khẩu
+ha.bao26bsh@gmail.com|ok|login
+haba.o26bsh@gmail.com|ok|login
+lemanh2bs@gmail.com|ok|đã login sẵn
+euyw.amcsea@gmail.com|ok|login
+le.manh2bs@gmail.com|ok|đã login sẵn
+lem.anh2bs@gmail.com|ok|đã login sẵn
+hungm.anh2gb@gmail.com|ok|login
+c.hungtalachungta1@gmail.com|ok|login
+chun.gtalachungta1@gmail.com|ok|login
+q.uangphu25bs@gmail.com|ok|login
+nh.uttien6374m@gmail.com|ok|login
+nh.uttien0908m@gmail.com|ok|login
+eia.ecawawc@gmail.com|ok|login
+e.i.aecawawc@gmail.com|ok|đã login sẵn
+muanaodfke9472@gmail.com|ok|đã login sẵn
+gia.han186191@gmail.com|ok|login
+bu.ewancasce@gmail.com|ok|đã login sẵn
+b.ue.wancasce@gmail.com|ok|đã login sẵn
+len.awifow@gmail.com|ok|đã login sẵn
+t.oanluong3023@gmail.com|ok|login
+kh.ongconchungta1994@gmail.com|ok|đã login sẵn
+mori.tzupin@gmail.com|ok|đã login sẵn
+miro.fflorian@gmail.com|ok|đã login sẵn
+tobi.asakira04@gmail.com|ok|đã login sẵn
+l.enawifow@gmail.com|ok|login
+le.nawifow@gmail.com|ok|login
+tua.nhung16060809@gmail.com|fail|chưa xác nhận đăng nhập (thử thách?): 
+Tru.e080221486899999@gmail.com|fail|Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://chatgpt.com/", waiting until "load"
+
+To0.8518747339999@gmail.com|fail|BrowserType.connect_over_cdp: Timeout 180000ms exceeded.
+Call log:
+  - <ws preparing> retrieving websocket url from http://127.0.0.1:54813
+  - <ws connecting> ws://127.0.0.1:54813/devtools/browser/062f8891-ce45-46f2-bf97-efea3f75e387
+  - <ws connected> ws://127.0.0.1:54813/devtools/browser/062f8891-ce45-46f2-bf97-efea3f75e387
+
+To0.851874733@gmail.com|fail|BrowserType.connect_over_cdp: Timeout 180000ms exceeded.
+Call log:
+  - <ws preparing> retrieving websocket url from http://127.0.0.1:52170
+  - <ws connecting> ws://127.0.0.1:52170/devtools/browser/c04914cd-59c8-40ec-a2f9-6621b6d26066
+  - <ws connected> ws://127.0.0.1:52170/devtools/browser/c04914cd-59c8-40ec-a2f9-6621b6d26066
+
+To08.51874733@gmail.com|fail|mở profile thất bại: Không thể kết nối tới proxy
+True.0826633751@gmail.com|fail|mở profile thất bại: Không thể kết nối tới proxy
+True08266337519999@gmail.com|fail|Page.goto: net::ERR_ABORTED at https://chatgpt.com/
+Call log:
+  - navigating to "https://chatgpt.com/", waiting until "load"
+
+t.hongsang195@gmail.com|fail|Page.goto: Target page, context or browser has been closed
+Call log:
+  - navigating to "https://auth.openai.com/log-in", waiting until "load"
+
+buttersweber11706+g2o@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+freddale7624+8g0@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+barberterry113783+jq5@gmail.com|ok|login
+benjaminedgar7136+w6s@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+bissellkurt02761+kp9@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+bondbrundage6081++23@gmail.com|ok|đã login sẵn
+bracketthubert39995@gmail.com|ok|login
+reubenriccardo74603@gmail.com|ok|đã login sẵn
+butterswade00260+@gmail.com|ok|đã login sẵn
+bertrammuller9784+@gmail.com|ok|đã login sẵn
+fischeratkinson18940+70646@gmail.com|ok|đã login sẵn
+nelsonatwood14207+@gmail.com|ok|đã login sẵn
+sarahwilliamson841+75000@gmail.com|ok|đã login sẵn
+deasda4+502@gmail.com|ok|đã login sẵn
+rakadinata227+dfv@gmail.com|ok|đã login sẵn
+deasda4+g2e@gmail.com|ok|đã login sẵn
+fahrullyadiman44+b56@gmail.com|ok|đã login sẵn
+benjaminedgar7136+w6s@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+freddale7624+8g0@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+bracketthubert39995@gmail.com|ok|đã login sẵn
+allenbremer1101+@gmail.com|ok|đã login sẵn
+beardlee538544@gmail.com|ok|đã login sẵn
+buttersweber11706+g2o@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+bondbrundage6081++23@gmail.com|ok|login
+barberterry113783+jq5@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+bertrammuller9784+@gmail.com|ok|đã login sẵn
+reubenriccardo74603@gmail.com|ok|đã login sẵn
+bissellkurt02761+kp9@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+bissellkurt02761+kp9@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+nelsonatwood14207+@gmail.com|ok|đã login sẵn
+butterswade00260+@gmail.com|ok|login
+fischeratkinson18940+70646@gmail.com|ok|đã login sẵn
+sarahwilliamson841+75000@gmail.com|ok|đã login sẵn
+rakadinata227+dfv@gmail.com|ok|đã login sẵn
+deasda4+502@gmail.com|ok|đã login sẵn
+fahrullyadiman44+b56@gmail.com|ok|đã login sẵn
+buellgrayson8267@gmail.com|ok|login
+spencerfletcher7497@googlemail.com|ok|đã login sẵn
+nelsonatwood14207@gmail.com|ok|login
+brockmanberg99074+50912@gmail.com|ok|đã login sẵn
+battbranham630187@googlemail.com|ok|đã login sẵn
+jaredjames4761@gmail.com|ok|đã login sẵn
+bartlettearl7945@googlemail.com|ok|đã login sẵn
+biddlechristian1599@gmail.com|fail|chưa xác nhận đăng nhập (thử thách?): Lịch sử đoạn chat | Khi bạn sẵn sàng là chúng ta có thể bắt đầu. | Khi bạn sẵn sàng là chúng ta có thể bắt đầu.
+nathanieljulian014+77142@gmail.com|ok|đã login sẵn
+fahrullyadiman44+05r@gmail.com|ok|đã login sẵn
+donnaherrera1830@googlemail.com|ok|login
+deasda4+g2e@gmail.com|ok|login
+kimberlygonzalez4888+20213@googlemail.com|ok|login
+bardezekiel0570+82180@googlemail.com|ok|login
+huyendamgvnthuyb+1@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+dangthanhvantuyen907@gmail.com|fail|sai mật khẩu
+thangvanthhyebuyen@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+thangvantuyentuyenvn+1@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+dangthanhvnthuyen647+1@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+athanhvuminh2@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+thuyetdangthangvan@gmail.com|ok|login
+tuanmyminhduong+1@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+dangthanhvant662+1@gmail.com|ok|login
+thuyetdangthangvan+1@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+vuthanhminhle9@gmail.com|ok|login
+vanthanhdangthanh528+1@gmail.com|ok|đã login sẵn
+dangthanhvanthhyen213+1@gmail.com|ok|login
+nguyennguyen18322an+td6@gmail.com|ok|đã login sẵn
+huyrbdangthanhvab2@gmail.com|ok|login
+dangthanhvanthueh@gmail.com|ok|login
+rhuyetdangthanhvan@gmail.com|ok|đã login sẵn
+thuyensnhthanhvan+abc@gmail.com|ok|login
+dangthanhvanthuyen251@gmail.com|ok|login
+thuyensnhthanhvan+1@gmail.com|ok|login
+ha.bao26bsh@gmail.com|ok|đã login sẵn
+ma.nhhhoang62@gmail.com|ok|đã login sẵn
+euyw.amcsea@gmail.com|ok|đã login sẵn
+haba.o26bsh@gmail.com|ok|đã login sẵn
+quo.cvinh26sb@gmail.com|ok|đã login sẵn
+hungm.anh2gb@gmail.com|ok|đã login sẵn
+lemanh2bs@gmail.com|ok|đã login sẵn
+le.manh2bs@gmail.com|ok|đã login sẵn
+c.hungtalachungta1@gmail.com|ok|đã login sẵn
+chun.gtalachungta1@gmail.com|ok|đã login sẵn
+q.uangphu25bs@gmail.com|ok|đã login sẵn
+h.abao26bsh@gmail.com|fail|sai mật khẩu
+nh.uttien6374m@gmail.com|ok|đã login sẵn
+eia.ecawawc@gmail.com|ok|đã login sẵn
+t.oanluong3023@gmail.com|ok|đã login sẵn
+e.i.aecawawc@gmail.com|ok|đã login sẵn
+gia.han186191@gmail.com|ok|login
+bu.ewancasce@gmail.com|ok|đã login sẵn
+b.ue.wancasce@gmail.com|ok|đã login sẵn
+l.enawifow@gmail.com|ok|đã login sẵn
+lem.anh2bs@gmail.com|ok|login
+nh.uttien0908m@gmail.com|ok|login
+muanaodfke9472@gmail.com|ok|login
+kh.ongconchungta1994@gmail.com|ok|đã login sẵn
+mori.tzupin@gmail.com|ok|đã login sẵn
+miro.fflorian@gmail.com|ok|đã login sẵn
+tobi.asakira04@gmail.com|ok|đã login sẵn
+le.nawifow@gmail.com|ok|login
+len.awifow@gmail.com|ok|login
+tua.nhung16060809@gmail.com|fail|chưa xác nhận đăng nhập (thử thách?): Lịch sử đoạn chat | Hôm nay bạn có ý tưởng gì? | Hôm nay bạn có ý tưởng gì?
+To0.851874733@gmail.com|ok|login
+Tru.e080221486899999@gmail.com|ok|login
+True.0826633751@gmail.com|ok|login
+To08.51874733@gmail.com|ok|login
+True08266337519999@gmail.com|ok|login
+vuan.hlong655@gmail.com|ok|login
+To0.8518747339999@gmail.com|ok|login
+t.hongsang195@gmail.com|fail|chưa xác nhận đăng nhập (thử thách?): Lịch sử đoạn chat | Gần đây | Khi bạn sẵn sàng là chúng ta có thể bắt đầu.
+euyw.amcsea@gmail.com|ok|đã login sẵn
+ma.nhhhoang62@gmail.com|ok|đã login sẵn
+haba.o26bsh@gmail.com|ok|đã login sẵn
+ha.bao26bsh@gmail.com|ok|đã login sẵn
+quo.cvinh26sb@gmail.com|ok|đã login sẵn
+le.manh2bs@gmail.com|ok|đã login sẵn
+lemanh2bs@gmail.com|ok|đã login sẵn
+hungm.anh2gb@gmail.com|ok|đã login sẵn
+h.abao26bsh@gmail.com|ok|login
+lem.anh2bs@gmail.com|ok|login
+chun.gtalachungta1@gmail.com|ok|login
+c.hungtalachungta1@gmail.com|ok|login
+nh.uttien6374m@gmail.com|ok|đã login sẵn
+gia.han186191@gmail.com|ok|login
+q.uangphu25bs@gmail.com|ok|đã login sẵn
+e.i.aecawawc@gmail.com|ok|đã login sẵn
+t.oanluong3023@gmail.com|ok|đã login sẵn
+eia.ecawawc@gmail.com|ok|login
+b.ue.wancasce@gmail.com|ok|đã login sẵn
+nh.uttien0908m@gmail.com|ok|login
+tua.nhung16060809@gmail.com|fail|chưa xác nhận đăng nhập (thử thách?): Nhận phản hồi phù hợp với nhu cầu của bạn | Chúng ta nên bắt đầu từ đâu? | Tìm kiếm thịnh hành
+l.enawifow@gmail.com|ok|đã login sẵn
+le.nawifow@gmail.com|ok|đã login sẵn
+len.awifow@gmail.com|ok|đã login sẵn
+miro.fflorian@gmail.com|ok|đã login sẵn
+muanaodfke9472@gmail.com|ok|login
+Tru.e080221486899999@gmail.com|ok|đã login sẵn
+tobi.asakira04@gmail.com|ok|đã login sẵn
+To0.851874733@gmail.com|ok|đã login sẵn
+kh.ongconchungta1994@gmail.com|ok|login
+mori.tzupin@gmail.com|fail|tài khoản đã bị xóa/vô hiệu hóa
+bu.ewancasce@gmail.com|ok|login
+To08.51874733@gmail.com|ok|đã login sẵn
+To0.8518747339999@gmail.com|ok|login
+vuan.hlong655@gmail.com|ok|đã login sẵn
+True.0826633751@gmail.com|ok|login
+t.hongsang195@gmail.com|ok|login
+True08266337519999@gmail.com|ok|login
+s.chneidergerald309+23j@gmail.com|fail|Page.goto: net::ERR_NO_SUPPORTED_PROXIES at https://chatgpt.com/
+Call log:
+  - navigating to "https://chatgpt.com/", waiting until "load"
+
+s.cottburnett895+3dn@gmail.com|fail|Page.goto: net::ERR_NO_SUPPORTED_PROXIES at https://chatgpt.com/
+Call log:
+  - navigating to "https://chatgpt.com/", waiting until "load"
+
+s.chneidergerald309+23j@gmail.com|fail|Page.goto: net::ERR_NO_SUPPORTED_PROXIES at https://chatgpt.com/
+Call log:
+  - navigating to "https://chatgpt.com/", waiting until "load"
+
+ar.thurcarl166+3h0@gmail.com|fail|Page.goto: net::ERR_NO_SUPPORTED_PROXIES at https://chatgpt.com/
+Call log:
+  - navigating to "https://chatgpt.com/", waiting until "load"
+
+mi.chelluke265+ro3@gmail.com|fail|Page.goto: net::ERR_NO_SUPPORTED_PROXIES at https://chatgpt.com/
+Call log:
+  - navigating to "https://chatgpt.com/", waiting until "load"
+
+s.cottburnett895+3dn@gmail.com|fail|Page.goto: net::ERR_NO_SUPPORTED_PROXIES at https://chatgpt.com/
+Call log:
+  - navigating to "https://chatgpt.com/", waiting until "load"
+
+b.ossbranch516+214@gmail.com|fail|Page.goto: net::ERR_NO_SUPPORTED_PROXIES at https://chatgpt.com/
+Call log:
+  - navigating to "https://chatgpt.com/", waiting until "load"
+
+mi.chelluke265+ro3@gmail.com|fail|Page.goto: net::ERR_NO_SUPPORTED_PROXIES at https://chatgpt.com/
+Call log:
+  - navigating to "https://chatgpt.com/", waiting until "load"
+
+ar.thurcarl166+3h0@gmail.com|fail|Page.goto: net::ERR_NO_SUPPORTED_PROXIES at https://chatgpt.com/
+Call log:
+  - navigating to "https://chatgpt.com/", waiting until "load"
+
+b.ossbranch516+214@gmail.com|fail|Page.goto: net::ERR_NO_SUPPORTED_PROXIES at https://chatgpt.com/
+Call log:
+  - navigating to "https://chatgpt.com/", waiting until "load"
+
+s.cottburnett895+3dn@gmail.com|fail|Page.goto: net::ERR_NO_SUPPORTED_PROXIES at https://chatgpt.com/
+Call log:
+  - navigating to "https://chatgpt.com/", waiting until "load"
+
+s.chneidergerald309+23j@gmail.com|fail|Page.goto: net::ERR_NO_SUPPORTED_PROXIES at https://chatgpt.com/
+Call log:
+  - navigating to "https://chatgpt.com/", waiting until "load"
+
+b.ossbranch516+214@gmail.com|ok|login
+mi.chelluke265+ro3@gmail.com|ok|login
+s.chneidergerald309+23j@gmail.com|ok|login
+s.chneidergerald309+23j@gmail.com|ok|login
+ar.thurcarl166+3h0@gmail.com|ok|login
+s.cottburnett895+3dn@gmail.com|ok|login
+s.cottburnett895+3dn@gmail.com|ok|login
+b.ossbranch516+214@gmail.com|ok|đã login sẵn
+ar.thurcarl166+3h0@gmail.com|ok|đã login sẵn
+mi.chelluke265+ro3@gmail.com|ok|đã login sẵn
+ar.thurcarl166+3h0@gmail.com|ok|đã login sẵn | đổi pass ✗  —  đổi pass: không tới form mật khẩu mới (re-auth chưa qua)
+mi.chelluke265+ro3@gmail.com|ok|đã login sẵn | đổi pass ✗  —  đổi pass: SAI MẬT KHẨU HIỆN TẠI — dòng acc dùng pass CŨ? (acc có thể đã đổi pass trước đó). Hãy dùng dòng kết quả MỚI NHẤT của acc.
+b.ossbranch516+214@gmail.com|ok|đã login sẵn | đổi pass ✗  —  đổi pass: SAI MẬT KHẨU HIỆN TẠI — dòng acc dùng pass CŨ? (acc có thể đã đổi pass trước đó). Hãy dùng dòng kết quả MỚI NHẤT của acc.
+s.cottburnett895+3dn@gmail.com|ok|đã login sẵn | đổi pass ✗  —  đổi pass: không tới form mật khẩu mới (re-auth chưa qua)
+s.chneidergerald309+23j@gmail.com|fail|chưa xác nhận đăng nhập (thử thách?): Get responses tailored to you | Where should we begin? | Clear current chat?
+mi.chelluke265+ro3@gmail.com|ok|đã login sẵn | đổi pass ✗  —  đổi pass: OpenAI đòi XÁC MINH EMAIL khi đổi pass (phiên cũ / acc rủi ro) — pass HIỆN TẠI vẫn ĐÚNG nhưng tool không đọc được email acc nên không đổi được. Mẹo: chạy đổi pass NGAY sau khi login (phiên tươi) sẽ ít bị đòi email hơn.
+ar.thurcarl166+3h0@gmail.com|ok|đã login sẵn | đổi pass ✗  —  đổi pass: không tới form mật khẩu mới (re-auth chưa qua)
+b.ossbranch516+214@gmail.com|ok|đã login sẵn | đổi pass ✗  —  đổi pass: không tới form mật khẩu mới (re-auth chưa qua)
+s.cottburnett895+3dn@gmail.com|ok|đã login sẵn | đổi pass ✗  —  đổi pass: không tới form mật khẩu mới (re-auth chưa qua)
+s.chneidergerald309+23j@gmail.com|ok|login | đổi pass ✗  —  đổi pass: acc KHÔNG có mục 'Mật khẩu' trong Bảo mật (thường do đăng nhập qua Google/SSO, hoặc chưa đặt mật khẩu OpenAI) → không đổi pass qua web được
+rufusbrumley79@gmail.com|ok|login | đổi pass ✗  —  đổi pass: acc KHÔNG có mục 'Mật khẩu' trong Bảo mật (thường do đăng nhập qua Google/SSO, hoặc chưa đặt mật khẩu OpenAI) → không đổi pass qua web được
+stanleycurt53@gmail.com|ok|login | đổi pass ✗  —  đổi pass: OpenAI đòi XÁC MINH EMAIL khi đổi pass (phiên cũ / acc rủi ro) — pass HIỆN TẠI vẫn ĐÚNG nhưng tool không đọc được email acc nên không đổi được. Mẹo: chạy đổi pass NGAY sau khi login (phiên tươi) sẽ ít bị đòi email hơn.
+castanocfernandou673+46298@googlemail.com|ok|login | đổi pass ✗  —  đổi pass: OpenAI đòi XÁC MINH EMAIL khi đổi pass (phiên cũ / acc rủi ro) — pass HIỆN TẠI vẫn ĐÚNG nhưng tool không đọc được email acc nên không đổi được. Mẹo: chạy đổi pass NGAY sau khi login (phiên tươi) sẽ ít bị đòi email hơn.
+b.ossbranch516+214@gmail.com|ok|login | đổi pass ✗  —  đổi pass: acc KHÔNG có mục 'Mật khẩu' trong Bảo mật (thường do đăng nhập qua Google/SSO, hoặc chưa đặt mật khẩu OpenAI) → không đổi pass qua web được
+bellalden931@googlemail.com|ok|login | đổi pass ✗  —  đổi pass: OpenAI đòi XÁC MINH EMAIL khi đổi pass (phiên cũ / acc rủi ro) — pass HIỆN TẠI vẫn ĐÚNG nhưng tool không đọc được email acc nên không đổi được. Mẹo: chạy đổi pass NGAY sau khi login (phiên tươi) sẽ ít bị đòi email hơn.
+mi.chelluke265+ro3@gmail.com|ok|login | đổi pass ✗  —  đổi pass: OpenAI đòi XÁC MINH EMAIL khi đổi pass (phiên cũ / acc rủi ro) — pass HIỆN TẠI vẫn ĐÚNG nhưng tool không đọc được email acc nên không đổi được. Mẹo: chạy đổi pass NGAY sau khi login (phiên tươi) sẽ ít bị đòi email hơn.
+ar.thurcarl166+3h0@gmail.com|ok|login | đổi pass ✗  —  đổi pass: OpenAI đòi XÁC MINH EMAIL khi đổi pass (phiên cũ / acc rủi ro) — pass HIỆN TẠI vẫn ĐÚNG nhưng tool không đọc được email acc nên không đổi được. Mẹo: chạy đổi pass NGAY sau khi login (phiên tươi) sẽ ít bị đòi email hơn.
+s.cottburnett895+3dn@gmail.com|ok|login | đổi pass ✗  —  đổi pass: không tới form mật khẩu mới (re-auth chưa qua)
+ar.thurcarl166+3h0@gmail.com|ok|login | đổi pass ✗  —  đổi pass: acc KHÔNG có mục 'Mật khẩu' trong Bảo mật (thường do đăng nhập qua Google/SSO, hoặc chưa đặt mật khẩu OpenAI) → không đổi pass qua web được
+b.ossbranch516+214@gmail.com|fail|không tới được ô mật khẩu
+s.cottburnett895+3dn@gmail.com|fail|không thấy ô email (trang lạ / Cloudflare?)

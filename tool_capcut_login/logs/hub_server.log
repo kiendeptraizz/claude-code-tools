@@ -1,0 +1,2405 @@
+INFO:     Started server process [14676]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+INFO:     Started server process [16828]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+INFO:     Started server process [13660]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+INFO:     127.0.0.1:64124 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64124 - "GET /api/ping?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64124 - "GET /api/groups?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54873 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54873 - "GET /api/ping?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54873 - "GET /api/groups?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59832 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59832 - "GET /api/ping?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59832 - "GET /api/groups?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58739 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58739 - "GET /api/ping?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58739 - "GET /api/groups?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65285 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65285 - "GET /api/ping?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65285 - "GET /api/groups?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57313 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57313 - "GET /api/ping?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57313 - "GET /api/groups?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49989 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49989 - "GET /api/ping?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49989 - "GET /api/groups?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61872 - "POST /api/run HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61872 - "GET /api/status HTTP/1.1" 200 OK
+[19:03:35] === LOGIN CAPCUT 10 acc -> nhóm 'All' | 2 luồng ===
+[19:03:35] [1/10] ccy76uetzf@submitreports.com  (proxy 171.236.166.111)
+[19:03:35] [2/10] cchyplqtw9@fboxmail.com  (proxy 171.224.206.111)
+INFO:     127.0.0.1:61872 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61872 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61872 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61872 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61872 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61872 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61872 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61872 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61872 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61872 - "POST /api/stop HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61872 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61872 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61872 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61872 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61872 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61872 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61872 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61872 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61872 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61872 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61872 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61872 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61872 - "POST /api/stop HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61872 - "GET /api/status HTTP/1.1" 200 OK
+[19:03:57]     mở trang login CapCut
+INFO:     127.0.0.1:61872 - "GET /api/status HTTP/1.1" 200 OK
+[19:03:58]     mở trang login CapCut
+INFO:     127.0.0.1:61872 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61872 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61872 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61872 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61872 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61872 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61872 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61872 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52603 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+[19:04:29]     nhập email cchyplqtw9@fboxmail.com
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+[19:04:32]     nhập email ccy76uetzf@submitreports.com
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+[19:04:58]     nhập mật khẩu
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+[19:05:02]     nhập mật khẩu
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+[19:05:39]     ✅ cchyplqtw9@fboxmail.com login  →  cchyplqtw9@fboxmail.com|capcutpro2026
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+[19:06:16]     ✅ ccy76uetzf@submitreports.com login  →  ccy76uetzf@submitreports.com|capcutpro2026
+[19:06:16] === XONG: 2 OK / 0 lỗi (trên 10) ===
+INFO:     127.0.0.1:60397 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57420 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57420 - "GET /api/ping?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57420 - "GET /api/groups?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61048 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61048 - "GET /api/ping?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61048 - "GET /api/groups?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61048 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61048 - "GET /api/ping?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61048 - "GET /api/groups?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61048 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61048 - "GET /api/ping?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61048 - "GET /api/groups?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55168 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55168 - "GET /api/ping?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55168 - "GET /api/groups?port=19995 HTTP/1.1" 200 OK
+INFO:     Started server process [7020]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+INFO:     127.0.0.1:57219 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57219 - "GET /api/ping?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57219 - "GET /api/groups?port=19995 HTTP/1.1" 200 OK
+INFO:     Started server process [6940]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+INFO:     127.0.0.1:50567 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50567 - "GET /api/ping?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50567 - "GET /api/groups?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "POST /api/run HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+[22:00:08] === CHECK OFFER CAPCUT 8 acc -> nhóm 'All' | 2 luồng ===
+[22:00:08] [1/8] cceb6pr5v6@contactpage.online  (proxy 171.245.100.143)
+[22:00:08] [2/8] ccvnmzawnn@xxvd.net  (proxy 27.76.89.49)
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+[22:00:20]     mở trang login CapCut
+[22:00:21]     mở trang login CapCut
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+[22:00:51]     nhập email cceb6pr5v6@contactpage.online
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+[22:00:52]     nhập email ccvnmzawnn@xxvd.net
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+[22:01:20]     nhập mật khẩu
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+[22:01:22]     nhập mật khẩu
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+[22:02:05]     ✅ cceb6pr5v6@contactpage.online login | 🎁 CÓ OFFER (giá gốc bị gạch x1 | for the first month | up to 39% off)
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+[22:02:06]     ✅ ccvnmzawnn@xxvd.net login | 🎁 CÓ OFFER (giá gốc bị gạch x1 | for the first month | up to 39% off)
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+[22:02:10] [3/8] cc9qbk8tl0@xsnipersquad.com  (proxy 171.253.110.205)
+INFO:     127.0.0.1:62119 - "GET /api/status HTTP/1.1" 200 OK
+[22:02:11] [4/8] ccshxc7ksl@xsnipersquad.space  (proxy 171.245.100.143)
+[22:02:11]     ❌ cc9qbk8tl0@xsnipersquad.com: BrowserType.connect_over_cdp: connect ECONNREFUSED 127.0.0.1:57576
+Call log:
+  - <ws preparing> retrieving websocket url from http://127.0.0.1:57576
+
+[22:02:16] [5/8] ccfnk3kkfg@xxvd.net  (proxy 27.76.89.49)
+INFO:     127.0.0.1:57510 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57510 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57510 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57510 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57510 - "GET /api/status HTTP/1.1" 200 OK
+[22:02:20]     mở trang login CapCut
+INFO:     127.0.0.1:57510 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57510 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57510 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57510 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57510 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57510 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57510 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57510 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57510 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57510 - "GET /api/status HTTP/1.1" 200 OK
+[22:02:30]     mở trang login CapCut
+INFO:     127.0.0.1:57510 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57510 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57510 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57510 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57510 - "POST /api/stop HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57510 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57510 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57510 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57510 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57510 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57510 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57510 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57510 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57510 - "POST /api/stop HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57510 - "POST /api/stop HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57510 - "POST /api/stop HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57510 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57510 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57510 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57510 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57510 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57510 - "POST /api/stop HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57510 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57510 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57510 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57510 - "GET /api/status HTTP/1.1" 200 OK
+[22:02:51]     nhập email ccshxc7ksl@xsnipersquad.space
+INFO:     127.0.0.1:57510 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57510 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57510 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57510 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57510 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57510 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57510 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57510 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57510 - "GET /api/status HTTP/1.1" 200 OK
+[22:03:00]     nhập email ccfnk3kkfg@xxvd.net
+INFO:     127.0.0.1:57510 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57510 - "GET /api/status HTTP/1.1" 200 OK
+[22:03:11]     ❌ ccfnk3kkfg@xxvd.net: không tới được ô mật khẩu
+[22:03:13]     ❌ ccshxc7ksl@xsnipersquad.space: không tới được ô mật khẩu
+[22:03:13] === XONG: 2 OK / 3 lỗi (trên 8) ===
+INFO:     127.0.0.1:53071 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53071 - "GET /api/ping?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53071 - "GET /api/groups?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54546 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54546 - "GET /api/ping?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54546 - "GET /api/groups?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54546 - "GET /api/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "POST /api/run HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+[22:06:40] === CHECK OFFER CAPCUT 13 acc -> nhóm 'All' | 4 luồng ===
+[22:06:40] [1/13] ccvdi49gki@xsnipersquad.space  (proxy 171.245.100.143)
+[22:06:40] [2/13] ccy76uetzf@submitreports.com  (proxy 27.76.89.49)
+[22:06:40] [3/13] cchyplqtw9@fboxmail.com  (proxy 171.253.110.205)
+[22:06:40] [4/13] cc1nx7nqpo@gmail-xsniper.com  (proxy 171.245.100.143)
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+[22:06:59]     mở trang login CapCut
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+[22:07:23]     ✅ cchyplqtw9@fboxmail.com đã login sẵn | 🎁 CÓ OFFER (giá gốc bị gạch x2 | for the first month | up to 90% off)
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+[22:07:27]     ✅ ccy76uetzf@submitreports.com đã login sẵn | 🎁 CÓ OFFER (giá gốc bị gạch x1 | for the first month | up to 39% off)
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+[22:07:28] [5/13] ccj1dk0fph@mnvr.site  (proxy 27.76.89.49)
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+[22:07:30]     nhập email cc1nx7nqpo@gmail-xsniper.com
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+[22:07:32] [6/13] ccycl08lj9@mnvr.site  (proxy 171.253.110.205)
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+[22:07:33]     ✅ ccvdi49gki@xsnipersquad.space đã login sẵn | 🎁 CÓ OFFER (giá gốc bị gạch x3 | for 7 days | up to 80% off)
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+[22:07:38] [7/13] ccq4xwn4fp@gmailxsn.com  (proxy 171.245.100.143)
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+[22:07:41]     mở trang login CapCut
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+[22:07:46]     mở trang login CapCut
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+[22:07:49]     mở trang login CapCut
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+[22:07:59]     nhập mật khẩu
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+[22:08:19]     nhập email ccycl08lj9@mnvr.site
+[22:08:19]     nhập email ccq4xwn4fp@gmailxsn.com
+[22:08:19]     nhập email ccj1dk0fph@mnvr.site
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+[22:08:42]     ✅ cc1nx7nqpo@gmail-xsniper.com login | 🎁 CÓ OFFER (giá gốc bị gạch x3 | for 7 days | up to 80% off)
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+[22:08:47] [8/13] cc7mg17z2i@gmailxsn.space  (proxy 27.76.89.49)
+[22:08:48]     nhập mật khẩu
+[22:08:48]     nhập mật khẩu
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+[22:08:53]     nhập mật khẩu
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+[22:08:58]     mở trang login CapCut
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+[22:09:29]     nhập email cc7mg17z2i@gmailxsn.space
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+[22:09:40]     ✅ ccq4xwn4fp@gmailxsn.com login | 🎁 CÓ OFFER (giá gốc bị gạch x3 | for 7 days | up to 80% off)
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+[22:09:45] [9/13] cczax8zo6c@ichecker.tech  (proxy 171.253.110.205)
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+[22:09:56]     mở trang login CapCut
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+[22:09:59]     nhập mật khẩu
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+[22:10:02]     ✅ ccj1dk0fph@mnvr.site login | 🎁 CÓ OFFER (giá gốc bị gạch x3 | for 7 days | up to 80% off)
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+[22:10:07] [10/13] ccvwpzsdos@ichecker.tech  (proxy 171.245.100.143)
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+[22:10:18]     mở trang login CapCut
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+[22:10:28]     nhập email cczax8zo6c@ichecker.tech
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+[22:10:35]     ✅ ccycl08lj9@mnvr.site login | ?offer
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+[22:10:40] [11/13] cc1dtdqxvw@ichecker.tech  (proxy 27.76.89.49)
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+[22:10:44]     ✅ cc7mg17z2i@gmailxsn.space login | 🎁 CÓ OFFER (giá gốc bị gạch x3 | for 7 days | up to 80% off)
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+[22:10:49] [12/13] cca2fowkne@submitreports.com  (proxy 171.253.110.205)
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+[22:10:50]     nhập email ccvwpzsdos@ichecker.tech
+[22:10:51]     mở trang login CapCut
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+[22:10:57]     mở trang login CapCut
+[22:10:57]     nhập mật khẩu
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+[22:11:20]     nhập mật khẩu
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+[22:11:22]     nhập email cc1dtdqxvw@ichecker.tech
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+[22:11:38]     nhập email cca2fowkne@submitreports.com
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "GET /api/status HTTP/1.1" 200 OK
+[22:11:48]     ✅ cczax8zo6c@ichecker.tech login | 🎁 CÓ OFFER (giá gốc bị gạch x1 | for the first month | up to 39% off)
+[22:11:51]     nhập mật khẩu
+[22:11:53] [13/13] ccam4ny881@mnvr.site  (proxy 171.245.100.143)
+[22:12:04]     mở trang login CapCut
+[22:12:07]     nhập mật khẩu
+INFO:     127.0.0.1:51882 - "GET /api/status HTTP/1.1" 200 OK
+[22:12:12]     ✅ ccvwpzsdos@ichecker.tech login | 🎁 CÓ OFFER (giá gốc bị gạch x1 | for the first month | up to 39% off)
+[22:12:34]     nhập email ccam4ny881@mnvr.site
+[22:12:41]     ✅ cc1dtdqxvw@ichecker.tech login | 🎁 CÓ OFFER (giá gốc bị gạch x3 | for the first month | up to 90% off)
+[22:12:52]     ✅ cca2fowkne@submitreports.com login | 🎁 CÓ OFFER (giá gốc bị gạch x3 | for 7 days | up to 80% off)
+[22:13:03]     nhập mật khẩu
+INFO:     127.0.0.1:52936 - "GET /api/status HTTP/1.1" 200 OK
+[22:13:44]     ✅ ccam4ny881@mnvr.site login | 🎁 CÓ OFFER (giá gốc bị gạch x3 | for 7 days | up to 80% off)
+[22:13:49] === XONG: 13 OK / 0 lỗi (trên 13) ===
+INFO:     127.0.0.1:51219 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     Started server process [32836]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+INFO:     127.0.0.1:63355 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63355 - "GET /api/ping?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63355 - "GET /api/groups?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63355 - "GET /api/history HTTP/1.1" 200 OK
+INFO:     Started server process [23604]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+INFO:     127.0.0.1:54626 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54626 - "GET /api/ping?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54626 - "GET /api/groups?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54626 - "GET /api/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58256 - "GET /api/history HTTP/1.1" 200 OK
+INFO:     Started server process [20372]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+INFO:     127.0.0.1:50704 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50704 - "GET /api/ping?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50704 - "GET /api/groups?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50704 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50704 - "GET /api/ping?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50704 - "GET /api/groups?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50704 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50704 - "GET /api/ping?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50704 - "GET /api/groups?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50704 - "GET /api/history HTTP/1.1" 200 OK
+INFO:     Started server process [20100]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+INFO:     127.0.0.1:60494 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60494 - "GET /api/ping?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60494 - "GET /api/groups?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60494 - "GET /api/history HTTP/1.1" 200 OK
+INFO:     Started server process [21704]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+INFO:     Started server process [10152]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+INFO:     127.0.0.1:50163 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50853 - "GET /api/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50163 - "GET /api/ping?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58346 - "GET /api/ping?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63052 - "GET /api/ping?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63052 - "GET /api/groups?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "POST /api/run HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+[16:02:37] === CHECK OFFER CAPCUT 10 acc -> nhóm 'All' | 5 luồng ===
+[16:02:37] [1/10] xkzd1wxbz@creanti.capmanager.io.vn  (proxy 160.187.120.85)
+[16:02:37] [2/10] 8452wrb74@gleetra.capmanager.io.vn  (proxy 160.22.174.7)
+[16:02:37] [3/10] 20f12e8k9@mouload.cutflow.io.vn  (proxy 160.30.190.15)
+[16:02:37] [4/10] qv5eo7i3i@clitaib.videohub.io.vn  (proxy 160.187.120.85)
+[16:02:37] [5/10] jeoiaodcy@gabaing.capedit.io.vn  (proxy 160.22.174.7)
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+[16:02:51]     mở trang login CapCut
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+[16:02:52]     mở trang login CapCut
+[16:02:52]     mở trang login CapCut
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+[16:02:54]     mở trang login CapCut
+[16:02:54]     mở trang login CapCut
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+[16:03:21]     nhập email 20f12e8k9@mouload.cutflow.io.vn
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+[16:03:23]     nhập email qv5eo7i3i@clitaib.videohub.io.vn
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+[16:03:23]     nhập email xkzd1wxbz@creanti.capmanager.io.vn
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+[16:03:26]     nhập email jeoiaodcy@gabaing.capedit.io.vn
+[16:03:26]     nhập email 8452wrb74@gleetra.capmanager.io.vn
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+[16:03:51]     nhập mật khẩu
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+[16:03:52]     nhập mật khẩu
+[16:03:52]     nhập mật khẩu
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+[16:03:55]     nhập mật khẩu
+[16:03:55]     nhập mật khẩu
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+[16:05:01]     ✅ jeoiaodcy@gabaing.capedit.io.vn login | KHÔNG offer
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+[16:05:05]     ✅ 20f12e8k9@mouload.cutflow.io.vn login | KHÔNG offer
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+[16:05:06] [6/10] v9pvwt8j2@clejio.capstudio.io.vn  (proxy 160.30.190.15)
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+[16:05:10] [7/10] 9q7vgcjbs@laeshoa.editzone.io.vn  (proxy 160.187.120.85)
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+[16:05:19]     mở trang login CapCut
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+[16:05:21]     mở trang login CapCut
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+[16:05:58]     nhập email v9pvwt8j2@clejio.capstudio.io.vn
+[16:05:58]     nhập email 9q7vgcjbs@laeshoa.editzone.io.vn
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+[16:06:27]     nhập mật khẩu
+[16:06:27]     nhập mật khẩu
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+[16:07:23]     ✅ qv5eo7i3i@clitaib.videohub.io.vn login | ?offer
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+[16:07:28]     ✅ xkzd1wxbz@creanti.capmanager.io.vn login | ?offer
+[16:07:28] [8/10] f7ze2wxp6@sliesha.capedit.io.vn  (proxy 160.22.174.7)
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+[16:07:32]     ✅ 8452wrb74@gleetra.capmanager.io.vn login | ?offer
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+[16:07:33] [9/10] 8ibukrz0w@gaigloo.cutpro.io.vn  (proxy 160.30.190.15)
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+[16:07:37] [10/10] cxx5h1z80@paestoo.capteam.io.vn  (proxy 160.187.120.85)
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+[16:07:38]     mở trang login CapCut
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+[16:07:42]     mở trang login CapCut
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+[16:07:48]     mở trang login CapCut
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+[16:08:08]     nhập email f7ze2wxp6@sliesha.capedit.io.vn
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+[16:08:15]     nhập email 8ibukrz0w@gaigloo.cutpro.io.vn
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+[16:08:18]     nhập email cxx5h1z80@paestoo.capteam.io.vn
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+[16:08:37]     nhập mật khẩu
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+[16:08:45]     nhập mật khẩu
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+[16:08:47]     nhập mật khẩu
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+[16:09:35]     ✅ v9pvwt8j2@clejio.capstudio.io.vn login | ?offer
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+[16:09:36]     ✅ f7ze2wxp6@sliesha.capedit.io.vn login | KHÔNG offer
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+[16:09:39]     ✅ 9q7vgcjbs@laeshoa.editzone.io.vn login | ?offer
+[16:09:39]     ✅ 8ibukrz0w@gaigloo.cutpro.io.vn login | KHÔNG offer
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+[16:09:40]     ✅ cxx5h1z80@paestoo.capteam.io.vn login | KHÔNG offer
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+[16:09:45] === XONG: 10 OK / 0 lỗi (trên 10) ===
+INFO:     127.0.0.1:52734 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58164 - "POST /api/run HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58164 - "GET /api/status HTTP/1.1" 200 OK
+[16:35:25] === CHECK OFFER CAPCUT 7 acc -> nhóm 'All' | 5 luồng ===
+[16:35:25] [1/7] crokechouhan29@hotmail.com  (proxy 160.187.120.85)
+[16:35:25] [2/7] leshraenayiby90@hotmail.com  (proxy 160.22.174.7)
+[16:35:25] [3/7] reznichgavelda796@hotmail.com  (proxy 160.30.190.15)
+[16:35:25] [4/7] khurshemildren8@hotmail.com  (proxy 160.187.120.85)
+[16:35:25] [5/7] ganonricklyn80@hotmail.com  (proxy 160.22.174.7)
+INFO:     127.0.0.1:58164 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58164 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58164 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58164 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58164 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58164 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58164 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58164 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58164 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58164 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58164 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58164 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58164 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58164 - "GET /api/status HTTP/1.1" 200 OK
+[16:35:39]     mở trang login CapCut
+[16:35:39]     mở trang login CapCut
+[16:35:40]     mở trang login CapCut
+INFO:     127.0.0.1:58164 - "GET /api/status HTTP/1.1" 200 OK
+[16:35:40]     mở trang login CapCut
+INFO:     127.0.0.1:58164 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58164 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58164 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58164 - "GET /api/status HTTP/1.1" 200 OK
+[16:35:44]     mở trang login CapCut
+INFO:     127.0.0.1:58164 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58164 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58164 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58164 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58164 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58164 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58164 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58164 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58164 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58164 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58164 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58164 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58164 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58164 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58164 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58164 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58164 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58164 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58164 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58164 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58164 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58164 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58164 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58164 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58164 - "GET /api/status HTTP/1.1" 200 OK
+[16:36:09]     nhập email ganonricklyn80@hotmail.com
+INFO:     127.0.0.1:58164 - "GET /api/status HTTP/1.1" 200 OK
+[16:36:10]     nhập email crokechouhan29@hotmail.com
+[16:36:10]     nhập email khurshemildren8@hotmail.com
+[16:36:11]     nhập email leshraenayiby90@hotmail.com
+INFO:     127.0.0.1:58164 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58164 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58164 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58164 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58164 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+[16:36:22]     nhập email reznichgavelda796@hotmail.com
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+[16:36:38]     nhập mật khẩu
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+[16:36:39]     nhập mật khẩu
+[16:36:39]     nhập mật khẩu
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+[16:36:40]     nhập mật khẩu
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+[16:36:51]     nhập mật khẩu
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+[16:37:58]     ✅ crokechouhan29@hotmail.com login | 🎁 CÓ OFFER (giá gốc bị gạch x2 | for the first month | up to 80% off)
+[16:37:58]     ✅ ganonricklyn80@hotmail.com login | 🎁 CÓ OFFER (giá gốc bị gạch x2 | for the first month | up to 80% off)
+[16:37:58]     ✅ khurshemildren8@hotmail.com login | 🎁 CÓ OFFER (giá gốc bị gạch x2 | for the first month | up to 80% off)
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+[16:38:00]     ✅ leshraenayiby90@hotmail.com login | 🎁 CÓ OFFER (giá gốc bị gạch x2 | for the first month | up to 80% off)
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+[16:38:03] [6/7] tuetsruchwa3443@hotmail.com  (proxy 160.30.190.15)
+[16:38:03] [7/7] zionslouken101@hotmail.com  (proxy 160.187.120.85)
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+[16:38:28]     mở trang login CapCut
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+[16:38:29]     mở trang login CapCut
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+[16:38:59]     nhập email zionslouken101@hotmail.com
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+[16:39:00]     nhập email tuetsruchwa3443@hotmail.com
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+[16:39:28]     nhập mật khẩu
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+[16:39:29]     nhập mật khẩu
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+[16:40:11]     ✅ zionslouken101@hotmail.com login | 🎁 CÓ OFFER (giá gốc bị gạch x2 | for the first month | up to 80% off)
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+[16:40:11]     ✅ tuetsruchwa3443@hotmail.com login | 🎁 CÓ OFFER (giá gốc bị gạch x2 | for the first month | up to 80% off)
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+[16:40:16]     ✅ reznichgavelda796@hotmail.com login | ?offer
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+[16:40:21] === XONG: 7 OK / 0 lỗi (trên 7) ===
+INFO:     127.0.0.1:63670 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62647 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62647 - "GET /api/ping?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57933 - "GET /api/history HTTP/1.1" 200 OK
+INFO:     Started server process [29644]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+INFO:     127.0.0.1:51209 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51209 - "GET /api/ping?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51209 - "GET /api/groups?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51209 - "GET /api/history HTTP/1.1" 200 OK
+INFO:     Started server process [22488]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+INFO:     127.0.0.1:55812 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55812 - "GET /api/ping?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55812 - "GET /api/groups?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55812 - "GET /api/history HTTP/1.1" 200 OK
+INFO:     Started server process [16184]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+INFO:     127.0.0.1:59481 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59481 - "GET /api/ping?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59481 - "GET /api/groups?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59481 - "GET /api/history HTTP/1.1" 200 OK
+INFO:     Started server process [12444]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+INFO:     127.0.0.1:65004 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60067 - "GET /api/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65004 - "GET /api/ping?port=19995 HTTP/1.1" 200 OK
+INFO:     Started server process [21760]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+INFO:     127.0.0.1:58352 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58352 - "GET /api/ping?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55551 - "GET /api/history HTTP/1.1" 200 OK
+INFO:     Started server process [5420]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+INFO:     127.0.0.1:52208 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52208 - "GET /api/ping?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52208 - "GET /api/groups?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52208 - "GET /api/history HTTP/1.1" 200 OK
+INFO:     Started server process [20828]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+INFO:     127.0.0.1:65016 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65016 - "GET /api/ping?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65016 - "GET /api/groups?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65016 - "GET /api/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64214 - "GET /api/ping?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64214 - "GET /api/groups?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54462 - "POST /api/run HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54462 - "GET /api/status HTTP/1.1" 200 OK
+[00:29:30] === LOGIN CAPCUT 7 acc -> nhóm 'capcut' | 5 luồng ===
+[00:29:30] [1/7] mehuyssulye1@hotmail.com  (proxy 27.76.89.49)
+[00:29:30] [2/7] meivestahmus11@hotmail.com  (proxy 171.253.110.205)
+[00:29:30] [3/7] spytmandonyai61@hotmail.com  (proxy 171.236.167.98)
+[00:29:30] [4/7] bercuhiruairi10@hotmail.com  (proxy 27.76.89.49)
+[00:29:30] [5/7] kazemymedred40@hotmail.com  (proxy 171.253.110.205)
+INFO:     127.0.0.1:54462 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54462 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54462 - "GET /api/status HTTP/1.1" 200 OK
+[00:29:33]     ❌ kazemymedred40@hotmail.com: mở profile thất bại: Không thể kết nối tới proxy
+INFO:     127.0.0.1:54462 - "GET /api/status HTTP/1.1" 200 OK
+[00:29:35]     ❌ meivestahmus11@hotmail.com: mở profile thất bại: Không thể kết nối tới proxy
+INFO:     127.0.0.1:54462 - "GET /api/status HTTP/1.1" 200 OK
+[00:29:37]     ❌ bercuhiruairi10@hotmail.com: mở profile thất bại: Không thể kết nối tới proxy
+INFO:     127.0.0.1:54462 - "GET /api/status HTTP/1.1" 200 OK
+[00:29:38] [6/7] agadianfearin385@hotmail.com  (proxy 171.236.167.98)
+INFO:     127.0.0.1:54462 - "GET /api/status HTTP/1.1" 200 OK
+[00:29:40] [7/7] scheskytykisna5@hotmail.com  (proxy 27.76.89.49)
+INFO:     127.0.0.1:54462 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54462 - "GET /api/status HTTP/1.1" 200 OK
+[00:29:45]     ❌ mehuyssulye1@hotmail.com: mở profile thất bại: Không thể kết nối tới proxy
+INFO:     127.0.0.1:54462 - "GET /api/status HTTP/1.1" 200 OK
+[00:29:47]     mở trang login CapCut
+[00:29:47]     ❌ scheskytykisna5@hotmail.com: mở profile thất bại: Không thể kết nối tới proxy
+INFO:     127.0.0.1:54462 - "GET /api/status HTTP/1.1" 200 OK
+[00:29:48]     mở trang login CapCut
+INFO:     127.0.0.1:54462 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54462 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54462 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54462 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54462 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54462 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54462 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54462 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54462 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54462 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54462 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54462 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54462 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54462 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54462 - "GET /api/status HTTP/1.1" 200 OK
+[00:30:17]     nhập email spytmandonyai61@hotmail.com
+INFO:     127.0.0.1:54462 - "GET /api/status HTTP/1.1" 200 OK
+[00:30:19]     nhập email agadianfearin385@hotmail.com
+INFO:     127.0.0.1:54462 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54462 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54462 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54462 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54462 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54462 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54462 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54462 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54462 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54462 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54462 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54462 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54462 - "GET /api/status HTTP/1.1" 200 OK
+[00:30:46]     nhập mật khẩu
+INFO:     127.0.0.1:54462 - "GET /api/status HTTP/1.1" 200 OK
+[00:30:48]     nhập mật khẩu
+INFO:     127.0.0.1:54462 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54462 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54462 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54462 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54462 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54462 - "GET /api/status HTTP/1.1" 200 OK
+[00:31:17]     ✅ spytmandonyai61@hotmail.com login
+[00:31:19]     ✅ agadianfearin385@hotmail.com login
+[00:31:24] === XONG: 2 OK / 5 lỗi (trên 7) ===
+INFO:     127.0.0.1:52958 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     Started server process [4652]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+INFO:     Started server process [18420]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+INFO:     127.0.0.1:59398 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59398 - "GET /api/ping?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59398 - "GET /api/history HTTP/1.1" 200 OK
+INFO:     Started server process [28716]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+INFO:     127.0.0.1:52577 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52577 - "GET /api/ping?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52577 - "GET /api/groups?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52577 - "GET /api/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63868 - "POST /api/run HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63868 - "GET /api/status HTTP/1.1" 200 OK
+[09:22:37] === CHECK OFFER CAPCUT 5 acc -> nhóm 'All' | 5 luồng ===
+[09:22:37] [1/5] mehuyssulye1@hotmail.com  (proxy 171.236.172.223)
+[09:22:37] [2/5] meivestahmus11@hotmail.com  (proxy 116.101.51.41)
+[09:22:37] [3/5] bercuhiruairi10@hotmail.com  (proxy 171.224.203.42)
+[09:22:37] [4/5] kazemymedred40@hotmail.com  (proxy 171.236.167.98)
+[09:22:37] [5/5] scheskytykisna5@hotmail.com  (proxy 171.236.172.223)
+INFO:     127.0.0.1:63868 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63868 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63868 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63868 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63868 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63868 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63868 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63868 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63868 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63868 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63868 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63868 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63868 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63868 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63868 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63868 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63868 - "GET /api/status HTTP/1.1" 200 OK
+[09:22:57]     mở trang login CapCut
+INFO:     127.0.0.1:63868 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63868 - "GET /api/status HTTP/1.1" 200 OK
+[09:22:59]     mở trang login CapCut
+INFO:     127.0.0.1:63868 - "GET /api/status HTTP/1.1" 200 OK
+[09:23:00]     mở trang login CapCut
+INFO:     127.0.0.1:63868 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63868 - "GET /api/status HTTP/1.1" 200 OK
+[09:23:03]     mở trang login CapCut
+INFO:     127.0.0.1:63868 - "GET /api/status HTTP/1.1" 200 OK
+[09:23:04]     mở trang login CapCut
+INFO:     127.0.0.1:63868 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63868 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63868 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63868 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63868 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63868 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63868 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63868 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63868 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63868 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63868 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63868 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63868 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63868 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63868 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63868 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63868 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63868 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63868 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63868 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63868 - "GET /api/status HTTP/1.1" 200 OK
+[09:23:24]     nhập email bercuhiruairi10@hotmail.com
+INFO:     127.0.0.1:63868 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63868 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63868 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63868 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63868 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63868 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63868 - "GET /api/status HTTP/1.1" 200 OK
+[09:23:32]     nhập email kazemymedred40@hotmail.com
+[09:23:32]     nhập email scheskytykisna5@hotmail.com
+INFO:     127.0.0.1:63868 - "GET /api/status HTTP/1.1" 200 OK
+[09:23:33]     nhập email mehuyssulye1@hotmail.com
+INFO:     127.0.0.1:63868 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63868 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63868 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63868 - "GET /api/status HTTP/1.1" 200 OK
+[09:23:36]     nhập email meivestahmus11@hotmail.com
+INFO:     127.0.0.1:63868 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63868 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63868 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63868 - "GET /api/status HTTP/1.1" 200 OK
+[09:23:58]     nhập mật khẩu
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+[09:24:01]     nhập mật khẩu
+[09:24:02]     nhập mật khẩu
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+[09:24:06]     nhập mật khẩu
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+[09:24:06]     nhập mật khẩu
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+[09:24:53]     ✅ scheskytykisna5@hotmail.com login | 🎁 CÓ OFFER (giá gốc bị gạch x3 | for 7 days | up to 80% off)
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+[09:24:57]     ✅ mehuyssulye1@hotmail.com login | 🎁 CÓ OFFER (giá gốc bị gạch x3 | for 7 days | up to 80% off)
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+[09:24:59]     ✅ meivestahmus11@hotmail.com login | 🎁 CÓ OFFER (giá gốc bị gạch x3 | for 7 days | up to 80% off)
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+[09:25:00]     ✅ bercuhiruairi10@hotmail.com login | 🎁 CÓ OFFER (giá gốc bị gạch x3 | Dùng thử)
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+[09:25:29]     ✅ kazemymedred40@hotmail.com login | 🎁 CÓ OFFER (giá gốc bị gạch x3 | Dùng thử)
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+[09:25:34] === XONG: 5 OK / 0 lỗi (trên 5) ===
+INFO:     127.0.0.1:65226 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65226 - "GET /api/history HTTP/1.1" 200 OK
+INFO:     Started server process [20540]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+INFO:     127.0.0.1:60567 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60567 - "GET /api/ping?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60567 - "GET /api/history HTTP/1.1" 200 OK
+INFO:     Started server process [27312]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+INFO:     127.0.0.1:58322 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58322 - "GET /api/ping?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58322 - "GET /api/history HTTP/1.1" 200 OK
+INFO:     Started server process [31452]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+INFO:     127.0.0.1:51224 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51224 - "GET /api/ping?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51224 - "GET /api/groups?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51224 - "GET /api/history HTTP/1.1" 200 OK
+INFO:     Started server process [28484]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+INFO:     127.0.0.1:56623 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56623 - "GET /api/ping?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56623 - "GET /api/history HTTP/1.1" 200 OK
+INFO:     Started server process [7976]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+INFO:     127.0.0.1:63010 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63010 - "GET /api/ping?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63010 - "GET /api/groups?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63931 - "GET /api/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "POST /api/run HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+[15:10:23] === CHECK OFFER CAPCUT 8 acc -> nhóm 'capcut' | 5 luồng ===
+[15:10:23] [1/8] quatezkhlife3350@hotmail.com  (proxy 171.236.172.223)
+[15:10:23] [2/8] muhidvaghi78@hotmail.com  (proxy 116.101.51.41)
+[15:10:23] [3/8] trebejonaizi3258@hotmail.com  (proxy 171.224.203.42)
+[15:10:23] [4/8] osmelclearon2654@hotmail.com  (proxy 171.236.167.98)
+[15:10:23] [5/8] krempflovins394@hotmail.com  (proxy 171.236.172.223)
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+[15:10:42]     mở trang login CapCut
+[15:10:42]     mở trang login CapCut
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+[15:10:43]     mở trang login CapCut
+[15:10:43]     mở trang login CapCut
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+[15:10:43]     mở trang login CapCut
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+[15:11:10]     nhập email quatezkhlife3350@hotmail.com
+[15:11:10]     nhập email trebejonaizi3258@hotmail.com
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+[15:11:13]     nhập email krempflovins394@hotmail.com
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+[15:11:14]     nhập email muhidvaghi78@hotmail.com
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+[15:11:18]     nhập email osmelclearon2654@hotmail.com
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+[15:11:42]     nhập mật khẩu
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+[15:11:43]     nhập mật khẩu
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+[15:11:44]     nhập mật khẩu
+[15:11:44]     nhập mật khẩu
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+[15:11:52]     nhập mật khẩu
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+[15:12:37]     ✅ krempflovins394@hotmail.com login | 🎁 CÓ OFFER (giá gốc bị gạch x3 | for 7 days | up to 80% off)
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+[15:12:42] [6/8] laomiamakler408@hotmail.com  (proxy 116.101.51.41)
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+[15:12:44]     ✅ muhidvaghi78@hotmail.com login | 🎁 CÓ OFFER (giá gốc bị gạch x3 | for 7 days | up to 80% off)
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+[15:12:49] [7/8] delnikstrukl5@hotmail.com  (proxy 171.224.203.42)
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+[15:12:54]     ✅ quatezkhlife3350@hotmail.com login | 🎁 CÓ OFFER (giá gốc bị gạch x3 | Dùng thử)
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+[15:12:58]     mở trang login CapCut
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+[15:12:58]     mở trang login CapCut
+[15:12:59] [8/8] ingemarmuntada0@hotmail.com  (proxy 171.236.167.98)
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+[15:13:02]     ✅ trebejonaizi3258@hotmail.com login | 🎁 CÓ OFFER (giá gốc bị gạch x3 | Dùng thử)
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+[15:13:04]     ✅ osmelclearon2654@hotmail.com login | KHÔNG offer
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+[15:13:12]     mở trang login CapCut
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+[15:13:26]     nhập email delnikstrukl5@hotmail.com
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+[15:13:26]     nhập email laomiamakler408@hotmail.com
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61849 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61849 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61849 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61849 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61849 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61849 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61849 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61849 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61849 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61849 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61849 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61849 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61849 - "GET /api/status HTTP/1.1" 200 OK
+[15:13:46]     nhập email ingemarmuntada0@hotmail.com
+INFO:     127.0.0.1:61849 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61849 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+[15:14:00]     nhập mật khẩu
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+[15:14:02]     nhập mật khẩu
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+[15:14:23]     nhập mật khẩu
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+[15:14:57]     ✅ delnikstrukl5@hotmail.com login | 🎁 CÓ OFFER (giá gốc bị gạch x3 | Dùng thử)
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+[15:15:07]     ✅ laomiamakler408@hotmail.com login | 🎁 CÓ OFFER (giá gốc bị gạch x3 | Dùng thử)
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+[15:15:17]     ✅ ingemarmuntada0@hotmail.com login | 🎁 CÓ OFFER (giá gốc bị gạch x3 | Dùng thử)
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+[15:15:22] === XONG: 8 OK / 0 lỗi (trên 8) ===
+INFO:     127.0.0.1:57825 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53658 - "GET /api/history HTTP/1.1" 200 OK
+INFO:     Started server process [31196]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+INFO:     127.0.0.1:61002 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61002 - "GET /api/ping?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61002 - "GET /api/groups?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61002 - "GET /api/history HTTP/1.1" 200 OK
+INFO:     Started server process [17004]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+INFO:     127.0.0.1:62642 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62642 - "GET /api/ping?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62642 - "GET /api/groups?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57838 - "GET /api/history HTTP/1.1" 200 OK
+INFO:     Started server process [22268]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+INFO:     127.0.0.1:56551 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56551 - "GET /api/ping?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56551 - "GET /api/groups?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56551 - "GET /api/history HTTP/1.1" 200 OK
+INFO:     Started server process [10492]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+INFO:     127.0.0.1:54058 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54058 - "GET /api/ping?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54058 - "GET /api/groups?port=19995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54058 - "GET /api/history HTTP/1.1" 200 OK

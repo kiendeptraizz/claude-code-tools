@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Đổi mật khẩu Hotmail hàng loạt</title>
+<style>
+  :root{--bg:#0f1216;--card:#181c22;--card2:#1f242c;--line:#2a313b;--txt:#e6e9ee;
+    --mut:#9aa4b2;--accent:#0ea5e9;--accent2:#0284c7;--ok:#22c55e;--bad:#ef4444;}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--txt);font-family:system-ui,Segoe UI,Roboto,Arial,sans-serif;font-size:14px}
+  .wrap{max-width:1180px;margin:0 auto;padding:18px}
+  h1{font-size:20px;margin:0 0 2px;display:flex;align-items:center;gap:8px}
+  .sub{color:var(--mut);font-size:12px;margin-bottom:14px}
+  .grid{display:grid;grid-template-columns:3fr 2fr;gap:12px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;margin-bottom:12px}
+  .card h2{font-size:12px;margin:0 0 8px;color:var(--mut);text-transform:uppercase;letter-spacing:.04em}
+  label{font-size:12px;color:var(--mut);display:block;margin-bottom:4px}
+  input,select,textarea{background:var(--card2);border:1px solid var(--line);color:var(--txt);
+    border-radius:8px;padding:8px 10px;font-size:13px;outline:none;width:100%;font-family:inherit}
+  textarea{font-family:Consolas,monospace;resize:vertical}
+  input:focus,textarea:focus{border-color:var(--accent)}
+  .rowf{display:flex;gap:10px;flex-wrap:wrap;align-items:flex-end}
+  button{background:var(--card2);border:1px solid var(--line);color:var(--txt);border-radius:8px;
+    padding:9px 14px;font-size:14px;cursor:pointer;font-weight:600}
+  button:hover{border-color:var(--accent)}
+  button.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+  button.primary:hover{background:var(--accent2)}
+  button.danger{background:#7f1d1d;border-color:#7f1d1d}
+  button:disabled{opacity:.45;cursor:not-allowed}
+  .muted{color:var(--mut)}
+  .ck{display:flex;align-items:center;gap:8px;color:var(--txt);font-size:13px;margin:7px 0;cursor:pointer}
+  .ck input{width:auto;margin:0}
+  code,.line{font-family:Consolas,monospace;font-size:12px;background:var(--card2);padding:2px 6px;border-radius:5px;color:#cbd5e1;word-break:break-all}
+  .mini{padding:2px 7px;font-size:12px;font-weight:600;border-radius:6px}
+  .opbadge{display:inline-block;background:rgba(14,165,233,.15);color:#7dd3fc;border-radius:99px;padding:1px 7px;font-size:11px;margin:1px 2px}
+  .bar{height:8px;background:var(--card2);border-radius:99px;overflow:hidden;margin:8px 0}
+  .bar>i{display:block;height:100%;width:0;background:var(--accent);transition:width .3s}
+  .counters{display:flex;gap:16px;flex-wrap:wrap;font-weight:600}
+  table{width:100%;border-collapse:collapse;font-size:13px}
+  th,td{text-align:left;padding:7px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{color:var(--mut);font-weight:600;font-size:11px;text-transform:uppercase}
+  .badge{padding:2px 8px;border-radius:99px;font-size:11px;font-weight:700;white-space:nowrap}
+  .b-ok{background:rgba(34,197,94,.15);color:#86efac}
+  .b-fail{background:rgba(239,68,68,.18);color:#fca5a5}
+  #log{background:#0b0e12;border:1px solid var(--line);border-radius:8px;padding:10px;height:190px;
+    overflow:auto;font-family:Consolas,monospace;font-size:12px;white-space:pre-wrap;color:#cbd5e1}
+  .tablewrap{max-height:360px;overflow:auto}
+  .right{margin-left:auto}
+  .modal{position:fixed;inset:0;background:rgba(0,0,0,.6);display:none;align-items:center;justify-content:center;padding:20px;z-index:50}
+  .modal.open{display:flex}
+  .modal .box{background:var(--card);border:1px solid var(--line);border-radius:12px;max-width:900px;width:100%;max-height:80vh;overflow:auto;padding:18px}
+  @media(max-width:900px){.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>📧 Đổi mật khẩu Hotmail hàng loạt</h1>
+  <div class="sub">Đổi pass Outlook/Hotmail (UI mới) + tự đọc mã qua refresh_token (IMAP). Dùng các acc làm recovery CHÉO nên cần ≥2 acc. KHÔNG cần GPM.</div>
+
+  <div class="grid">
+    <div>
+      <div class="card">
+        <div class="rowf" style="align-items:center;margin-bottom:6px">
+          <h2 style="margin:0">Tài khoản (email|pass|refresh_token|client_id)</h2>
+          <button class="right" onclick="openHistory()">📜 Lịch sử</button>
+        </div>
+        <textarea id="accs" rows="10" placeholder="email1@hotmail.com|pass1|refresh_token1|client_id1
+email2@hotmail.com|pass2|refresh_token2|client_id2"></textarea>
+        <div id="accCount" class="muted" style="margin-top:4px">0 tài khoản</div>
+      </div>
+    </div>
+    <div>
+      <div class="card">
+        <h2>Cài đặt &amp; chạy</h2>
+        <label class="ck"><input type="radio" name="pmode" value="fixed" checked onchange="togglePw()"> Mật khẩu MỚI cố định (chung)</label>
+        <input id="newPass" placeholder="VD: Doipass@2026Abc" style="margin:2px 0 8px">
+        <label class="ck"><input type="radio" name="pmode" value="random" onchange="togglePw()"> Mật khẩu NGẪU NHIÊN mỗi acc</label>
+        <div class="rowf" style="margin:10px 0">
+          <div><label>Số luồng</label><input id="threads" value="2" style="width:70px"></div>
+          <div style="align-self:center"><label class="ck"><input type="checkbox" id="headless" checked> Chạy ẩn trình duyệt</label></div>
+        </div>
+        <label>Proxy (mỗi dòng ip:port:user:pass) — trống = dùng proxy chung ở Hub</label>
+        <textarea id="proxies" rows="2" placeholder="để trống nếu dùng proxy chung" style="margin-bottom:8px"></textarea>
+        <button class="primary" id="btnRun" onclick="run('change')" style="width:100%;height:42px;font-size:15px">▶ Đổi mật khẩu</button>
+        <button id="btnTest" onclick="run('test')" style="width:100%;margin-top:8px">🔍 Kiểm tra token (sống/chết)</button>
+        <button class="danger" id="btnStop" onclick="stop()" disabled style="width:100%;margin-top:8px">⏹ Dừng</button>
+        <div class="muted" style="font-size:11px;margin-top:10px">⚠️ Cần ≥2 acc (recovery chéo). Chạy 2-3 luồng cho ổn. Kết quả (pass mới + token mới) lưu <code>data/success.txt</code>.</div>
+      </div>
+      <div class="card">
+        <div class="counters">
+          <span id="cDone" class="muted">Sẵn sàng</span>
+          <span style="color:var(--ok)" id="cOk">✅ 0</span>
+          <span style="color:var(--bad)" id="cFail">❌ 0</span>
+        </div>
+        <div class="bar"><i id="barFill"></i></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="rowf" style="align-items:center">
+      <h2 style="margin:0">Kết quả</h2>
+      <button class="right" onclick="copyLines()">📋 Copy tất cả (email|pass|token|cid)</button>
+    </div>
+    <div class="tablewrap" style="margin-top:8px">
+      <table><thead><tr><th>#</th><th>Email</th><th>TT</th><th>Ghi chú</th><th>Kết quả (email|pass|token|cid)</th></tr></thead>
+      <tbody id="rows"><tr><td colspan="5" class="muted">Chưa có kết quả. (Chế độ kiểm tra token xem ở Log.)</td></tr></tbody></table>
+    </div>
+  </div>
+
+  <div class="card"><h2>Log</h2><div id="log"></div></div>
+</div>
+
+<div class="modal" id="histModal" onclick="if(event.target===this)this.classList.remove('open')">
+  <div class="box"><div class="rowf"><h2 style="margin:0">📜 Lịch sử &amp; tra cứu</h2>
+    <button class="right" onclick="document.getElementById('histModal').classList.remove('open')">Đóng</button></div>
+    <input id="histSearch" placeholder="🔎 Tìm theo email / pass / token..." style="margin-top:10px" oninput="renderHist()">
+    <div class="rowf" style="align-items:center;gap:10px;margin-top:8px">
+      <label class="ck" style="margin:0"><input type="checkbox" id="ckAll" onclick="toggleAll(this)"> Chọn tất cả</label>
+      <span id="selCount" class="muted"></span>
+      <button class="mini right" onclick="copySelected()">📋 Copy đã chọn</button>
+      <button class="mini" onclick="rerunSelected()">▶ Chạy lại đã chọn</button>
+    </div>
+    <div id="histBody" style="margin-top:12px"></div></div>
+</div>
+
+<script>
+const $ = id => document.getElementById(id);
+let polling=null, LAST=[], HIST=[];
+async function jget(u){ return (await fetch(u)).json(); }
+async function jpost(u,b){ return (await fetch(u,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(b||{})})).json(); }
+function esc(s){ return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+function countAccs(){ const n=$('accs').value.split('\n').filter(l=>l.trim()&&!l.trim().startsWith('#')&&l.includes('|')).length; $('accCount').textContent=n+' tài khoản'; }
+$('accs').addEventListener('input', countAccs);
+function togglePw(){ const fixed=document.querySelector('input[name=pmode]:checked').value==='fixed'; $('newPass').style.display=fixed?'block':'none'; }
+
+async function run(mode){
+  const accs=$('accs').value.trim();
+  if(!accs){ alert('Chưa dán tài khoản'); return; }
+  const pmode=document.querySelector('input[name=pmode]:checked').value;
+  const new_password=($('newPass').value||'').trim();
+  if(mode==='change' && pmode==='fixed' && !new_password){ alert('Nhập mật khẩu mới, hoặc chọn ngẫu nhiên'); return; }
+  if(mode==='change' && !confirm('Đổi mật khẩu hàng loạt (PHÁ HỦY, không hoàn tác). Chắc chắn?')) return;
+  const r=await jpost('/api/run',{accounts:accs, mode:mode, password_mode:pmode, new_password:new_password,
+    threads:parseInt($('threads').value)||2, headless:$('headless').checked, proxies:$('proxies').value});
+  if(!r.ok){ alert(r.error||'lỗi'); return; }
+  $('btnRun').disabled=true; $('btnTest').disabled=true; $('btnStop').disabled=false; $('rows').innerHTML=''; $('log').textContent='';
+  if(polling) clearInterval(polling); polling=setInterval(poll,1000); poll();
+}
+async function stop(){ await jpost('/api/stop'); }
+function ops2html(r){
+  if(r.status==='ok'){
+    const a=[]; if(r.newpass) a.push('pass mới'); a.push(r.new_token?'token mới ✓':'token cũ giữ');
+    if(r.provider) a.push('recovery:'+r.provider);
+    return a.map(x=>'<span class="opbadge">'+esc(x)+'</span>').join('');
+  }
+  return '<span class="muted">'+esc(r.reason||'lỗi')+'</span>';
+}
+async function cp(btn,text){ try{ await navigator.clipboard.writeText(text); const o=btn.textContent; btn.textContent='✓'; setTimeout(()=>btn.textContent=o,1200);}catch(e){ alert('Copy lỗi'); } }
+function copyLines(){
+  const lines=LAST.filter(r=>r.line).map(r=>r.line).join('\n');
+  if(!lines){ alert('Chưa có dòng kết quả'); return; }
+  navigator.clipboard.writeText(lines).then(()=>alert('Đã copy '+LAST.filter(r=>r.line).length+' dòng'));
+}
+function selectedLines(){ return [...document.querySelectorAll('.rowck:checked')].map(c=>c.value).filter(Boolean); }
+function updateSel(){ const n=document.querySelectorAll('.rowck:checked').length; $('selCount').textContent=n?('Đã chọn '+n):''; }
+function toggleAll(cb){ document.querySelectorAll('.rowck').forEach(c=>c.checked=cb.checked); updateSel(); }
+function copySelected(){
+  const lines=selectedLines();
+  if(!lines.length){ alert('Chưa chọn dòng nào (tích ô bên trái)'); return; }
+  navigator.clipboard.writeText(lines.join('\n')).then(()=>alert('Đã copy '+lines.length+' dòng đã chọn'));
+}
+function rerunSelected(){
+  const lines=selectedLines();
+  if(!lines.length){ alert('Chưa chọn dòng nào (tích ô bên trái)'); return; }
+  $('accs').value=lines.join('\n'); countAccs();
+  $('histModal').classList.remove('open'); window.scrollTo(0,0);
+  alert('Đã đưa '+lines.length+' tài khoản lên ô Tài khoản.\nChọn chế độ rồi bấm ▶ để chạy lại.');
+}
+function renderRows(res){
+  if(!res.length){ $('rows').innerHTML='<tr><td colspan="5" class="muted">Chưa có kết quả.</td></tr>'; return; }
+  $('rows').innerHTML=res.map((r,i)=>{
+    const badge=r.status==='ok'?'<span class="badge b-ok">OK</span>':'<span class="badge b-fail">lỗi</span>';
+    const line=esc(r.line||'');
+    const cpbtn=r.line?` <button class="mini" onclick='cp(this,${JSON.stringify(r.line||'')})'>📋</button>`:'';
+    return `<tr><td>${i+1}</td><td>${esc(r.email)}</td><td>${badge}</td><td>${ops2html(r)}</td><td><code class="line">${line}</code>${cpbtn}</td></tr>`;
+  }).join('');
+}
+async function poll(){
+  const s=await jget('/api/status');
+  $('barFill').style.width=(s.total?Math.round(s.done/s.total*100):0)+'%';
+  $('cDone').textContent=s.done+'/'+s.total+(s.mode?('  ·  '+(s.mode==='test'?'kiểm tra token':'đổi pass')):'');
+  $('cOk').textContent='✅ '+s.ok; $('cFail').textContent='❌ '+s.fail;
+  LAST=s.results||[]; renderRows(s.results);
+  $('log').textContent=(s.logs||[]).join('\n'); $('log').scrollTop=$('log').scrollHeight;
+  if(!s.running && s.finished){ clearInterval(polling); polling=null; $('btnRun').disabled=false; $('btnTest').disabled=false; $('btnStop').disabled=true; }
+}
+function acctRow(a, time){
+  const badge=a.status==='ok'?'<span class="badge b-ok">OK</span>':'<span class="badge b-fail">lỗi</span>';
+  const line=esc(a.line||''); const cpbtn=a.line?` <button class="mini" onclick='cp(this,${JSON.stringify(a.line||'')})'>📋</button>`:'';
+  const ckval=(a.line||'').replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;');
+  const ck=a.line?`<input type="checkbox" class="rowck" value="${ckval}" onchange="updateSel()">`:'';
+  const t=time?('<td class="muted" style="white-space:nowrap">'+esc(time)+'</td>'):'';
+  return `<tr><td>${ck}</td><td>${esc(a.email)}</td><td>${badge}</td><td>${ops2html(a)}</td><td><code class="line">${line}</code>${cpbtn}</td>${t}</tr>`;
+}
+async function openHistory(){ const r=await jget('/api/history'); HIST=r.runs||[]; $('histSearch').value=''; renderHist(); $('histModal').classList.add('open'); }
+function renderHist(){
+  const q=($('histSearch').value||'').trim().toLowerCase(); const el=$('histBody');
+  if($('ckAll')) $('ckAll').checked=false; if($('selCount')) $('selCount').textContent='';
+  if(!HIST.length){ el.innerHTML='<div class="muted">Chưa có lịch sử.</div>'; return; }
+  if(q){
+    const rows=[];
+    HIST.forEach(run=>(run.accounts||[]).forEach(a=>{
+      const hay=((a.email||'')+' '+(a.line||'')+' '+(a.newpass||'')+' '+(a.reason||'')).toLowerCase();
+      if(hay.includes(q)) rows.push(acctRow(a, run.time));
+    }));
+    el.innerHTML = rows.length
+      ? `<div class="muted" style="margin-bottom:6px">${rows.length} kết quả khớp "${esc(q)}"</div><table><thead><tr><th style="width:22px"></th><th>Email</th><th>TT</th><th>Ghi chú</th><th>Kết quả</th><th>Thời gian</th></tr></thead><tbody>${rows.join('')}</tbody></table>`
+      : `<div class="muted">Không tìm thấy "${esc(q)}"</div>`;
+    return;
+  }
+  el.innerHTML=HIST.map(run=>{
+    const head=`<div style="margin:12px 0 4px;font-weight:700">🕒 ${esc(run.time||'')} · ✅ ${run.success||run.ok||0} / ❌ ${run.failed||0} (${run.total||0} acc)</div>`;
+    const rows=(run.accounts||[]).map(a=>acctRow(a)).join('');
+    return head+'<table><thead><tr><th style="width:22px"></th><th>Email</th><th>TT</th><th>Ghi chú</th><th>Kết quả (email|pass|token|cid)</th></tr></thead><tbody>'+rows+'</tbody></table>';
+  }).join('<hr style="border-color:var(--line)">');
+}
+countAccs(); togglePw();
+</script>
+</body>
+</html>

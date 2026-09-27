@@ -1,0 +1,27 @@
+INFO:     Started server process [14888]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:59270 - "GET /api/tools HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59274 - "GET /api/tools HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59270 - "GET /api/tools HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59278 - "GET /api/start?tool=chatgpt HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59270 - "GET /api/tools HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59270 - "GET /api/tools HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59270 - "GET /api/tools HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59270 - "GET /api/tools HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59270 - "GET /api/tools HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59270 - "GET /api/tools HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59270 - "GET /api/tools HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59270 - "GET /api/tools HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51351 - "GET /api/tools HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58918 - "GET /api/tools HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52187 - "GET /api/start?tool=capcut HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52195 - "GET /api/ready?tool=capcut HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52196 - "GET /api/ready?tool=capcut HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52197 - "GET /api/ready?tool=capcut HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52198 - "GET /api/ready?tool=capcut HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52200 - "GET /api/ready?tool=capcut HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52201 - "GET /api/ready?tool=capcut HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52202 - "GET /api/ready?tool=capcut HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52203 - "GET /api/ready?tool=capcut HTTP/1.1" 404 Not Found
