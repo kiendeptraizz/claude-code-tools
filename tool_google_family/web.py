@@ -25,7 +25,7 @@ import main as core
 app = FastAPI(title="Google Family Checker")
 
 STATE = {
-    "running": False, "group": "", "done": 0, "total": 0,
+    "running": False, "mode": "family", "group": "", "done": 0, "total": 0,
     "ok": 0, "fail": 0, "logs": [], "results": [], "finished": False,
 }
 LOCK = threading.Lock()
@@ -93,12 +93,33 @@ def api_profiles(group_id: int, port: int = 0):
 def api_status():
     with LOCK:
         return {
-            "running": STATE["running"], "group": STATE["group"],
+            "running": STATE["running"], "mode": STATE["mode"], "group": STATE["group"],
             "done": STATE["done"], "total": STATE["total"],
             "ok": STATE["ok"], "fail": STATE["fail"],
             "logs": STATE["logs"][-250:], "results": STATE["results"],
-            "finished": STATE["finished"],
+            "finished": STATE["finished"], "paused": core.list_paused(),
         }
+
+
+@app.get("/api/paused")
+def api_paused():
+    """Acc đang CHỜ bạn xác minh tay (captcha/verify)."""
+    return {"paused": core.list_paused()}
+
+
+@app.post("/api/resume")
+def api_resume(payload: dict = Body(default={})):
+    """Báo 'đã xác minh xong' cho 1 acc (email) hoặc tất cả (bỏ trống email)."""
+    email = (payload or {}).get("email") or None
+    ok = core.resume_paused(email)
+    return {"ok": ok}
+
+
+@app.get("/api/labels")
+def api_labels():
+    """Trả về map code -> nhãn để Web hiển thị kết quả login."""
+    import google_login
+    return {"labels": google_login.LABELS, "good": list(google_login.GOOD_CODES)}
 
 
 @app.post("/api/run")
@@ -116,7 +137,7 @@ def api_run(payload: dict = Body(...)):
     config.CLOSE_PROFILE_AFTER = bool(payload.get("close_after", True))
     mark = bool(payload.get("mark", False))
     with LOCK:
-        STATE.update(running=True, group=gname, done=0, total=0, ok=0, fail=0,
+        STATE.update(running=True, mode="family", group=gname, done=0, total=0, ok=0, fail=0,
                      logs=[], results=[], finished=False)
     core.STOP_EVENT.clear()
     core.LOG_CALLBACK = _log
@@ -134,6 +155,64 @@ def api_run(payload: dict = Body(...)):
 
     threading.Thread(target=worker, daemon=True).start()
     return {"ok": True}
+
+
+@app.post("/api/run_login")
+def api_run_login(payload: dict = Body(...)):
+    """Login hàng loạt + phân loại sống/chết. Nhận: accounts (text), group_name, threads, mark."""
+    with LOCK:
+        if STATE["running"]:
+            return JSONResponse({"ok": False, "error": "Đang chạy rồi"}, status_code=409)
+    accs = core.parse_accounts_text(payload.get("accounts", "") or "")
+    if not accs:
+        return {"ok": False, "error": "không có account hợp lệ (dòng: email|pass|2fa)"}
+    gname = payload.get("group_name", "") or config.GPM_GROUP
+    config.GPM_PORT = int(payload.get("port", config.GPM_PORT))
+    threads = max(1, min(int(payload.get("threads", 1)), 5))
+    config.CLOSE_PROFILE_AFTER = bool(payload.get("close_after", True))
+    mark = bool(payload.get("mark", False))
+    pause = bool(payload.get("pause", False))
+    # proxy: ô proxy trên web (nếu có) + proxy chung data/proxies.txt
+    proxies = [p for p in (payload.get("proxies", "") or "").splitlines() if p.strip()]
+    with LOCK:
+        STATE.update(running=True, mode="login", group=gname, done=0, total=len(accs),
+                     ok=0, fail=0, logs=[], results=[], finished=False)
+    core.STOP_EVENT.clear()
+    core.LOG_CALLBACK = _log
+
+    def worker():
+        try:
+            core.run_login(accs, gname, threads=threads, mark=mark, pause=pause,
+                           proxies=proxies, on_progress=_progress, on_result=_result)
+        except Exception as e:  # noqa
+            _log(f"LỖI: {e}")
+        finally:
+            core.LOG_CALLBACK = None
+            with LOCK:
+                STATE["running"] = False
+                STATE["finished"] = True
+
+    threading.Thread(target=worker, daemon=True).start()
+    return {"ok": True}
+
+
+@app.get("/api/login_history")
+def api_login_history():
+    runs = []
+    p = config.LOGIN_HISTORY_FILE
+    if os.path.exists(p):
+        try:
+            with open(p, "r", encoding="utf-8") as f:
+                for line in f:
+                    line = line.strip()
+                    if line:
+                        try:
+                            runs.append(json.loads(line))
+                        except Exception:  # noqa
+                            pass
+        except Exception:  # noqa
+            pass
+    return {"runs": runs[-50:][::-1]}
 
 
 @app.post("/api/stop")

@@ -31,6 +31,96 @@ STOP_EVENT = threading.Event()
 
 _EMAIL_RE = re.compile(r"[A-Za-z0-9._%+\-]+@[A-Za-z0-9.\-]+\.[A-Za-z]{2,}")
 
+# ===== CHỜ XÁC MINH TAY (captcha / verify) =====
+# Khi gặp các loại phải xử lý tay, tool DỪNG, GIỮ cửa sổ GPM mở để bạn tự xác minh,
+# rồi bấm "Tiếp tục" (GUI) / gọi /api/resume (web) -> tool kiểm tra lại + chạy tiếp.
+PAUSE_FOR_MANUAL = False
+MANUAL_CODES = {"captcha", "verify_phone", "verify_you", "challenge"}
+_PAUSED = {}                      # email -> {"event", "code", "label", "since"}
+_PAUSE_LOCK = threading.Lock()
+_MACHINE_IP = ""                  # IP công khai của MÁY (không proxy) — để so biết proxy có ăn không
+
+
+def list_paused():
+    """Danh sách acc đang CHỜ bạn xác minh tay (để UI hiện nút 'Tiếp tục')."""
+    with _PAUSE_LOCK:
+        return [{"email": e, "code": d["code"], "label": d["label"], "since": d["since"]}
+                for e, d in _PAUSED.items()]
+
+
+def resume_paused(email=None):
+    """Báo 'đã xác minh xong' cho 1 acc (email) hoặc TẤT CẢ (email=None)."""
+    with _PAUSE_LOCK:
+        if email:
+            d = _PAUSED.get(email)
+            if d:
+                d["event"].set()
+                return True
+            return False
+        for d in _PAUSED.values():
+            d["event"].set()
+        return True
+
+
+def normalize_proxy(raw):
+    """Chuẩn hóa 1 dòng proxy về định dạng GPM nhận:
+       - bỏ dòng trống / ghi chú / nhãn [..] đầu dòng
+       - URL  scheme://user:pass@host:port  ->  scheme://host:port:user:pass
+       - giữ nguyên  host:port  /  host:port:user:pass  (GPM coi là HTTP)
+    """
+    s = (raw or "").strip()
+    if not s or s.startswith("#"):
+        return ""
+    if s.startswith("[") and "]" in s[:60]:
+        s = s.split("]", 1)[1].strip()
+    m = re.match(r"^(https?|socks5|socks4)://(?:([^:@/]+):([^@/]+)@)?([^:/@]+):(\d+)/?$", s, re.I)
+    if m:
+        scheme, user, pw, host, port = m.groups()
+        base = f"{host}:{port}"
+        if user and pw:
+            base += f":{user}:{pw}"
+        return f"{scheme.lower()}://{base}"
+    return s
+
+
+def load_proxies():
+    """Đọc proxy CHUNG từ data/proxies.txt (file hub ghi vào) -> list đã chuẩn hóa."""
+    out = []
+    p = config.PROXY_FILE
+    if os.path.exists(p):
+        try:
+            with open(p, "r", encoding="utf-8") as f:
+                for line in f:
+                    s = normalize_proxy(line)
+                    if s:
+                        out.append(s)
+        except Exception:  # noqa
+            pass
+    return out
+
+
+def _machine_public_ip():
+    """IP công khai của máy (gọi TRỰC TIẾP, không qua proxy)."""
+    import requests
+    try:
+        return requests.get(config.IP_CHECK_URL, timeout=10).text.strip()
+    except Exception:  # noqa
+        return ""
+
+
+def _egress_ip(page):
+    """Đọc IP ra ngoài của PROFILE (để xác nhận proxy có ăn không)."""
+    for u in (config.IP_CHECK_URL, "https://ifconfig.me/ip", "https://icanhazip.com"):
+        try:
+            page.goto(u, timeout=15000)
+            txt = (page.inner_text("body") or "").strip()
+            m = re.search(r"\d{1,3}(?:\.\d{1,3}){3}", txt)
+            if m:
+                return m.group(0)
+        except Exception:  # noqa
+            continue
+    return ""
+
 
 def get_logged_in_email(page):
     """Đọc email đang đăng nhập từ thanh tài khoản Google (One Google Bar aria-label)."""
@@ -298,47 +388,167 @@ def run_group(group_id, group_name="", on_progress=None, threads=None, on_result
 GLOGIN_URL = "https://accounts.google.com/signin/v2/identifier?flowName=GlifWebSignIn&hl=en"
 
 
-def login_one(acc, group_name="", raw_proxy=""):
+def _mark_profile(pid, code):
+    """Đánh dấu note + màu profile GPM theo kết quả login (best-effort)."""
+    label = google_login.LABELS.get(code, code)
+    if code in google_login.GOOD_CODES:
+        gpm.update_profile(pid, note=label, color=gpm.COLOR_GREEN)
+    else:
+        gpm.update_profile(pid, note=label, color=gpm.COLOR_PURPLE)
+
+
+def _wait_manual(page, email, code):
+    """GẶP captcha/verify: GIỮ cửa sổ GPM mở, chờ bạn tự xác minh rồi bấm 'Tiếp tục'.
+    Trả (code_mới, msg): kiểm tra lại sau khi bạn báo xong. Không tự giải captcha."""
+    label = google_login.LABELS.get(code, code)
+    ev = threading.Event()
+    since = datetime.datetime.now().strftime("%H:%M:%S")
+    with _PAUSE_LOCK:
+        _PAUSED[email] = {"event": ev, "code": code, "label": label, "since": since}
+    log(f"    ⏸ CHỜ XÁC MINH TAY: {email} [{label}] — cửa sổ GPM của acc đang MỞ, "
+        f"bạn tự xử lý (giải captcha / xác minh SĐT / 'it's you') xong rồi bấm '▶ Tiếp tục'.")
+    waited = 0
+    try:
+        while not ev.wait(1):
+            waited += 1
+            if should_stop():
+                log(f"    ⏹ Bỏ chờ {email} (đã dừng).")
+                return code, "đã dừng khi đang chờ xác minh tay"
+            if waited >= config.PAUSE_TIMEOUT:
+                log(f"    ⌛ Hết giờ chờ xác minh tay {email} ({config.PAUSE_TIMEOUT}s) — bỏ qua.")
+                return code, f"hết giờ chờ xác minh tay ({config.PAUSE_TIMEOUT}s)"
+    finally:
+        with _PAUSE_LOCK:
+            _PAUSED.pop(email, None)
+    # bạn báo xong -> reload + kiểm tra lại trạng thái đăng nhập
+    log(f"    ▶ {email}: bạn báo đã xác minh xong — kiểm tra lại...")
+    try:
+        try:
+            page.reload(timeout=config.PAGE_TIMEOUT)
+        except Exception:  # noqa
+            page.goto(GLOGIN_URL, timeout=config.PAGE_TIMEOUT)
+        time.sleep(3)
+    except Exception:  # noqa
+        pass
+    if google_login.is_logged_in(page):
+        log(f"    ✅ {email}: đã vào được sau khi bạn xác minh tay.")
+        return "ok", "đăng nhập được sau khi bạn xác minh tay"
+    blob = ""
+    try:
+        blob = page.inner_text("body")
+    except Exception:  # noqa
+        pass
+    new_code = google_login.classify_challenge(blob) if blob else code
+    return new_code, "vẫn chưa xong sau xác minh tay (thử lại / để sau)"
+
+
+def login_one(acc, group_name="", raw_proxy="", mark=False):
     """Tạo profile (tên=email) nếu chưa có -> đăng nhập Google -> để lại profile đã login.
-    Trả về 'ok' | 'already'."""
+    KHÔNG raise: trả về dict {code, pid, msg}. code xem google_login.LABELS.
+    Phiên đăng nhập được giữ lại trong profile GPM (đóng cửa sổ vẫn còn cookie)."""
     email = acc["email"]
+    rp = normalize_proxy(raw_proxy)
     prof = gpm.find_profile_by_name(email)
+    existed = bool(prof)
     if not prof:
-        prof = gpm.create_profile(email, group_name=group_name, raw_proxy=raw_proxy)
+        prof = gpm.create_profile(email, group_name=group_name, raw_proxy=rp)
     pid = gpm.get_profile_id(prof)
     if not pid:
-        raise RuntimeError(f"không tạo được profile cho {email}")
+        return {"code": "error", "pid": None, "msg": f"không tạo được profile cho {email}"}
+    # Profile ĐÃ CÓ: gán proxy mới (create chỉ set proxy lúc tạo -> profile cũ vẫn IP máy)
+    if existed and rp:
+        try:
+            ok_set = gpm.update_profile(pid, raw_proxy=rp)
+            log(f"    🔧 gán proxy cho profile sẵn có ({rp.split('://')[-1].split(':')[0]})"
+                + ("" if ok_set else " — GPM báo không set được"))
+        except Exception:  # noqa
+            pass
+
     addr, _ = gpm.start_profile(pid)
+    code, msg = "ok", ""
     try:
         with sync_playwright() as pw:
             browser = pw.chromium.connect_over_cdp(f"http://{addr}")
             ctx = browser.contexts[0] if browser.contexts else browser.new_context()
             page = ctx.pages[0] if ctx.pages else ctx.new_page()
             page.set_default_timeout(config.PAGE_TIMEOUT)
+            # Kiểm tra IP thật của profile (xem proxy có ăn không)
+            if rp and config.CHECK_IP:
+                ip = _egress_ip(page)
+                if ip and _MACHINE_IP and ip == _MACHINE_IP:
+                    log(f"    ⚠️ proxy KHÔNG ăn — profile vẫn IP máy ({ip}). Kiểm tra lại proxy/định dạng.")
+                elif ip:
+                    log(f"    🌐 IP profile: {ip}")
+                else:
+                    log("    ⚠️ không đọc được IP (mạng/proxy có thể lỗi).")
             page.goto(GLOGIN_URL, timeout=config.PAGE_TIMEOUT)
             time.sleep(3)
             if google_login.is_logged_in(page):
-                return "already"
-            google_login.login(page, email, acc["pass"], acc["twofa"], log=log, shot=shot)
-            time.sleep(2)
-            url = page.url or ""
-            ok = ("myaccount.google.com" in url) or google_login.is_logged_in(page) \
-                or ("/signin" not in url and "accounts.google.com/v3/signin" not in url)
+                code = "already"
+            else:
+                try:
+                    google_login.login(page, email, acc["pass"], acc["twofa"], log=log, shot=shot)
+                    time.sleep(2)
+                    url = page.url or ""
+                    ok = ("myaccount.google.com" in url) or google_login.is_logged_in(page) \
+                        or ("/signin" not in url and "accounts.google.com/v3/signin" not in url)
+                    if not ok:
+                        shot(page, email, "login_unverified")
+                        code, msg = "challenge", "không xác nhận được đăng nhập (có thể bị thử thách)"
+                except google_login.LoginError as e:  # noqa
+                    code, msg = e.code, str(e)
+                except Exception as e:  # noqa
+                    code, msg = google_login.categorize(str(e)), str(e)
+                # GẶP captcha/verify + bật chế độ chờ -> GIỮ cửa sổ mở, chờ bạn xác minh tay
+                if PAUSE_FOR_MANUAL and code in MANUAL_CODES and not should_stop():
+                    code, msg = _wait_manual(page, email, code)
             try:
                 browser.close()
             except Exception:  # noqa
                 pass
-            if not ok:
-                shot(page, email, "login_unverified")
-                raise RuntimeError("không xác nhận được đăng nhập (có thể bị thử thách)")
-            return "ok"
+    except Exception as e:  # noqa (lỗi mở profile / CDP)
+        code, msg = "error", str(e)
     finally:
+        if mark and pid:
+            try:
+                _mark_profile(pid, code)
+            except Exception:  # noqa
+                pass
         if config.CLOSE_PROFILE_AFTER:
             gpm.close_profile(pid)
+    return {"code": code, "pid": pid, "msg": msg}
 
 
-def run_login(accs, group_name="", threads=None, on_progress=None, on_result=None, proxies=None):
+def save_login_result(rec):
+    """Ghi 1 dòng kết quả login: email|code|nhãn|lý_do."""
+    try:
+        os.makedirs("data", exist_ok=True)
+        with open(config.LOGIN_RESULT_FILE, "a", encoding="utf-8") as f:
+            f.write(f"{rec.get('email','?')}|{rec.get('code','?')}|"
+                    f"{rec.get('label','')}|{rec.get('reason','')}\n")
+    except Exception:  # noqa
+        pass
+
+
+def write_login_history(record):
+    try:
+        os.makedirs("data", exist_ok=True)
+        with open(config.LOGIN_HISTORY_FILE, "a", encoding="utf-8") as f:
+            f.write(json.dumps(record, ensure_ascii=False) + "\n")
+    except Exception:  # noqa
+        pass
+
+
+def run_login(accs, group_name="", threads=None, on_progress=None, on_result=None,
+              proxies=None, mark=False, pause=False):
+    """Login hàng loạt + PHÂN LOẠI từng acc (sống/chết + lý do). Giữ phiên trong profile GPM.
+    pause=True: gặp captcha/verify thì DỪNG chờ bạn xác minh tay rồi chạy tiếp.
+    Trả về (số acc còn login được, số acc không login được)."""
+    global PAUSE_FOR_MANUAL, _MACHINE_IP
     STOP_EVENT.clear()
+    with _PAUSE_LOCK:
+        _PAUSED.clear()
+    PAUSE_FOR_MANUAL = bool(pause)
     for d in ("logs", "screenshots", "data"):
         os.makedirs(d, exist_ok=True)
     if not gpm.ping():
@@ -346,10 +556,20 @@ def run_login(accs, group_name="", threads=None, on_progress=None, on_result=Non
     n = len(accs)
     if n == 0:
         log("Không có account."); return 0, 0
-    proxies = [p.strip() for p in (proxies or []) if p.strip()]
+    # Proxy: gộp proxy truyền vào + proxy chung từ data/proxies.txt (hub ghi)
+    proxies = [normalize_proxy(p) for p in (proxies or [])]
+    proxies = [p for p in proxies if p]
+    if not proxies:
+        proxies = load_proxies()
     threads = max(1, min(int(threads or 1), 5))
     start_ts = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    log(f"=== LOGIN {n} acc -> nhóm '{group_name or 'All'}' | {threads} luồng ===")
+    # Lấy IP máy 1 lần (để so biết proxy có ăn không)
+    _MACHINE_IP = _machine_public_ip() if config.CHECK_IP else ""
+    log(f"=== LOGIN {n} acc -> nhóm '{group_name or 'All'}' | {threads} luồng"
+        + (f" | {len(proxies)} proxy" if proxies else " | KHÔNG proxy")
+        + (" | CHỜ xác minh tay: BẬT" if PAUSE_FOR_MANUAL else "") + " ===")
+    if _MACHINE_IP:
+        log(f"    (IP máy hiện tại: {_MACHINE_IP} — profile có proxy phải KHÁC IP này)")
     results = {}
     lock = threading.Lock()
     done = [0]
@@ -362,18 +582,21 @@ def run_login(accs, group_name="", threads=None, on_progress=None, on_result=Non
         rp = acc.get("proxy") or (proxies[i % len(proxies)] if proxies else "")
         try:
             log(f"[{i+1}/{n}] {acc['email']}" + (f"  (proxy {rp.split(':')[0]})" if rp else ""))
-            st = login_one(acc, group_name, raw_proxy=rp)
-            rec["status"] = "ok"
-            rec["note"] = "đã login sẵn" if st == "already" else ""
-            log(f"    ✅ {acc['email']}" + (" (đã login sẵn)" if st == "already" else " đăng nhập OK"))
+            r = login_one(acc, group_name, raw_proxy=rp, mark=mark)
+            code, msg = r.get("code", "error"), r.get("msg", "")
         except Exception as e:  # noqa
-            rec.update(status="fail", reason=str(e))
-            log(f"    ❌ {acc['email']}: {e}")
+            code, msg = google_login.categorize(str(e)), str(e)
+        label = google_login.LABELS.get(code, code)
+        good = code in google_login.GOOD_CODES
+        rec.update(status="ok" if good else "fail", code=code, label=label, reason=msg)
+        save_login_result(rec)
+        log(("    ✅ " if good else "    ❌ ") + f"{acc['email']}  {label}"
+            + (f"  ({msg})" if msg and not good else ""))
         with lock:
             results[acc["email"]] = rec
             done[0] += 1
             ok = sum(1 for r in results.values() if r.get("status") == "ok")
-            fail = sum(1 for r in results.values() if r.get("status") in ("fail", "error"))
+            fail = sum(1 for r in results.values() if r.get("status") != "ok")
             if on_progress:
                 try:
                     on_progress(done[0], n, ok, fail)
@@ -389,12 +612,19 @@ def run_login(accs, group_name="", threads=None, on_progress=None, on_result=Non
 
     with concurrent.futures.ThreadPoolExecutor(max_workers=threads) as ex:
         list(concurrent.futures.as_completed([ex.submit(work, i) for i in range(n)]))
-    ok = sum(1 for r in results.values() if r.get("status") == "ok")
-    fail = sum(1 for r in results.values() if r.get("status") == "fail")
-    log(f"=== LOGIN XONG: {ok} OK / {fail} lỗi (trên {n}) ===")
-    write_history({"time": start_ts, "action": "login", "group": group_name, "total": n,
-                   "ok": ok, "failed": fail,
-                   "accounts": [results.get(a["email"], {"email": a["email"]}) for a in accs]})
+
+    # tổng kết theo từng loại
+    from collections import Counter
+    cnt = Counter(r.get("code", "error") for r in results.values())
+    ok = sum(cnt.get(c, 0) for c in google_login.GOOD_CODES)
+    fail = n - ok
+    log(f"=== LOGIN XONG: {ok} còn login được / {fail} không (trên {n}) ===")
+    for c, lbl in google_login.LABELS.items():
+        if cnt.get(c):
+            log(f"      {lbl}: {cnt[c]}")
+    write_login_history({"time": start_ts, "action": "login", "group": group_name, "total": n,
+                         "ok": ok, "failed": fail, "counts": dict(cnt),
+                         "accounts": [results.get(a["email"], {"email": a["email"]}) for a in accs]})
     return ok, fail
 
 

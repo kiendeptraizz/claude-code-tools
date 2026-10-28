@@ -6,6 +6,18 @@ INPUT_FILE = "data/accounts.txt"      # mỗi dòng: email|pass|2fa(secret TOTP)
 RESULT_FILE = "data/results.txt"      # email|vai_trò|số_tv|slot_trống|ds_email_tv
 HISTORY_FILE = "data/history.jsonl"
 
+# ====== LOGIN HÀNG LOẠT ======
+LOGIN_RESULT_FILE = "data/login_results.txt"   # email|code|nhãn|lý_do
+LOGIN_HISTORY_FILE = "data/login_history.jsonl"
+
+# ====== PROXY ======
+PROXY_FILE = "data/proxies.txt"        # proxy chung (hub ghi vào đây) — xoay vòng cho acc không ghi proxy riêng
+CHECK_IP = True                        # mở xong profile thì kiểm tra IP thật (để biết proxy có ăn không)
+IP_CHECK_URL = "https://api.ipify.org?format=text"
+
+# ====== CHỜ XÁC MINH TAY (captcha / verify) ======
+PAUSE_TIMEOUT = 600                    # giây tối đa chờ bạn xác minh tay 1 acc (10 phút) rồi tự bỏ qua
+
 # ====== GPM LOGIN API ======
 GPM_PORT = 19995                       # cổng API GPM Login (mặc định 19995)
 GPM_BASE = f"http://127.0.0.1:{GPM_PORT}/api/v3"

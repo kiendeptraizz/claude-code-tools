@@ -126,16 +126,19 @@ def create_profile(name, group_name=None, raw_proxy="", browser_version=None):
 # màu đánh dấu (best-effort — GPM API v3 có thể BỎ QUA field color, chỉ note chắc chắn ghi được)
 COLOR_RED = "#EF4444"
 COLOR_PURPLE = "#A855F7"
+COLOR_GREEN = "#22C55E"
 
 
-def update_profile(profile_id, note=None, color=None):
-    """Cập nhật ghi chú (note) + màu (color, best-effort) của profile.
+def update_profile(profile_id, note=None, color=None, raw_proxy=None):
+    """Cập nhật ghi chú (note) + màu (color) + proxy (raw_proxy) của profile.
     POST /api/v3/profiles/update/{id}. Trả True nếu API báo success."""
     body = {}
     if note is not None:
         body["note"] = note
     if color is not None:
         body["color"] = color   # hex "#RRGGBB" — GPM ĐỔI MÀU profile thật (SET ăn dù GET không trả về field này)
+    if raw_proxy is not None:
+        body["raw_proxy"] = raw_proxy   # GÁN proxy cho profile ĐÃ CÓ (không chỉ lúc tạo mới)
     if not body:
         return False
     try:

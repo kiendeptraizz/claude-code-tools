@@ -51,7 +51,7 @@
   .b-fail{background:rgba(239,68,68,.2);color:#fca5a5}
   .b-mgr{background:rgba(59,130,246,.18);color:#93c5fd}
   .mem{color:var(--mut);font-size:12px;line-height:1.5}
-  #log{background:#0b0e12;border:1px solid var(--line);border-radius:8px;padding:10px;
+  #log,#lgnLog{background:#0b0e12;border:1px solid var(--line);border-radius:8px;padding:10px;
     height:200px;overflow:auto;font-family:Consolas,monospace;font-size:12px;white-space:pre-wrap;color:#cbd5e1}
   .tablewrap{max-height:430px;overflow:auto;border-radius:8px}
   .pill{font-size:12px;color:var(--mut)}
@@ -63,8 +63,14 @@
 </head>
 <body>
 <div class="wrap">
-  <h1>👨‍👩‍👧 Check Google Family <span class="pill">qua GPM Login</span></h1>
-  <div class="sub">Mở profile trong nhóm GPM → đọc email đăng nhập + thành viên family + slot trống. Chạy ngay tại máy có GPM.</div>
+  <h1>👨‍👩‍👧 Tool Google <span class="pill">qua GPM Login</span></h1>
+  <div class="sub">Check family theo nhóm, hoặc login hàng loạt + phân loại sống/chết. Chạy ngay tại máy có GPM.</div>
+
+  <!-- Tabs -->
+  <div class="row" style="margin-bottom:12px">
+    <button id="tabFam" class="primary" onclick="setTab('family')">👨‍👩‍👧 Check Family</button>
+    <button id="tabLgn" onclick="setTab('login')">🔐 Login hàng loạt</button>
+  </div>
 
   <!-- Kết nối -->
   <div class="card">
@@ -77,7 +83,7 @@
   </div>
 
   <!-- Điều khiển -->
-  <div class="card">
+  <div class="card fam">
     <h2>Chọn nhóm &amp; chạy</h2>
     <div class="row" style="align-items:flex-end">
       <div class="field">
@@ -98,7 +104,7 @@
   </div>
 
   <!-- Tiến trình -->
-  <div class="card">
+  <div class="card fam">
     <div class="counters">
       <span id="cDone" class="muted">Sẵn sàng</span>
       <span style="color:var(--ok)" id="cOk">✅ 0</span>
@@ -110,7 +116,7 @@
   </div>
 
   <!-- Kết quả -->
-  <div class="card">
+  <div class="card fam">
     <div class="row" style="align-items:center;margin-bottom:8px">
       <h2 style="margin:0">Kết quả</h2>
       <div style="margin-left:auto;display:flex;gap:8px">
@@ -128,9 +134,83 @@
   </div>
 
   <!-- Log -->
-  <div class="card">
+  <div class="card fam">
     <h2>Log</h2>
     <div id="log"></div>
+  </div>
+
+  <!-- ===== LOGIN HÀNG LOẠT ===== -->
+  <div class="card lgn" style="display:none">
+    <h2>Danh sách acc &amp; cài đặt</h2>
+    <label>Mỗi dòng: <b>email|pass|2fa|proxy</b> (2fa = secret TOTP, proxy tùy chọn)</label>
+    <textarea id="accs" rows="7" placeholder="email|pass|2fa&#10;email2|pass2|2fa2"
+      style="width:100%;background:var(--card2);border:1px solid var(--line);color:var(--txt);border-radius:8px;padding:10px;font-family:Consolas,monospace;font-size:13px;resize:vertical"></textarea>
+    <div class="row" style="align-items:flex-end;margin-top:10px">
+      <div class="field"><label>Nhóm GPM</label><input id="lgnGroup" value="All" style="width:140px"></div>
+      <div class="field"><label>Số luồng</label><input id="lgnThreads" value="1" style="width:70px"></div>
+      <label class="switch"><input type="checkbox" id="lgnMark" checked> 🎨 Đánh dấu màu + ghi chú vào GPM theo kết quả</label>
+      <label class="switch"><input type="checkbox" id="lgnClose" checked> Đóng cửa sổ profile sau khi login (phiên vẫn giữ)</label>
+      <label class="switch"><input type="checkbox" id="lgnPause" checked> ⏸ Gặp CAPTCHA/verify thì DỪNG chờ tôi xác minh tay rồi chạy tiếp</label>
+    </div>
+    <div style="margin-top:10px">
+      <label>Proxy chung (mỗi dòng 1 proxy — để trống sẽ dùng <b>data/proxies.txt</b>):</label>
+      <textarea id="lgnProxies" rows="2" placeholder="host:port:user:pass&#10;socks5://host:port:user:pass"
+        style="width:100%;background:var(--card2);border:1px solid var(--line);color:var(--txt);border-radius:8px;padding:8px;font-family:Consolas,monospace;font-size:12px;resize:vertical"></textarea>
+      <div class="muted" style="font-size:11px;margin-top:4px">Proxy riêng từng acc vẫn ưu tiên (dòng <b>email|pass|2fa|proxy</b>). Proxy được GÁN cả cho profile ĐÃ CÓ, và tool sẽ log IP thật để biết proxy có ăn không.</div>
+    </div>
+    <div class="row" style="margin-top:12px">
+      <button class="primary" id="btnLgnRun" onclick="runLogin()">▶ Bắt đầu login</button>
+      <button class="danger" id="btnLgnStop" onclick="stop()" disabled>⏹ Dừng</button>
+      <button class="right" onclick="openLoginHistory()">📜 Lịch sử login</button>
+    </div>
+    <div class="muted" style="margin-top:10px;font-size:12px">
+      ℹ️ Tạo/mở profile GPM tên = email, tự đăng nhập (sinh 2FA từ secret), phân loại:
+      OK / sai pass / acc khóa / verify SĐT / verify it's you / sai 2FA / CAPTCHA. Phiên được giữ trong profile để dùng lại.
+      Acc dính CAPTCHA/verify thật phải xử lý tay.
+    </div>
+  </div>
+
+  <div class="card lgn" style="display:none">
+    <div class="counters">
+      <span id="lgnDone" class="muted">Sẵn sàng</span>
+      <span style="color:var(--ok)" id="lgnOk">✅ 0 sống</span>
+      <span style="color:var(--bad)" id="lgnFail">❌ 0 lỗi</span>
+    </div>
+    <div class="bar"><i id="lgnBar"></i></div>
+    <div id="lgnSummary" style="margin-top:8px;display:flex;gap:6px;flex-wrap:wrap"></div>
+  </div>
+
+  <!-- CHỜ XÁC MINH TAY -->
+  <div class="card lgn" id="lgnPausedCard" style="display:none;border:1px solid var(--warn,#f59e0b)">
+    <div class="row" style="align-items:center;margin-bottom:8px">
+      <h2 style="margin:0">⏸ Đang chờ bạn xác minh tay</h2>
+      <button class="right primary" onclick="resumeLogin()">▶ Tiếp tục TẤT CẢ</button>
+    </div>
+    <div class="muted" style="font-size:12px;margin-bottom:8px">
+      Cửa sổ GPM của các acc dưới đây đang MỞ. Bạn tự giải captcha / xác minh trong cửa sổ đó, xong rồi bấm <b>Tiếp tục</b> — tool sẽ kiểm tra lại và chạy bước tiếp.
+    </div>
+    <div id="lgnPausedList" style="display:flex;flex-direction:column;gap:6px"></div>
+  </div>
+
+  <div class="card lgn" style="display:none">
+    <div class="row" style="align-items:center;margin-bottom:8px">
+      <h2 style="margin:0">Kết quả login</h2>
+      <div style="margin-left:auto;display:flex;gap:8px">
+        <button onclick="copyAlive()">📋 Copy acc sống</button>
+        <button onclick="copyDead()">📋 Copy acc lỗi</button>
+      </div>
+    </div>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>#</th><th>Email</th><th>Trạng thái</th><th>Lý do</th></tr></thead>
+        <tbody id="lgnRows"><tr><td colspan="4" class="muted">Chưa có kết quả.</td></tr></tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="card lgn" style="display:none">
+    <h2>Log</h2>
+    <div id="lgnLog"></div>
   </div>
 </div>
 
@@ -139,7 +219,7 @@
   <div class="box">
     <div class="row"><h2 style="margin:0">📜 Lịch sử check &amp; tra cứu</h2>
       <button class="right" onclick="document.getElementById('histModal').classList.remove('open')">Đóng</button></div>
-    <input id="histSearch" placeholder="🔎 Tìm theo email / profile / thành viên..." style="width:100%;margin-top:10px" oninput="renderHist()">
+    <input id="histSearch" placeholder="🔎 Tìm theo email / profile / thành viên..." style="width:100%;margin-top:10px" oninput="renderHistActive()">
     <div id="histBody" style="margin-top:12px"></div>
   </div>
 </div>
@@ -237,7 +317,17 @@ function renderResults(res){
 
 async function poll(){
   const s = await jget('/api/status');
+  LAST = s.results || [];
   const pct = s.total ? Math.round(s.done/s.total*100) : 0;
+  if(s.mode === 'login') pollLogin(s, pct); else pollFamily(s, pct);
+  if(!s.running && s.finished){
+    clearInterval(polling); polling = null;
+    $('btnRun').disabled = false; $('btnStop').disabled = true;
+    $('btnLgnRun').disabled = false; $('btnLgnStop').disabled = true;
+  }
+}
+
+function pollFamily(s, pct){
   $('barFill').style.width = pct + '%';
   $('cDone').textContent = s.done + '/' + s.total + (s.group? '  ·  '+s.group : '');
   $('cOk').textContent = '✅ ' + s.ok;
@@ -247,12 +337,96 @@ async function poll(){
   const full = s.results.filter(r=>r.status==='ok' && r.free_slots===0).length;
   const free = s.results.filter(r=>r.status==='ok' && typeof r.free_slots==='number' && r.free_slots>0).length;
   $('cSlots').textContent = (s.results.length? ('đầy: '+full+'  ·  còn slot: '+free) : '');
-  LAST = s.results||[]; renderResults(s.results);
+  renderResults(s.results);
   $('log').textContent = (s.logs||[]).join('\n'); $('log').scrollTop = $('log').scrollHeight;
-  if(!s.running && s.finished){
-    clearInterval(polling); polling = null;
-    $('btnRun').disabled = false; $('btnStop').disabled = true;
-  }
+}
+
+function pollLogin(s, pct){
+  $('lgnBar').style.width = pct + '%';
+  $('lgnDone').textContent = s.done + '/' + s.total + (s.group? '  ·  '+s.group : '');
+  $('lgnOk').textContent = '✅ ' + s.ok + ' sống';
+  $('lgnFail').textContent = '❌ ' + s.fail + ' lỗi';
+  const cnt = {}; (s.results||[]).forEach(r=>{ cnt[r.code] = (cnt[r.code]||0)+1; });
+  $('lgnSummary').innerHTML = Object.keys(LABELS).filter(c=>cnt[c])
+    .map(c=>`<span class="badge ${GOODSET.has(c)?'b-free':'b-fail'}">${esc(LABELS[c])}: ${cnt[c]}</span>`).join('');
+  $('lgnRows').innerHTML = (s.results && s.results.length) ? s.results.map((r,i)=>{
+    const good = GOODSET.has(r.code);
+    return `<tr><td>${i+1}</td><td>${esc(r.email||'')}</td>
+      <td><span class="badge ${good?'b-free':'b-fail'}">${esc(r.label||r.code||'')}</span></td>
+      <td class="muted">${esc(r.reason||'')}</td></tr>`;
+  }).join('') : '<tr><td colspan="4" class="muted">Chưa có kết quả.</td></tr>';
+  $('lgnLog').textContent = (s.logs||[]).join('\n'); $('lgnLog').scrollTop = $('lgnLog').scrollHeight;
+  renderPaused(s.paused||[]);
+}
+
+function renderPaused(paused){
+  const card = $('lgnPausedCard');
+  if(!paused.length){ card.style.display='none'; $('lgnPausedList').innerHTML=''; return; }
+  card.style.display='';
+  $('lgnPausedList').innerHTML = paused.map(p=>`
+    <div class="row" style="align-items:center;gap:10px;background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:8px 10px">
+      <b>${esc(p.email||'')}</b>
+      <span class="badge b-fail">${esc(p.label||p.code||'')}</span>
+      <span class="muted" style="font-size:11px">từ ${esc(p.since||'')}</span>
+      <button class="right primary" onclick="resumeLogin('${encodeURIComponent(p.email||'')}')">▶ Tiếp tục</button>
+    </div>`).join('');
+}
+async function resumeLogin(email){
+  const body = email ? {email: decodeURIComponent(email)} : {};
+  try{ await jpost('/api/resume', body); poll(); }catch(e){ alert('lỗi: '+e); }
+}
+
+// ---- tab + login ----
+let LABELS = {}, GOODSET = new Set();
+async function loadLabels(){ try{ const r = await jget('/api/labels'); LABELS = r.labels||{}; GOODSET = new Set(r.good||[]); }catch(e){} }
+function setTab(t){
+  document.querySelectorAll('.fam').forEach(e=>e.style.display = t==='family'?'':'none');
+  document.querySelectorAll('.lgn').forEach(e=>e.style.display = t==='login'?'':'none');
+  $('tabFam').classList.toggle('primary', t==='family');
+  $('tabLgn').classList.toggle('primary', t==='login');
+}
+async function runLogin(){
+  if(!$('accs').value.trim()){ alert('Chưa nhập account (dòng: email|pass|2fa)'); return; }
+  const r = await jpost('/api/run_login', {
+    accounts: $('accs').value, group_name: $('lgnGroup').value||'All',
+    port: parseInt($('port').value)||19995,
+    threads: parseInt($('lgnThreads').value)||1,
+    close_after: $('lgnClose').checked, mark: $('lgnMark').checked,
+    pause: $('lgnPause').checked, proxies: $('lgnProxies').value
+  });
+  if(!r.ok){ alert(r.error||'lỗi'); return; }
+  $('btnLgnRun').disabled = true; $('btnLgnStop').disabled = false;
+  $('lgnRows').innerHTML = ''; $('lgnLog').textContent = ''; $('lgnSummary').innerHTML = '';
+  if(polling) clearInterval(polling);
+  polling = setInterval(poll, 1000); poll();
+}
+function copyAlive(){
+  const lines = LAST.filter(r=>GOODSET.has(r.code)).map(r=>r.email);
+  doCopy(lines.join('\n'), 'Đã copy '+lines.length+' acc còn login được');
+}
+function copyDead(){
+  const lines = LAST.filter(r=>r.code && !GOODSET.has(r.code)).map(r=>`${r.email} | ${r.label||r.code}`);
+  doCopy(lines.join('\n'), 'Đã copy '+lines.length+' acc lỗi');
+}
+
+let LHIST = [];
+async function openLoginHistory(){
+  HIST_MODE = 'login';
+  const r = await jget('/api/login_history'); LHIST = r.runs||[];
+  $('histSearch').value = ''; renderLoginHist();
+  $('histModal').classList.add('open');
+}
+function renderLoginHist(){
+  const q = ($('histSearch').value||'').trim().toLowerCase(); const el = $('histBody');
+  if(!LHIST.length){ el.innerHTML = '<div class="muted">Chưa có lịch sử login.</div>'; return; }
+  el.innerHTML = LHIST.map(run=>{
+    const rows = (run.accounts||[]).filter(a=>!q || (a.email||'').toLowerCase().includes(q))
+      .map(a=>{ const good = GOODSET.has(a.code);
+        return `<tr><td>${esc(a.email||'')}</td><td><span class="badge ${good?'b-free':'b-fail'}">${esc(a.label||a.code||'')}</span></td><td class="muted">${esc(a.reason||'')}</td></tr>`;
+      }).join('');
+    const head = `<div style="margin:12px 0 4px;font-weight:700">🕒 ${esc(run.time||'')} · nhóm "${esc(run.group||'')}" · ✅ ${run.ok||0} sống / ❌ ${run.failed||0} lỗi</div>`;
+    return head + '<table><thead><tr><th>Email</th><th>Trạng thái</th><th>Lý do</th></tr></thead><tbody>'+rows+'</tbody></table>';
+  }).join('<hr style="border-color:var(--line)">');
 }
 
 let HIST=[];
@@ -264,7 +438,10 @@ function profRow(a, time){
   const t=time?`<td class="muted" style="white-space:nowrap">${esc(time)}</td>`:'';
   return `<tr><td>${esc(a.profile||'')}</td>${cells}${t}</tr>`;
 }
+let HIST_MODE = 'family';
+function renderHistActive(){ if(HIST_MODE==='login') renderLoginHist(); else renderHist(); }
 async function openHistory(){
+  HIST_MODE = 'family';
   const r = await jget('/api/history'); HIST=r.runs||[];
   $('histSearch').value=''; renderHist();
   $('histModal').classList.add('open');
@@ -291,6 +468,7 @@ function renderHist(){
 }
 
 // auto trên load
+loadLabels();
 ping().then(ok => { if(ok) loadGroups(); });
 </script>
 </body>

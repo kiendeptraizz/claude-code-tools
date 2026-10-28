@@ -141,10 +141,16 @@ class App(ctk.CTk):
         self.btn_start.grid(row=4, column=0, padx=14, pady=(0, 6), sticky="ew")
         self.btn_stop = ctk.CTkButton(right, text="⏹  Dừng", fg_color="#8a2b2b",
                                       hover_color="#a13434", state="disabled", command=self.on_stop)
-        self.btn_stop.grid(row=5, column=0, padx=14, pady=(0, 10), sticky="ew")
+        self.btn_stop.grid(row=5, column=0, padx=14, pady=(0, 6), sticky="ew")
+
+        self.btn_login = ctk.CTkButton(right, text="🔐  Login hàng loạt (check sống/chết)",
+                                       fg_color="#1f6f43", hover_color="#248a52", height=40,
+                                       font=ctk.CTkFont(size=13, weight="bold"),
+                                       command=self.open_login)
+        self.btn_login.grid(row=6, column=0, padx=14, pady=(0, 10), sticky="ew")
 
         res_fr = ctk.CTkFrame(right, fg_color="transparent")
-        res_fr.grid(row=6, column=0, padx=14, pady=(0, 10), sticky="ew")
+        res_fr.grid(row=7, column=0, padx=14, pady=(0, 10), sticky="ew")
         ctk.CTkButton(res_fr, text="📊 Kết quả", width=80, fg_color="#3a3f44", hover_color="#4a5056",
                       command=lambda: open_folder("data")).pack(side="left", padx=(0, 6))
         ctk.CTkButton(res_fr, text="🖼 Ảnh", width=70, fg_color="#3a3f44", hover_color="#4a5056",
@@ -275,6 +281,13 @@ class App(ctk.CTk):
     def show_history(self):
         HistoryWindow(self)
 
+    def open_login(self):
+        if self.worker and self.worker.is_alive():
+            self._log("⚠️  Đang chạy check family — dừng trước khi login hàng loạt.")
+            return
+        self._apply_to_config()
+        LoginWindow(self)
+
     # ---- log / queue ----
     def _drain(self):
         try:
@@ -392,6 +405,258 @@ class HistoryWindow(ctk.CTkToplevel):
                     self.box.insert("end", f"      ❌ {a.get('profile',''):<20} {a.get('reason','')[:50]}\n")
             self.box.insert("end", "─" * 90 + "\n")
         self.box.configure(state="disabled")
+
+
+class LoginWindow(ctk.CTkToplevel):
+    """Login hàng loạt Google qua GPM: dán danh sách acc email|pass|2fa ->
+    tool tạo/mở profile GPM, đăng nhập, PHÂN LOẠI sống/chết, giữ phiên trong profile."""
+
+    def __init__(self, parent):
+        super().__init__(parent)
+        self.title("🔐 Login hàng loạt Google (GPM Login)")
+        self.geometry("1040x700")
+        self.minsize(900, 600)
+        self.msg_q = queue.Queue()
+        self.worker = None
+        self.counts = {}
+        self._build()
+        self.after(120, self._drain)
+        self.protocol("WM_DELETE_WINDOW", self._on_close)
+        self.after(200, self.lift)
+
+    def _build(self):
+        self.grid_columnconfigure(0, weight=3)
+        self.grid_columnconfigure(1, weight=2)
+        self.grid_rowconfigure(1, weight=1)
+
+        ctk.CTkLabel(self, text="🔐 Login hàng loạt + check sống/chết",
+                     font=ctk.CTkFont(size=18, weight="bold")).grid(
+            row=0, column=0, columnspan=2, padx=16, pady=(12, 4), sticky="w")
+
+        # ---- trái: nhập acc ----
+        left = ctk.CTkFrame(self)
+        left.grid(row=1, column=0, rowspan=2, padx=(16, 8), pady=8, sticky="nsew")
+        left.grid_rowconfigure(1, weight=1)
+        left.grid_columnconfigure(0, weight=1)
+        ctk.CTkLabel(left, text="Danh sách acc (mỗi dòng: email|pass|2fa|proxy — proxy tùy chọn):",
+                     font=ctk.CTkFont(size=12)).grid(row=0, column=0, padx=12, pady=(10, 2), sticky="w")
+        self.acc_box = ctk.CTkTextbox(left, font=ctk.CTkFont(family="Consolas", size=12))
+        self.acc_box.grid(row=1, column=0, padx=12, pady=(0, 6), sticky="nsew")
+        note = ("ℹ️ Tool tạo/mở profile GPM tên = email, tự đăng nhập (sinh mã 2FA từ secret TOTP), "
+                "rồi phân loại: OK / sai pass / acc khóa / đòi verify SĐT / verify it's you / sai 2FA / "
+                "CAPTCHA. Phiên đăng nhập được GIỮ trong profile GPM để dùng lại. "
+                "Acc dính CAPTCHA/verify thật phải xử lý tay.")
+        ctk.CTkLabel(left, text=note, text_color="#8ab4f8", wraplength=560,
+                     justify="left", font=ctk.CTkFont(size=11)).grid(
+            row=2, column=0, padx=12, pady=(0, 10), sticky="w")
+
+        # ---- phải: cài đặt + chạy ----
+        right = ctk.CTkFrame(self)
+        right.grid(row=1, column=1, padx=(8, 16), pady=8, sticky="nsew")
+        right.grid_columnconfigure(0, weight=1)
+        ctk.CTkLabel(right, text="⚙️  Cài đặt", font=ctk.CTkFont(size=14, weight="bold")).grid(
+            row=0, column=0, padx=14, pady=(12, 6), sticky="w")
+
+        r1 = ctk.CTkFrame(right, fg_color="transparent")
+        r1.grid(row=1, column=0, padx=14, pady=(0, 6), sticky="ew")
+        ctk.CTkLabel(r1, text="Nhóm GPM:").pack(side="left")
+        self.group_entry = ctk.CTkEntry(r1, width=130)
+        self.group_entry.insert(0, config.GPM_GROUP)
+        self.group_entry.pack(side="left", padx=(6, 14))
+        ctk.CTkLabel(r1, text="Luồng:").pack(side="left")
+        self.threads_entry = ctk.CTkEntry(r1, width=45)
+        self.threads_entry.insert(0, str(config.THREADS))
+        self.threads_entry.pack(side="left", padx=6)
+
+        self.mark_sw = ctk.CTkSwitch(right, text="Đánh dấu màu + ghi chú vào profile GPM theo kết quả")
+        self.mark_sw.grid(row=2, column=0, padx=14, pady=(2, 2), sticky="w")
+        self.mark_sw.select()
+        self.close_sw = ctk.CTkSwitch(right, text="Đóng cửa sổ profile sau khi login (phiên vẫn được giữ)")
+        self.close_sw.grid(row=3, column=0, padx=14, pady=(0, 2), sticky="w")
+        if config.CLOSE_PROFILE_AFTER:
+            self.close_sw.select()
+        self.pause_sw = ctk.CTkSwitch(
+            right, text="⏸ Gặp CAPTCHA/verify thì DỪNG chờ tôi xác minh tay rồi chạy tiếp")
+        self.pause_sw.grid(row=4, column=0, padx=14, pady=(0, 8), sticky="w")
+        self.pause_sw.select()
+
+        self.btn_start = ctk.CTkButton(right, text="▶  Bắt đầu login", height=42,
+                                       fg_color="#1f6f43", hover_color="#248a52",
+                                       font=ctk.CTkFont(size=14, weight="bold"), command=self.on_start)
+        self.btn_start.grid(row=5, column=0, padx=14, pady=(2, 6), sticky="ew")
+        self.btn_stop = ctk.CTkButton(right, text="⏹  Dừng", fg_color="#8a2b2b", hover_color="#a13434",
+                                      state="disabled", command=self.on_stop)
+        self.btn_stop.grid(row=6, column=0, padx=14, pady=(0, 8), sticky="ew")
+
+        rf = ctk.CTkFrame(right, fg_color="transparent")
+        rf.grid(row=7, column=0, padx=14, pady=(0, 8), sticky="ew")
+        ctk.CTkButton(rf, text="📊 Kết quả", width=80, fg_color="#3a3f44", hover_color="#4a5056",
+                      command=lambda: open_folder("data")).pack(side="left", padx=(0, 6))
+        ctk.CTkButton(rf, text="🖼 Ảnh", width=70, fg_color="#3a3f44", hover_color="#4a5056",
+                      command=lambda: open_folder("screenshots")).pack(side="left")
+
+        self.summary = ctk.CTkLabel(right, text="", justify="left", wraplength=360,
+                                    font=ctk.CTkFont(family="Consolas", size=11))
+        self.summary.grid(row=8, column=0, padx=14, pady=(2, 8), sticky="w")
+
+        # ---- khung CHỜ XÁC MINH TAY (hiện khi có acc dính captcha/verify) ----
+        self.paused_frame = ctk.CTkFrame(right, fg_color="#3a2f1a", border_color="#f59e0b", border_width=1)
+        self.paused_frame.grid(row=9, column=0, padx=14, pady=(2, 10), sticky="ew")
+        self.paused_frame.grid_columnconfigure(0, weight=1)
+        ctk.CTkLabel(self.paused_frame, text="⏸ Đang chờ bạn xác minh tay",
+                     font=ctk.CTkFont(size=12, weight="bold")).grid(
+            row=0, column=0, padx=10, pady=(8, 0), sticky="w")
+        ctk.CTkButton(self.paused_frame, text="▶ Tiếp tục tất cả", width=120,
+                      fg_color="#b45309", hover_color="#d97706",
+                      command=lambda: self._resume(None)).grid(row=0, column=1, padx=10, pady=(8, 0))
+        self.paused_box = ctk.CTkFrame(self.paused_frame, fg_color="transparent")
+        self.paused_box.grid(row=1, column=0, columnspan=2, padx=8, pady=8, sticky="ew")
+        self.paused_box.grid_columnconfigure(0, weight=1)
+        self._paused_rows = {}
+        self.paused_frame.grid_remove()   # ẩn tới khi có acc chờ
+
+        # ---- dưới phải: tiến trình + log ----
+        bottom = ctk.CTkFrame(self)
+        bottom.grid(row=2, column=1, padx=(8, 16), pady=(0, 8), sticky="nsew")
+        bottom.grid_rowconfigure(2, weight=1)
+        bottom.grid_columnconfigure(0, weight=1)
+        self.progress = ctk.CTkProgressBar(bottom)
+        self.progress.set(0)
+        self.progress.grid(row=0, column=0, padx=12, pady=(12, 4), sticky="ew")
+        self.counter = ctk.CTkLabel(bottom, text="Sẵn sàng", font=ctk.CTkFont(size=13, weight="bold"))
+        self.counter.grid(row=1, column=0, padx=12, pady=(0, 6), sticky="w")
+        self.log_box = ctk.CTkTextbox(bottom, font=ctk.CTkFont(family="Consolas", size=11), wrap="word")
+        self.log_box.grid(row=2, column=0, padx=12, pady=(0, 12), sticky="nsew")
+        self.log_box.configure(state="disabled")
+
+    def _set_running(self, running):
+        self.btn_start.configure(state="disabled" if running else "normal")
+        self.btn_stop.configure(state="normal" if running else "disabled")
+
+    def on_start(self):
+        text = self.acc_box.get("1.0", "end")
+        accs = core.parse_accounts_text(text)
+        if not accs:
+            self._log("⚠️  Chưa có account hợp lệ (dòng: email|pass|2fa).")
+            return
+        try:
+            threads = max(1, min(int(self.threads_entry.get().strip() or 1), 5))
+        except ValueError:
+            threads = 1
+        config.CLOSE_PROFILE_AFTER = bool(self.close_sw.get())
+        gname = self.group_entry.get().strip() or config.GPM_GROUP
+        mark = bool(self.mark_sw.get())
+        pause = bool(self.pause_sw.get())
+        self._clear_log()
+        self.counts = {}
+        self.summary.configure(text="")
+        self.progress.set(0)
+        self._set_running(True)
+        core.STOP_EVENT.clear()
+        core.LOG_CALLBACK = lambda line: self.msg_q.put(("log", line))
+        self.worker = threading.Thread(
+            target=self._run, args=(accs, gname, threads, mark, pause), daemon=True)
+        self.worker.start()
+
+    def _run(self, accs, gname, threads, mark, pause):
+        try:
+            core.run_login(accs, gname, threads=threads, mark=mark, pause=pause,
+                           on_progress=lambda d, t, a, b: self.msg_q.put(("prog", d, t, a, b)),
+                           on_result=lambda rec: self.msg_q.put(("res", rec)))
+        except Exception as e:  # noqa
+            self.msg_q.put(("log", f"LỖI: {e}"))
+        finally:
+            self.msg_q.put(("done",))
+
+    def on_stop(self):
+        core.STOP_EVENT.set()
+        self._log("⏹  Đang dừng...")
+
+    def _drain(self):
+        try:
+            while True:
+                item = self.msg_q.get_nowait()
+                kind = item[0]
+                if kind == "log":
+                    self._log(item[1])
+                elif kind == "prog":
+                    _, d, t, a, b = item
+                    self.progress.set(d / t if t else 0)
+                    self.counter.configure(text=f"✅ {a} sống   ❌ {b} lỗi   ({d}/{t})")
+                elif kind == "res":
+                    self._tally(item[1])
+                elif kind == "done":
+                    self._set_running(False)
+                    core.LOG_CALLBACK = None
+        except queue.Empty:
+            pass
+        self._refresh_paused()
+        try:
+            self.after(120, self._drain)
+        except Exception:  # noqa
+            pass
+
+    def _refresh_paused(self):
+        """Hiện/ẩn khung chờ xác minh tay + dựng nút 'Tiếp tục' cho từng acc."""
+        try:
+            paused = core.list_paused()
+        except Exception:  # noqa
+            paused = []
+        emails = {p["email"] for p in paused}
+        # bỏ nút của acc đã xong
+        for em in list(self._paused_rows):
+            if em not in emails:
+                self._paused_rows.pop(em).destroy()
+        if not paused:
+            self.paused_frame.grid_remove()
+            return
+        self.paused_frame.grid()
+        for i, p in enumerate(paused):
+            em = p["email"]
+            if em in self._paused_rows:
+                continue
+            row = ctk.CTkFrame(self.paused_box, fg_color="transparent")
+            row.grid(row=i, column=0, sticky="ew", pady=2)
+            row.grid_columnconfigure(0, weight=1)
+            ctk.CTkLabel(row, text=f"{em}  —  {p.get('label', p.get('code',''))}",
+                         anchor="w", font=ctk.CTkFont(size=11)).grid(row=0, column=0, sticky="w")
+            ctk.CTkButton(row, text="▶ Tiếp tục", width=90, fg_color="#b45309",
+                          hover_color="#d97706",
+                          command=lambda e=em: self._resume(e)).grid(row=0, column=1, padx=(6, 0))
+            self._paused_rows[em] = row
+
+    def _resume(self, email):
+        try:
+            core.resume_paused(email)
+        except Exception:  # noqa
+            pass
+        self._refresh_paused()
+
+    def _tally(self, rec):
+        code = rec.get("code", "error")
+        self.counts[code] = self.counts.get(code, 0) + 1
+        lines = []
+        import google_login as gl
+        for c, lbl in gl.LABELS.items():
+            if self.counts.get(c):
+                lines.append(f"{lbl}: {self.counts[c]}")
+        self.summary.configure(text="\n".join(lines))
+
+    def _log(self, line):
+        self.log_box.configure(state="normal")
+        self.log_box.insert("end", line + "\n")
+        self.log_box.see("end")
+        self.log_box.configure(state="disabled")
+
+    def _clear_log(self):
+        self.log_box.configure(state="normal")
+        self.log_box.delete("1.0", "end")
+        self.log_box.configure(state="disabled")
+
+    def _on_close(self):
+        core.STOP_EVENT.set()
+        core.LOG_CALLBACK = None
+        self.destroy()
 
 
 if __name__ == "__main__":
