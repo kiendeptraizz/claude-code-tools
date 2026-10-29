@@ -480,16 +480,23 @@ class LoginWindow(ctk.CTkToplevel):
         self.pause_sw.grid(row=4, column=0, padx=14, pady=(0, 8), sticky="w")
         self.pause_sw.select()
 
+        rbk = ctk.CTkFrame(right, fg_color="transparent")
+        rbk.grid(row=5, column=0, padx=14, pady=(0, 8), sticky="ew")
+        ctk.CTkLabel(rbk, text="🔑 Pass dự phòng:").pack(side="left")
+        self.backup_entry = ctk.CTkEntry(rbk, width=180, show="•",
+                                         placeholder_text="pass chính sai thì thử pass này")
+        self.backup_entry.pack(side="left", padx=(6, 0))
+
         self.btn_start = ctk.CTkButton(right, text="▶  Bắt đầu login", height=42,
                                        fg_color="#1f6f43", hover_color="#248a52",
                                        font=ctk.CTkFont(size=14, weight="bold"), command=self.on_start)
-        self.btn_start.grid(row=5, column=0, padx=14, pady=(2, 6), sticky="ew")
+        self.btn_start.grid(row=6, column=0, padx=14, pady=(2, 6), sticky="ew")
         self.btn_stop = ctk.CTkButton(right, text="⏹  Dừng", fg_color="#8a2b2b", hover_color="#a13434",
                                       state="disabled", command=self.on_stop)
-        self.btn_stop.grid(row=6, column=0, padx=14, pady=(0, 8), sticky="ew")
+        self.btn_stop.grid(row=7, column=0, padx=14, pady=(0, 8), sticky="ew")
 
         rf = ctk.CTkFrame(right, fg_color="transparent")
-        rf.grid(row=7, column=0, padx=14, pady=(0, 8), sticky="ew")
+        rf.grid(row=8, column=0, padx=14, pady=(0, 8), sticky="ew")
         ctk.CTkButton(rf, text="📊 Kết quả", width=80, fg_color="#3a3f44", hover_color="#4a5056",
                       command=lambda: open_folder("data")).pack(side="left", padx=(0, 6))
         ctk.CTkButton(rf, text="🖼 Ảnh", width=70, fg_color="#3a3f44", hover_color="#4a5056",
@@ -497,11 +504,11 @@ class LoginWindow(ctk.CTkToplevel):
 
         self.summary = ctk.CTkLabel(right, text="", justify="left", wraplength=360,
                                     font=ctk.CTkFont(family="Consolas", size=11))
-        self.summary.grid(row=8, column=0, padx=14, pady=(2, 8), sticky="w")
+        self.summary.grid(row=9, column=0, padx=14, pady=(2, 8), sticky="w")
 
         # ---- khung CHỜ XÁC MINH TAY (hiện khi có acc dính captcha/verify) ----
         self.paused_frame = ctk.CTkFrame(right, fg_color="#3a2f1a", border_color="#f59e0b", border_width=1)
-        self.paused_frame.grid(row=9, column=0, padx=14, pady=(2, 10), sticky="ew")
+        self.paused_frame.grid(row=10, column=0, padx=14, pady=(2, 10), sticky="ew")
         self.paused_frame.grid_columnconfigure(0, weight=1)
         ctk.CTkLabel(self.paused_frame, text="⏸ Đang chờ bạn xác minh tay",
                      font=ctk.CTkFont(size=12, weight="bold")).grid(
@@ -547,6 +554,7 @@ class LoginWindow(ctk.CTkToplevel):
         gname = self.group_entry.get().strip() or config.GPM_GROUP
         mark = bool(self.mark_sw.get())
         pause = bool(self.pause_sw.get())
+        backup_pass = self.backup_entry.get()
         self._clear_log()
         self.counts = {}
         self.summary.configure(text="")
@@ -555,12 +563,12 @@ class LoginWindow(ctk.CTkToplevel):
         core.STOP_EVENT.clear()
         core.LOG_CALLBACK = lambda line: self.msg_q.put(("log", line))
         self.worker = threading.Thread(
-            target=self._run, args=(accs, gname, threads, mark, pause), daemon=True)
+            target=self._run, args=(accs, gname, threads, mark, pause, backup_pass), daemon=True)
         self.worker.start()
 
-    def _run(self, accs, gname, threads, mark, pause):
+    def _run(self, accs, gname, threads, mark, pause, backup_pass):
         try:
-            core.run_login(accs, gname, threads=threads, mark=mark, pause=pause,
+            core.run_login(accs, gname, threads=threads, mark=mark, pause=pause, backup_pass=backup_pass,
                            on_progress=lambda d, t, a, b: self.msg_q.put(("prog", d, t, a, b)),
                            on_result=lambda rec: self.msg_q.put(("res", rec)))
         except Exception as e:  # noqa

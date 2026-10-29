@@ -36,6 +36,7 @@ _EMAIL_RE = re.compile(r"[A-Za-z0-9._%+\-]+@[A-Za-z0-9.\-]+\.[A-Za-z]{2,}")
 # rồi bấm "Tiếp tục" (GUI) / gọi /api/resume (web) -> tool kiểm tra lại + chạy tiếp.
 PAUSE_FOR_MANUAL = False
 MANUAL_CODES = {"captcha", "verify_phone", "verify_you", "challenge"}
+BACKUP_PASS = ""                  # pass dự phòng CHUNG cho cả pool (pass chính sai thì thử pass này)
 _PAUSED = {}                      # email -> {"event", "code", "label", "since"}
 _PAUSE_LOCK = threading.Lock()
 _MACHINE_IP = ""                  # IP công khai của MÁY (không proxy) — để so biết proxy có ăn không
@@ -106,6 +107,33 @@ def _machine_public_ip():
         return requests.get(config.IP_CHECK_URL, timeout=10).text.strip()
     except Exception:  # noqa
         return ""
+
+
+_START_LOCK = threading.Lock()
+
+
+def _open_profile_cdp(pw, pid):
+    """Mở profile GPM rồi GẮN Playwright qua CDP — có RETRY chờ cổng debug mở.
+    Chống lỗi 'connect_over_cdp ECONNREFUSED' khi mở nhiều profile cùng lúc
+    (GPM trả địa chỉ ngay nhưng Chrome chưa kịp bind cổng). Trả (browser, addr)."""
+    # Giãn cách lúc START để GPM không phải dựng nhiều Chrome cùng lúc
+    with _START_LOCK:
+        addr, _ = gpm.start_profile(pid)
+        time.sleep(config.START_STAGGER)
+    last = None
+    for attempt in range(config.CDP_CONNECT_TRIES):
+        if should_stop():
+            raise RuntimeError("đã dừng khi đang mở profile")
+        try:
+            return pw.chromium.connect_over_cdp(f"http://{addr}"), addr
+        except Exception as e:  # noqa
+            last = e
+            if attempt == 2:
+                log(f"    ⏳ chờ Chrome của profile mở cổng debug ({addr})...")
+            time.sleep(config.CDP_CONNECT_DELAY)
+    raise RuntimeError(f"không gắn được CDP {addr} sau {config.CDP_CONNECT_TRIES} lần "
+                       f"(~{int(config.CDP_CONNECT_TRIES * config.CDP_CONNECT_DELAY)}s) — "
+                       f"GPM mở profile chưa xong/thất bại: {last}")
 
 
 def _egress_ip(page):
@@ -247,10 +275,9 @@ def process_profile(prof):
     if not pid:
         raise RuntimeError(f"profile thiếu id: {prof}")
 
-    addr, _ = gpm.start_profile(pid)
     try:
         with sync_playwright() as pw:
-            browser = pw.chromium.connect_over_cdp(f"http://{addr}")
+            browser, addr = _open_profile_cdp(pw, pid)
             ctx = browser.contexts[0] if browser.contexts else browser.new_context()
             page = ctx.pages[0] if ctx.pages else ctx.new_page()
             page.set_default_timeout(config.PAGE_TIMEOUT)
@@ -397,9 +424,11 @@ def _mark_profile(pid, code):
         gpm.update_profile(pid, note=label, color=gpm.COLOR_PURPLE)
 
 
-def _wait_manual(page, email, code):
+def _wait_manual(page, acc, code):
     """GẶP captcha/verify: GIỮ cửa sổ GPM mở, chờ bạn tự xác minh rồi bấm 'Tiếp tục'.
-    Trả (code_mới, msg): kiểm tra lại sau khi bạn báo xong. Không tự giải captcha."""
+    Sau khi bạn báo xong -> TIẾP TỤC đăng nhập (điền nốt email/pass/2FA) chứ không
+    chỉ reload. Trả (code_mới, msg). Không tự giải captcha."""
+    email = acc["email"]
     label = google_login.LABELS.get(code, code)
     ev = threading.Event()
     since = datetime.datetime.now().strftime("%H:%M:%S")
@@ -420,26 +449,18 @@ def _wait_manual(page, email, code):
     finally:
         with _PAUSE_LOCK:
             _PAUSED.pop(email, None)
-    # bạn báo xong -> reload + kiểm tra lại trạng thái đăng nhập
-    log(f"    ▶ {email}: bạn báo đã xác minh xong — kiểm tra lại...")
+    # bạn báo xong -> TIẾP TỤC đăng nhập từ trang hiện tại (điền nốt pass/2FA)
+    log(f"    ▶ {email}: bạn báo đã xác minh xong — tiếp tục đăng nhập (điền nốt pass/2FA)...")
     try:
-        try:
-            page.reload(timeout=config.PAGE_TIMEOUT)
-        except Exception:  # noqa
-            page.goto(GLOGIN_URL, timeout=config.PAGE_TIMEOUT)
-        time.sleep(3)
-    except Exception:  # noqa
-        pass
-    if google_login.is_logged_in(page):
-        log(f"    ✅ {email}: đã vào được sau khi bạn xác minh tay.")
-        return "ok", "đăng nhập được sau khi bạn xác minh tay"
-    blob = ""
-    try:
-        blob = page.inner_text("body")
-    except Exception:  # noqa
-        pass
-    new_code = google_login.classify_challenge(blob) if blob else code
-    return new_code, "vẫn chưa xong sau xác minh tay (thử lại / để sau)"
+        if google_login.continue_login(page, email, acc.get("pass", ""), acc.get("twofa", ""),
+                                       log=log, shot=shot, backup_pass=BACKUP_PASS):
+            log(f"    ✅ {email}: đã vào được sau khi bạn xác minh tay.")
+            return "ok", "đăng nhập được sau khi bạn xác minh tay"
+    except google_login.LoginError as e:  # noqa
+        return e.code, str(e)
+    except Exception as e:  # noqa
+        return google_login.categorize(str(e)), str(e)
+    return code, "vẫn chưa xong sau xác minh tay (thử lại / để sau)"
 
 
 def login_one(acc, group_name="", raw_proxy="", mark=False):
@@ -464,11 +485,10 @@ def login_one(acc, group_name="", raw_proxy="", mark=False):
         except Exception:  # noqa
             pass
 
-    addr, _ = gpm.start_profile(pid)
     code, msg = "ok", ""
     try:
         with sync_playwright() as pw:
-            browser = pw.chromium.connect_over_cdp(f"http://{addr}")
+            browser, addr = _open_profile_cdp(pw, pid)
             ctx = browser.contexts[0] if browser.contexts else browser.new_context()
             page = ctx.pages[0] if ctx.pages else ctx.new_page()
             page.set_default_timeout(config.PAGE_TIMEOUT)
@@ -487,7 +507,8 @@ def login_one(acc, group_name="", raw_proxy="", mark=False):
                 code = "already"
             else:
                 try:
-                    google_login.login(page, email, acc["pass"], acc["twofa"], log=log, shot=shot)
+                    google_login.login(page, email, acc["pass"], acc["twofa"], log=log, shot=shot,
+                                       backup_pass=BACKUP_PASS)
                     time.sleep(2)
                     url = page.url or ""
                     ok = ("myaccount.google.com" in url) or google_login.is_logged_in(page) \
@@ -501,7 +522,7 @@ def login_one(acc, group_name="", raw_proxy="", mark=False):
                     code, msg = google_login.categorize(str(e)), str(e)
                 # GẶP captcha/verify + bật chế độ chờ -> GIỮ cửa sổ mở, chờ bạn xác minh tay
                 if PAUSE_FOR_MANUAL and code in MANUAL_CODES and not should_stop():
-                    code, msg = _wait_manual(page, email, code)
+                    code, msg = _wait_manual(page, acc, code)
             try:
                 browser.close()
             except Exception:  # noqa
@@ -540,15 +561,17 @@ def write_login_history(record):
 
 
 def run_login(accs, group_name="", threads=None, on_progress=None, on_result=None,
-              proxies=None, mark=False, pause=False):
+              proxies=None, mark=False, pause=False, backup_pass=""):
     """Login hàng loạt + PHÂN LOẠI từng acc (sống/chết + lý do). Giữ phiên trong profile GPM.
     pause=True: gặp captcha/verify thì DỪNG chờ bạn xác minh tay rồi chạy tiếp.
+    backup_pass: pass dự phòng chung — pass chính sai thì thử pass này.
     Trả về (số acc còn login được, số acc không login được)."""
-    global PAUSE_FOR_MANUAL, _MACHINE_IP
+    global PAUSE_FOR_MANUAL, _MACHINE_IP, BACKUP_PASS
     STOP_EVENT.clear()
     with _PAUSE_LOCK:
         _PAUSED.clear()
     PAUSE_FOR_MANUAL = bool(pause)
+    BACKUP_PASS = (backup_pass or "").strip()
     for d in ("logs", "screenshots", "data"):
         os.makedirs(d, exist_ok=True)
     if not gpm.ping():
@@ -567,7 +590,8 @@ def run_login(accs, group_name="", threads=None, on_progress=None, on_result=Non
     _MACHINE_IP = _machine_public_ip() if config.CHECK_IP else ""
     log(f"=== LOGIN {n} acc -> nhóm '{group_name or 'All'}' | {threads} luồng"
         + (f" | {len(proxies)} proxy" if proxies else " | KHÔNG proxy")
-        + (" | CHỜ xác minh tay: BẬT" if PAUSE_FOR_MANUAL else "") + " ===")
+        + (" | CHỜ xác minh tay: BẬT" if PAUSE_FOR_MANUAL else "")
+        + (" | có pass dự phòng" if BACKUP_PASS else "") + " ===")
     if _MACHINE_IP:
         log(f"    (IP máy hiện tại: {_MACHINE_IP} — profile có proxy phải KHÁC IP này)")
     results = {}

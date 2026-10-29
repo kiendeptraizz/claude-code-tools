@@ -152,6 +152,11 @@
       <label class="switch"><input type="checkbox" id="lgnClose" checked> Đóng cửa sổ profile sau khi login (phiên vẫn giữ)</label>
       <label class="switch"><input type="checkbox" id="lgnPause" checked> ⏸ Gặp CAPTCHA/verify thì DỪNG chờ tôi xác minh tay rồi chạy tiếp</label>
     </div>
+    <div class="field" style="margin-top:10px">
+      <label>🔑 Pass dự phòng (1 pass chung — pass chính sai thì tool thử pass này)</label>
+      <input id="lgnBackupPass" type="password" autocomplete="off" placeholder="để trống nếu không dùng"
+        style="width:260px;background:var(--card2);border:1px solid var(--line);color:var(--txt);border-radius:8px;padding:8px;font-family:Consolas,monospace;font-size:13px">
+    </div>
     <div style="margin-top:10px">
       <label>Proxy chung (mỗi dòng 1 proxy — để trống sẽ dùng <b>data/proxies.txt</b>):</label>
       <textarea id="lgnProxies" rows="2" placeholder="host:port:user:pass&#10;socks5://host:port:user:pass"
@@ -392,7 +397,8 @@ async function runLogin(){
     port: parseInt($('port').value)||19995,
     threads: parseInt($('lgnThreads').value)||1,
     close_after: $('lgnClose').checked, mark: $('lgnMark').checked,
-    pause: $('lgnPause').checked, proxies: $('lgnProxies').value
+    pause: $('lgnPause').checked, proxies: $('lgnProxies').value,
+    backup_pass: $('lgnBackupPass').value
   });
   if(!r.ok){ alert(r.error||'lỗi'); return; }
   $('btnLgnRun').disabled = true; $('btnLgnStop').disabled = false;

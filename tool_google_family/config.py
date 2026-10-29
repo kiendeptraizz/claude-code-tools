@@ -34,6 +34,11 @@ DELAY_BETWEEN = 3                      # giây nghỉ giữa 2 acc
 PAGE_TIMEOUT = 45000                   # ms
 CLOSE_PROFILE_AFTER = True             # đóng profile GPM sau khi check xong
 
+# ====== MỞ PROFILE / GẮN CDP (chống lỗi ECONNREFUSED khi nhiều luồng) ======
+START_STAGGER = 2.0                    # giây giãn cách giữa 2 lần MỞ profile (GPM khỏi quá tải)
+CDP_CONNECT_TRIES = 20                 # số lần thử gắn CDP (chờ cổng debug của Chrome mở)
+CDP_CONNECT_DELAY = 1.5               # giây giữa 2 lần thử gắn CDP  (20 x 1.5 = ~30s chờ tối đa)
+
 # ====== FAMILY ======
 FAMILY_MAX = 6                         # tối đa 6 người (1 chủ + 5 thành viên)
 FAMILY_URL = "https://families.google.com/families"

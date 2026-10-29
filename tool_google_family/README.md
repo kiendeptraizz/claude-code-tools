@@ -65,6 +65,12 @@ Bật switch **"Gặp CAPTCHA/verify thì DỪNG chờ tôi xác minh tay"** (m�
   (GUI: khung cam; Web: thẻ "Đang chờ bạn xác minh tay"). Tool **kiểm tra lại** trạng thái và chạy bước tiếp.
 - Chờ tối đa `PAUSE_TIMEOUT` (mặc định 600s) rồi tự bỏ qua. Tool **không tự giải** CAPTCHA — bạn giải.
 
+### 🔑 Pass dự phòng (1 pass chung cho cả pool)
+- Ô **"Pass dự phòng"** (GUI + Web): nếu **pass chính** (ở dòng acc) đăng nhập **sai**, tool tự
+  **thử lại bằng pass dự phòng** này (1 lần). Dùng khi bạn đã bulk-reset cả kho về 1 pass chung.
+- Áp cho cả lúc đăng nhập thường lẫn lúc **tiếp tục sau xác minh tay**.
+- Giá trị pass **không ghi ra log / file** (chỉ giữ trong RAM lúc chạy).
+
 ### 🌐 Proxy cho profile
 - Proxy riêng từng acc: thêm vào cuối dòng `email|pass|2fa|proxy`.
 - Proxy chung: ô **Proxy chung** (Web) / file `data/proxies.txt` (hub ghi vào đây) — xoay vòng cho acc không ghi proxy riêng.

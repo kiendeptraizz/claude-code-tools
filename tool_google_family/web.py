@@ -172,6 +172,7 @@ def api_run_login(payload: dict = Body(...)):
     config.CLOSE_PROFILE_AFTER = bool(payload.get("close_after", True))
     mark = bool(payload.get("mark", False))
     pause = bool(payload.get("pause", False))
+    backup_pass = (payload.get("backup_pass", "") or "").strip()
     # proxy: ô proxy trên web (nếu có) + proxy chung data/proxies.txt
     proxies = [p for p in (payload.get("proxies", "") or "").splitlines() if p.strip()]
     with LOCK:
@@ -183,7 +184,8 @@ def api_run_login(payload: dict = Body(...)):
     def worker():
         try:
             core.run_login(accs, gname, threads=threads, mark=mark, pause=pause,
-                           proxies=proxies, on_progress=_progress, on_result=_result)
+                           proxies=proxies, backup_pass=backup_pass,
+                           on_progress=_progress, on_result=_result)
         except Exception as e:  # noqa
             _log(f"LỖI: {e}")
         finally:
